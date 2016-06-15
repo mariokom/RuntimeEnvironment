@@ -1,0 +1,100 @@
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Current working dir: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/./
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.mw.services.ResourceRegistry <clinit>
+FINE: Setting ARE base URI to <file:///C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/>
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.mw.services.ResourceRegistry <clinit>
+FINE: Setting OSGI_MODE to <true>
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Location of APE.jar: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: SysProp[APE.baseURI]=null
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Setting APE base URI to <file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/>
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.mw.services.ResourceRegistry setOSGIMode
+FINE: Setting OSGI_MODE to <false>
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.projectDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: defaultProperties: {fx.preferences.shortcut=true, fx.info.vendor=Asterics consortium, fx.info.license=MIT | GPLv3, fx.preferences.menu=true, fx.application.name=asterics-application, fx.preferences.install=true, fx.info.title=Assistive Technology Application, fx.info.description=, fx.info.category=Assistive Technology, fx.application.version=0.1, fx.deploy.nativeBundles=all}
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Adding APE.projectDir/custom/bin/ARE/ as search path for model files to APE.models
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.models]=;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Final apeProperties: {APE.models=;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models, APE.projectDir=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir}
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: ApeProp[ARE.baseURI]=file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/../ARE/
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.mw.services.ResourceRegistry setAREBaseURI
+INFO: Setting ARE base URI to: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/../ARE/
+Ìבת 31, 2016 6:10:02 ÌÌ eu.asterics.mw.services.ResourceRegistry getResource
+FINE: resourceName=loader_componentlist.ini, componentTypeId=null, runtimeComponentInstanceId=null, Resource URI <file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/profile/loader_componentlist.ini>
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.mw.are.BundleManager installServices
+FINE: OSGIMode=false --> Skipping services installation.
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.buildDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Deleting APE.buildDir before copying: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier warning
+WARNING: Could not delete APE.buildDir: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+java.io.FileNotFoundException: File does not exist: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2275)
+	at eu.asterics.ape.packaging.Packager.makeAll(Packager.java:334)
+	at eu.asterics.ape.main.APE.start(APE.java:187)
+	at eu.asterics.ape.main.APE.main(APE.java:99)
+
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Copying files to C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build\merged\bin\ARE
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Found model URIs: []
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier error
+SEVERE: STOPPING: No model URIs found. Please check value of property APE.models: ;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Current working dir: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/./
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.mw.services.ResourceRegistry <clinit>
+FINE: Setting ARE base URI to <file:///C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/>
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.mw.services.ResourceRegistry <clinit>
+FINE: Setting OSGI_MODE to <true>
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Location of APE.jar: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: SysProp[APE.baseURI]=null
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Setting APE base URI to <file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/>
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.mw.services.ResourceRegistry setOSGIMode
+FINE: Setting OSGI_MODE to <false>
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.projectDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: defaultProperties: {fx.preferences.shortcut=true, fx.info.vendor=Asterics consortium, fx.info.license=MIT | GPLv3, fx.preferences.menu=true, fx.application.name=asterics-application, fx.preferences.install=true, fx.info.title=Assistive Technology Application, fx.info.description=, fx.info.category=Assistive Technology, fx.application.version=0.1, fx.deploy.nativeBundles=all}
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Adding APE.projectDir/custom/bin/ARE/ as search path for model files to APE.models
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.models]=;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Final apeProperties: {APE.models=;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models, APE.projectDir=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir}
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: ApeProp[ARE.baseURI]=file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/../ARE/
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.mw.services.ResourceRegistry setAREBaseURI
+INFO: Setting ARE base URI to: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/../ARE/
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.mw.services.ResourceRegistry getResource
+FINE: resourceName=loader_componentlist.ini, componentTypeId=null, runtimeComponentInstanceId=null, Resource URI <file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/profile/loader_componentlist.ini>
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.mw.are.BundleManager installServices
+FINE: OSGIMode=false --> Skipping services installation.
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.buildDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier debug
+FINE: Deleting APE.buildDir before copying: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier warning
+WARNING: Could not delete APE.buildDir: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+java.io.FileNotFoundException: File does not exist: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2275)
+	at eu.asterics.ape.packaging.Packager.makeAll(Packager.java:334)
+	at eu.asterics.ape.main.APE.start(APE.java:187)
+	at eu.asterics.ape.main.APE.main(APE.java:99)
+
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Copying files to C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build\merged\bin\ARE
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Found model URIs: []
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier error
+SEVERE: STOPPING: No model URIs found. Please check value of property APE.models: ;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models

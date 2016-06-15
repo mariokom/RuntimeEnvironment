@@ -1,0 +1,1997 @@
+Ιουν 07, 2016 3:48:54 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 3:48:54 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 3:48:54 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 3:48:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 3:48:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 3:48:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 3:48:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 3:48:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 3:48:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 3:48:59 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 3:49:00 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 3:49:00 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:38:07 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 4:38:07 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 4:38:07 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 4:38:07 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 4:38:07 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 4:38:08 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 4:38:08 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 4:38:08 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 4:38:08 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 4:38:08 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 4:38:09 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 4:38:09 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:39:27 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 4:39:27 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 4:39:27 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 4:39:28 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 4:39:28 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 4:39:28 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 4:39:29 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 4:39:29 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 4:39:29 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 4:39:29 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 4:39:29 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 4:39:29 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:40:01 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 4:40:01 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 4:40:01 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 4:40:02 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 4:40:02 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 4:40:02 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 4:40:03 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 4:40:03 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 4:40:03 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 4:40:03 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 4:40:03 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 4:40:03 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:40:06 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:40:11 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/Head-ColouredLightBulb.acs !
+Ιουν 07, 2016 4:40:11 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:40:16 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:40:24 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/Head-ColouredLightBulb.acs !
+Ιουν 07, 2016 4:40:24 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:41:11 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:42:50 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 4:42:50 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 4:42:50 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 4:42:51 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 4:42:51 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 4:42:51 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 4:42:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 4:42:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 4:42:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 4:42:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 4:42:52 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 4:42:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:43:16 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:16 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:16 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:33 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:33 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:33 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:35 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:35 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:35 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:38 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:38 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:38 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:43:59 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/Head-ColouredLightBulb.acs !
+Ιουν 07, 2016 4:43:59 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:44:16 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/Head-ColouredLightBulb.acs !
+Ιουν 07, 2016 4:44:16 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:44:28 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:44:32 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:44:32 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:44:32 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 4:46:00 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 4:46:00 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 4:46:00 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 4:46:01 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 4:46:01 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 4:46:01 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 4:46:02 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 4:46:02 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 4:46:02 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 4:46:02 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 4:46:02 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 4:46:02 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:55:55 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 4:55:55 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 4:55:55 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 4:55:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 4:55:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 4:55:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 4:55:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 4:55:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 4:55:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 4:55:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 4:55:56 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 4:55:56 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:58:35 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 4:59:27 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:00:22 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:00:22 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:00:22 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:00:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:00:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:00:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:00:23 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:00:23 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:00:23 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:00:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:00:24 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:00:24 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:00:40 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:00:56 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:00:57 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:00:57 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:00:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:00:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:00:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:00:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:00:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:00:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:00:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:00:58 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:00:58 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:01:07 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:01:20 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:01:57 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:01:57 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:01:57 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:01:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:01:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:01:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:01:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:01:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:01:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:01:58 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:01:59 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:01:59 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:02:02 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/Head-ColouredLightBulb.acs !
+Ιουν 07, 2016 5:02:02 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:02:29 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:02:36 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:06:15 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:06:15 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:06:15 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:06:15 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:06:15 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:06:15 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:06:16 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:06:16 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:06:16 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:06:16 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:06:16 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:06:16 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:06:27 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:06:35 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:06:39 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:10:49 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:10:49 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:10:49 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:10:49 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:10:49 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:10:49 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:10:50 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:10:50 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:10:50 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:10:50 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:10:50 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:10:50 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:11:11 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:11:44 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:11:44 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:11:44 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:11:45 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:11:45 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:11:45 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:11:46 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:11:46 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:11:46 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:11:46 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:11:46 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:11:46 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:12:03 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:12:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:14:32 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:14:32 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:14:32 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:14:32 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:14:32 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:14:32 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:14:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:14:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:14:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:14:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:14:33 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:14:33 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:14:40 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:14:47 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:14:56 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:15:02 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:17:12 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:17:12 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:17:12 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:17:12 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:17:12 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:17:12 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:17:13 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:17:13 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:17:13 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:17:13 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:17:13 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:17:13 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:17:18 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:18:23 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:18:23 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:18:23 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:18:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:18:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:18:24 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:18:25 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:18:25 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:18:25 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:18:25 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:18:25 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:18:25 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:18:30 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:20:16 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:20:39 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:20:39 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:20:39 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:20:40 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:20:40 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:20:40 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:20:41 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:20:41 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:20:41 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:20:41 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:20:41 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:20:41 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:20:45 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:20:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:23:09 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:23:09 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:23:10 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:23:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:23:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:23:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:23:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:23:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:23:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:23:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:23:11 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:23:11 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:23:15 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:23:48 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:30:08 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:30:08 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:30:08 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:30:09 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:30:09 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:30:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:30:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:30:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:30:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:30:11 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:30:11 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:30:11 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:30:19 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:30:34 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:32:03 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:32:03 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:32:03 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:32:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:32:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:32:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:32:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:32:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:32:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:32:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:32:05 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:32:05 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:32:12 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:32:15 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:32:15 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:32:15 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:32:20 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:32:26 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:32:57 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:33:03 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:36:32 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:36:33 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:36:33 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:36:33 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:36:33 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:36:33 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:36:34 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:36:34 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:36:34 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:36:34 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:36:34 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:36:34 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:36:40 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:37:13 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:37:14 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:37:14 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:37:14 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:39:28 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:39:28 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:39:28 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:39:28 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:39:28 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:39:29 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:39:29 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:39:30 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:39:30 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:39:30 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:39:30 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:39:30 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:39:33 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:39:37 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:39:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:40:58 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:40:58 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:40:58 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:40:59 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:40:59 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:40:59 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:41:00 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:41:00 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:41:00 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:41:00 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:41:00 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:41:00 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:41:13 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:41:18 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:41:32 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:42:28 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:42:28 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:42:28 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:42:29 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:42:29 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:42:29 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:42:30 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:42:30 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:42:30 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:42:30 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:42:30 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:42:30 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:43:06 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:43:24 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:44:17 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:45:49 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:45:49 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:45:49 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:45:49 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:45:49 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:45:49 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:45:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:45:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:45:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:45:51 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:45:51 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:45:51 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:45:56 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:46:00 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:46:20 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:47:08 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:47:08 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:47:08 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:47:08 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:47:08 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:47:09 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:47:10 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:47:10 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:47:10 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:47:10 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:47:10 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:47:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:47:21 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:47:25 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:47:42 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:48:43 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:48:43 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:48:43 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:48:43 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:48:43 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:48:43 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:48:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:48:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:48:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:48:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:48:44 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:48:45 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:51:51 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:51:51 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:51:51 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:51:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:51:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:51:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:51:53 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:51:53 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:51:53 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:51:53 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:51:53 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:51:53 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:52:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:54:03 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:54:03 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:54:03 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:54:03 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:54:15 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:54:23 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:54:23 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:54:23 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:54:24 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:55:07 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:55:07 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:55:07 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:55:08 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:55:08 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:55:08 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:55:09 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:55:09 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:55:09 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:55:09 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:55:09 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:55:09 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:55:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:55:45 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:56:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:57:36 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 5:57:36 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 5:57:36 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 5:57:37 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 5:57:37 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 5:57:37 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 5:57:38 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 5:57:38 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 5:57:38 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 5:57:38 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 5:57:38 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 5:57:38 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:57:48 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:58:31 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 5:58:39 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:39 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:39 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:39 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:39 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:39 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:42 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:42 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:42 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:42 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:42 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:42 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:43 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:43 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:43 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:43 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:43 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:43 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:44 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:44 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:44 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:44 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:44 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:44 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 5:58:45 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 6:06:54 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 6:06:54 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 6:06:54 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 6:06:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 6:06:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 6:06:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 6:06:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 6:06:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 6:06:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 6:06:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 6:06:56 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 6:06:56 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 6:07:06 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 6:07:13 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 6:09:45 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 07, 2016 6:09:45 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 07, 2016 6:09:46 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 07, 2016 6:09:46 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 07, 2016 6:09:46 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 07, 2016 6:09:46 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 07, 2016 6:09:47 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 07, 2016 6:09:47 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 07, 2016 6:09:47 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 07, 2016 6:09:47 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 07, 2016 6:09:47 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 07, 2016 6:09:47 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 6:09:58 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 6:10:34 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/CameraMouse.acs !
+Ιουν 07, 2016 6:10:34 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 6:10:34 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 6:10:34 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 6:10:34 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 07, 2016 6:10:34 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 07, 2016 6:10:34 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:19 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 09, 2016 12:55:20 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 09, 2016 12:55:20 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 09, 2016 12:55:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 09, 2016 12:55:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 09, 2016 12:55:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 09, 2016 12:55:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 09, 2016 12:55:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 09, 2016 12:55:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 09, 2016 12:55:25 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 09, 2016 12:55:26 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 09, 2016 12:55:26 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 12:55:51 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:55:54 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 12:57:55 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 09, 2016 12:57:55 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 09, 2016 12:57:55 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 09, 2016 12:57:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 09, 2016 12:57:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 09, 2016 12:57:55 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 09, 2016 12:57:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 09, 2016 12:57:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 09, 2016 12:57:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 09, 2016 12:57:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 09, 2016 12:57:56 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 09, 2016 12:57:56 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 12:59:50 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:00:51 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/Head-ArrowsAndClick.acs !
+Ιουν 09, 2016 1:00:51 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:01:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:02:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:52 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:03:53 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:05:36 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 09, 2016 1:05:36 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 09, 2016 1:05:36 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 09, 2016 1:05:36 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 09, 2016 1:05:36 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 09, 2016 1:05:36 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 09, 2016 1:05:37 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 09, 2016 1:05:37 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 09, 2016 1:05:37 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 09, 2016 1:05:37 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 09, 2016 1:05:38 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 09, 2016 1:05:38 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:09:28 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:09:37 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:10:20 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component UchCLB.1
+
+Ιουν 09, 2016 1:11:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:11:27 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:13:47 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/Head-ArrowsAndClick.acs !
+Ιουν 09, 2016 1:13:47 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:14:42 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 09, 2016 1:14:42 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 09, 2016 1:14:42 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 09, 2016 1:14:43 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 09, 2016 1:14:43 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 09, 2016 1:14:43 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 09, 2016 1:14:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 09, 2016 1:14:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 09, 2016 1:14:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 09, 2016 1:14:44 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 09, 2016 1:14:44 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 09, 2016 1:14:44 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:14:53 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:15:02 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:15:36 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:15:38 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 09, 2016 1:16:18 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 09, 2016 1:16:18 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 09, 2016 1:16:18 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 09, 2016 1:16:18 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 09, 2016 1:16:18 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 09, 2016 1:16:18 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 09, 2016 1:16:19 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 09, 2016 1:16:19 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 09, 2016 1:16:19 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 09, 2016 1:16:19 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 09, 2016 1:16:19 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 09, 2016 1:16:19 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 10, 2016 11:55:40 ΠΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 10, 2016 11:55:40 ΠΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 10, 2016 11:55:41 ΠΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 10, 2016 11:55:48 ΠΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 10, 2016 11:55:48 ΠΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 10, 2016 11:55:48 ΠΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 10, 2016 11:55:50 ΠΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 10, 2016 11:55:50 ΠΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 10, 2016 11:55:50 ΠΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 10, 2016 11:55:50 ΠΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 10, 2016 11:55:50 ΠΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 10, 2016 11:55:50 ΠΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 10, 2016 4:41:51 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 10, 2016 4:41:51 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 10, 2016 4:41:51 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 10, 2016 4:41:54 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 10, 2016 4:41:54 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 10, 2016 4:41:54 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 10, 2016 4:41:55 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 10, 2016 4:41:55 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 10, 2016 4:41:55 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 10, 2016 4:41:56 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 10, 2016 4:41:58 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 10, 2016 4:41:58 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 1:06:54 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 13, 2016 1:06:54 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 13, 2016 1:06:55 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 13, 2016 1:07:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 13, 2016 1:07:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 13, 2016 1:07:10 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 13, 2016 1:07:17 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 13, 2016 1:07:17 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 13, 2016 1:07:17 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 13, 2016 1:07:18 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 13, 2016 1:07:20 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 13, 2016 1:07:20 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 1:08:17 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 1:57:42 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component CellBoard.1
+
+Ιουν 13, 2016 1:57:59 ΜΜ eu.asterics.mw.are.AsapiSupport getComponentProperty
+WARNING: eu.asterics.mw.are.AsapiSupport.getComponentProperty: Undefined component CellBoard.1
+
+Ιουν 13, 2016 3:54:34 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 13, 2016 3:54:34 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 13, 2016 3:54:34 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 13, 2016 3:54:38 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 13, 2016 3:54:38 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 13, 2016 3:54:39 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 13, 2016 3:54:40 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 13, 2016 3:54:40 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 13, 2016 3:54:40 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 13, 2016 3:54:41 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 13, 2016 3:54:41 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 13, 2016 3:54:41 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:14:04 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 13, 2016 4:14:04 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 13, 2016 4:14:04 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 13, 2016 4:14:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 13, 2016 4:14:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 13, 2016 4:14:05 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 13, 2016 4:14:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 13, 2016 4:14:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 13, 2016 4:14:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 13, 2016 4:14:05 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 13, 2016 4:14:05 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 13, 2016 4:14:05 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:21:31 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 13, 2016 4:21:31 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 13, 2016 4:21:31 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 13, 2016 4:21:32 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 13, 2016 4:21:32 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 13, 2016 4:21:32 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 13, 2016 4:21:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 13, 2016 4:21:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 13, 2016 4:21:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 13, 2016 4:21:33 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 13, 2016 4:21:33 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 13, 2016 4:21:33 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:22:50 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:23:31 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:25:21 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:26:13 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:26:21 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:26:25 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:27:11 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:28:23 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 13, 2016 4:28:23 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 13, 2016 4:28:23 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 13, 2016 4:28:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 13, 2016 4:28:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 13, 2016 4:28:23 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 13, 2016 4:28:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 13, 2016 4:28:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 13, 2016 4:28:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 13, 2016 4:28:24 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 13, 2016 4:28:24 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 13, 2016 4:28:24 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:28:29 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:36:02 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 13, 2016 4:36:02 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 13, 2016 4:36:02 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 13, 2016 4:36:03 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 13, 2016 4:36:03 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 13, 2016 4:36:03 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 13, 2016 4:36:04 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 13, 2016 4:36:04 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 13, 2016 4:36:04 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 13, 2016 4:36:04 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 13, 2016 4:36:04 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 13, 2016 4:36:04 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:36:34 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:36:59 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 13, 2016 4:38:01 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 15, 2016 2:55:43 ΜΜ eu.asterics.mw.are.Main start
+INFO: JVM 32 bit detected
+Ιουν 15, 2016 2:55:43 ΜΜ eu.asterics.mw.are.Main start
+INFO: Property eu.asterics.ARE.startModel: 
+Ιουν 15, 2016 2:55:44 ΜΜ eu.asterics.mw.gui.AstericsGUI <init>
+INFO: ARE.gui.font.size=18
+Ιουν 15, 2016 2:55:46 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager generateIgnoredPortList
+SEVERE: eu.asterics.mw.cimcommunication.CIMPortManager.generateIgnoredPortList: IO Exception while handling ignore ports file
+Ιουν 15, 2016 2:55:47 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Starting rescan of COM ports
+Ιουν 15, 2016 2:55:47 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager rescan
+INFO: Finished rescan of COM ports
+Ιουν 15, 2016 2:55:49 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPoolTasks.submitTimeout=20000
+Ιουν 15, 2016 2:55:49 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size=1
+Ιουν 15, 2016 2:55:49 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool <init>
+INFO: ThreadPool.ModelExecutor.size <= 1, using single threaded model execution approach
+Ιουν 15, 2016 2:55:49 ΜΜ eu.asterics.mw.services.AstericsModelExecutionThreadPool$1 newThread
+WARNING: ModelExecutor [AWT-EventQueue-0]: Switching to fallbackPool with Thread: ModelExecutor-Lifecycle-Fallback-0
+Ιουν 15, 2016 2:55:50 ΜΜ eu.asterics.mw.are.AsapiSupport$6 call
+INFO: Deployed Model file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/ARE/models/autostart.acs !
+Ιουν 15, 2016 2:55:50 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+
+Ιουν 15, 2016 2:56:06 ΜΜ eu.asterics.mw.cimcommunication.CIMPortManager printActiveCimControllers
+INFO: Currently active COM ports:
+

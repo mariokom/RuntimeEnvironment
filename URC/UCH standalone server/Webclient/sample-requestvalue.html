@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+
+	<head>
+		<title>Request Value</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" href="default.css" type="text/css">
+	
+	   <script type="text/javascript" src="org_myurc_webclient.js">
+			// Defines webclient functions.
+		</script>
+			
+		<script type="text/javascript" src="org_myurc_socket.js">
+			// Defines functions for socket objects.
+		</script>
+						
+		<script type="text/javascript" src="org_myurc_schema.js">
+			// Defines functions for schema objects.
+		</script>
+						
+      <script type="text/javascript" src="org_myurc_urchttp.js">
+	      // Defines primitive URC-HTTP functions.
+      </script>
+
+      <script type="text/javascript" src="org_myurc_urchttp_test.js">
+	      // Defines test cases, but only if file is read from local file system (URL scheme == "file:").  
+      </script>
+
+		<script type="text/javascript" src="org_myurc_lib.js">
+			// Defines utility functions.
+		</script>
+			
+		<script type="text/javascript">		// Functions specific to this page.
+		    
+		   updateInterval = 0;         // No polling for updates.
+		
+         function init() {
+            try {
+               org_myurc_webclient_init(["http://res.openurc.org/tv"], updateInterval);      
+            }
+	         catch (ex) {
+	            alert(typeof ex === "string" ? ex : ex.message);
+	         }
+         }
+         
+         function finalize() {
+            org_myurc_webclient_finalize();
+         }
+         
+         function requestValue(socketPath) {
+            var value = org_myurc_webclient_getValue(socketPath);
+            var pathNode = document.getElementById("path_");
+            pathNode.innerHTML = socketPath;
+            var valueNode = document.getElementById("value_");
+            valueNode.innerHTML = value;
+         }
+         
+         function toggleLog() {
+            if (document.getElementById("log_").className == "logshown") {
+               document.getElementById("logbutton_").innerHTML = "Show URC-HTTP Log";
+               document.getElementById("log_").className = "loghidden";
+            }
+            else {
+               document.getElementById("logbutton_").innerHTML = "Hide URC-HTTP Log";
+               document.getElementById("log_").className = "logshown";
+            }
+         }
+         
+		</script>
+		
+	</head>
+	
+	<body onload="init()" onunload="finalize()">
+	   
+	   <p>List of available socket paths:</p>
+	   
+	   <ul>
+         <li>http://res.openurc.org/tv#/powerMode</li>
+         <li>http://res.openurc.org/tv#/activeChannel</li>
+         <li>http://res.openurc.org/tv#/channelList</li>
+         <li>http://res.openurc.org/tv#/previousChannel</li>
+         <li>http://res.openurc.org/tv#/volume</li>
+         <li>http://res.openurc.org/tv#/mute</li>
+	   </ul>
+	   
+	   <p>Type socket path: 
+	   <input id="input_" type="text" name="input" size="50" value="http://res.openurc.org/tv#/powerMode">
+	   <button onclick="requestValue(document.getElementById('input_').value);" 
+	      onkeypress="requestValue(document.getElementById('input_').value);">Request value
+	   </button></p>
+	   
+	   <p>Result: Socket element "<span id="path_"></span>" has the value "<span id="value_"></span>".</p>
+		
+		<hr>
+		
+		<div id="error_" class="error"></div>
+
+		<p><button id="logbutton_" onclick="toggleLog();" onkeypress="toggleLog();">Show URC-HTTP Log</button> 
+		Note: empty update messages omitted</p>
+		
+		<div id="log_" class="loghidden"></div>
+		
+	</body>
+</html>

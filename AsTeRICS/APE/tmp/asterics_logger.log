@@ -1,0 +1,48 @@
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Setting APE base URI to <file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/>
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.projectDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.models]=;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models
+Ìבת 31, 2016 6:10:01 ÌÌ eu.asterics.mw.services.ResourceRegistry setAREBaseURI
+INFO: Setting ARE base URI to: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/../ARE/
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.buildDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier warning
+WARNING: Could not delete APE.buildDir: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+java.io.FileNotFoundException: File does not exist: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2275)
+	at eu.asterics.ape.packaging.Packager.makeAll(Packager.java:334)
+	at eu.asterics.ape.main.APE.start(APE.java:187)
+	at eu.asterics.ape.main.APE.main(APE.java:99)
+
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Copying files to C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build\merged\bin\ARE
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Found model URIs: []
+Ìבת 31, 2016 6:10:05 ÌÌ eu.asterics.ape.main.Notifier error
+SEVERE: STOPPING: No model URIs found. Please check value of property APE.models: ;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Setting APE base URI to <file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/>
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.projectDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.models]=;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models
+Ìבת 31, 2016 6:10:16 ÌÌ eu.asterics.mw.services.ResourceRegistry setAREBaseURI
+INFO: Setting ARE base URI to: file:/C:/Users/mkomod05.cs8500/Documents/GitHub/AsTeRICS/bin/APE/../ARE/
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: ApeProp[APE.buildDir]=C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier warning
+WARNING: Could not delete APE.buildDir: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+java.io.FileNotFoundException: File does not exist: C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2275)
+	at eu.asterics.ape.packaging.Packager.makeAll(Packager.java:334)
+	at eu.asterics.ape.main.APE.start(APE.java:187)
+	at eu.asterics.ape.main.APE.main(APE.java:99)
+
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Copying files to C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\build\merged\bin\ARE
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier info
+INFO: Found model URIs: []
+Ìבת 31, 2016 6:10:17 ÌÌ eu.asterics.ape.main.Notifier error
+SEVERE: STOPPING: No model URIs found. Please check value of property APE.models: ;C:\Users\mkomod05.cs8500\Documents\GitHub\AsTeRICS\bin\APE\defProjectDir\custom\bin\ARE\models

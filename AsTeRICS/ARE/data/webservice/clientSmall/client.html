@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="javascript/JSmap.js"></script> 
+		<script src="javascript/areCommunicator.js"></script>
+		 
+		<title>Rest Client</title>
+		
+		
+		<script type="text/javascript">
+
+			//variables holding the values retrieved from the ARE
+			var hue = 0;
+			var saturation = 0.5;
+			var brightness = 0;
+
+			//counts the number of failed requests to the ARE
+			var errorCount = 0;
+
+			//when the errorCount variable passes the errorThreshold, the color monitoring will stop
+			var errorThreshold = 20;
+
+			//in milliseconds
+			var colorMonitorFrequency = 10;
+
+		
+			setBaseURI("http://localhost:8081/rest/");
+		
+			//startCameraMouseModel
+			function startCameraMouseModel() {
+				autorun(successCallback, showError, 'CameraMouse.acs');
+			}
+			
+			function startArrowsAndClickModel() {
+				autorun(successCallback, showError, 'Head-ArrowsAndClick.acs');
+			}
+
+			function startHeadSoundModel() {
+				autorun(successCallback, showError, 'HeadSound.acs');
+			}
+
+			function startCameraCLBModel() {
+				autorun(successCallback, showError, 'Head-ColouredLightBulb.acs');
+			}
+
+			function stopCurrentModel() {
+				stopModel(successCallback, showError);
+			}
+
+
+			function successCallback(data, HTTPstatus) { 
+				alert(data);
+			}
+			
+			function showError(HTTPstatus, AREerrorMessage) { 
+				console.log(AREerrorMessage);
+				errorCount ++;
+			}
+
+
+			/*** Monitoring color of the 'ColoredLightBulb' model ***/
+
+			function setHue(data, HTTPstatus) { hue = data; }
+			function setSaturation(data, HTTPstatus) { saturation = data; }
+			function setBrightness(data, HTTPstatus) { brightness = data; }
+
+			function retrieveValues() {
+				if (errorCount > 10) { clearInterval(retrieveValuesInterval); }
+				getRuntimeComponentProperty(setHue, showError, "UchCLB.1", "hue");
+				getRuntimeComponentProperty(setSaturation, showError, "UchCLB.1", "saturation");
+				getRuntimeComponentProperty(setBrightness, showError, "UchCLB.1", "brightness");
+			}
+
+			function changeColorDiv() {
+				if (errorCount > 10) { clearInterval(changeColorInterval); }
+				var colorDiv = document.getElementById('colorDiv');
+				var rgbColor = HSVtoRGB(hue/360, saturation/100, brightness/100);
+
+				console.log("rgb("+rgbColor.r+","+rgbColor.g+","+rgbColor.b+")");
+				colorDiv.style.backgroundColor ="rgb("+rgbColor.r+","+rgbColor.g+","+rgbColor.b+")";
+			}
+
+
+			var changeColorInterval;
+			var retrieveValuesInterval;
+			function startMonitoring() {
+				changeColorInterval = setInterval(changeColorDiv, 10);
+				retrieveValuesInterval = setInterval(retrieveValues, 10);
+			}
+
+
+			/* accepts parameters
+			 * h  Object = {h:x, s:y, v:z}
+			 * OR 
+			 * h, s, v
+			*/
+			function HSVtoRGB(h, s, v) {
+			    var r, g, b, i, f, p, q, t;
+			    if (arguments.length === 1) {
+			        s = h.s, v = h.v, h = h.h;
+			    }
+			    i = Math.floor(h * 6);
+			    f = h * 6 - i;
+			    p = v * (1 - s);
+			    q = v * (1 - f * s);
+			    t = v * (1 - (1 - f) * s);
+			    switch (i % 6) {
+			        case 0: r = v, g = t, b = p; break;
+			        case 1: r = q, g = v, b = p; break;
+			        case 2: r = p, g = v, b = t; break;
+			        case 3: r = p, g = q, b = v; break;
+			        case 4: r = t, g = p, b = v; break;
+			        case 5: r = v, g = p, b = q; break;
+			    }
+			    return {
+			        r: Math.round(r * 255),
+			        g: Math.round(g * 255),
+			        b: Math.round(b * 255)
+			    };
+			}
+
+		</script>
+		
+	</head>
+	
+	<body style="width: 100%;">
+		<hr>
+
+		<h1> Rest API client demo (reduced functionality) </h1>
+		
+		<h4>(Place your mouse over a button to see additional info)</h4>
+		
+		<hr>
+
+		<br>
+
+		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'CameraMouse.acs' model which is able to control the mouse of the computer with head movements" onclick="startCameraMouseModel()"> <b>Start camera mouse model</b></button>
+
+		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'Head-ArrowsAndClick.acs' model. Move your head to the desired direction in order to click the corresponding arrow and open your mouse to click" onclick="startArrowsAndClickModel()"> <b>Start Head-ArrowsAndClick model model</b> </button>
+		
+		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'HeadSound.acs' model which gives you the ability to play music with head movements" onclick="startHeadSoundModel()"> <b>Start head sound model</b> </button>
+
+		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'Head-ColouredLightBulb.acs' model. The model will automatichally switch to 'CameraMouse' model if the head stays steady for 2 seconds" onclick="startCameraCLBModel()"> <b>Start Head-ColouredLightBulb model model</b> </button>
+
+		<br> <br>
+
+		<button style="margin:10px;border-radius:5px;padding:10px;" title="Stop the current model" onclick="stopCurrentModel()"> <b>Stop model</b> </button>
+
+		<br>
+		<hr>
+		<br>
+
+		<div id="colorDiv" style="height: 200px; width: 200px; border: 1px solid black;"> 
+			&nbsp;
+		</div>
+		<br>
+		<button onclick="startMonitoring();"> Start monitoring color ('Head-ColouredLightBulb.acs' model) </button>
+
+		<br/> <br/> <br> <br> <br>
+		
+	</body>
+	
+</html>

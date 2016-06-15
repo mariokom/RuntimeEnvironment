@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResSheet
+    rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet"
+    xmlns="http://openurc.org/ns/res" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xsi:schemaLocation="http://openurc.org/ns/res http://openurc.org/ns/res 
+    http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd 
+    http://purl.org/dc/terms/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd 
+    http://www.w3.org/1999/02/22-rdf-syntax-ns http://www.w3.org/1999/02/22-rdf-syntax-ns">
+
+    <dcterms:conformsTo>http://openurc.org/ns/rsheet-2/isoiec24752-5-2013</dcterms:conformsTo>
+    <dc:publisher>URC Consortium</dc:publisher>
+    <dc:creator>Vishal Bhuva</dc:creator>
+    <dc:title xml:lang="en">Resource sheet for Thermostat connected via Wi-Fi</dc:title>
+    <dcterms:modified>2010-08-23</dcterms:modified>
+    <dc:type>Text</dc:type>
+    
+	<scents>
+        <forDomain>http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis</forDomain>
+		<forDomain>http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td</forDomain>
+        <forLang>en</forLang>
+        <dc:type>Text</dc:type>
+        <dc:type>Image</dc:type>
+    </scents>
+	
+    <resItems rdf:parseType="Collection">
+        
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#target_label">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Thermostat CT-80</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#thermostatsocket">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Thermostat CT-80</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#thermostatsocket"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        
+        <!-- labels for grouping -->
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#mainGroup">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Main Group</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#mainGroup"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <!-- labels for socketElement -->
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#hold">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Hold</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#hold"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc> 
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#fanMode">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Fan Mode</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#fanMode"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#modelNumber">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Model Number</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#modelNumber"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#modelNumber_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Model Number of Device</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#modelNumber"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#connectionError">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Unable to connect to Thermostat. Please
+                check Wifi connection on the Thermostat device.</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#connectionError"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#confirmOff">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Are you sure you want to turn the
+                operating mode OFF?</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#confirmOff"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#tempUnitNotify">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">There are two types of Temperature units,
+                please select.</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#tempUnitNotify"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#feedbackNotify">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Please Provide Feedback.</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#feedbackNotify"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#message">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Feedback : </content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#message"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#connectionError_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Problem in connecting to the
+                Thermostat.</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#connectionError"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#operatingMode">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Operating Mode</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#operatingMode"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#operatingMode_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Operating Mode of thermostat</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#operatingMode"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#holdType_True">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">ON</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#holdType"/>
+                    <valRef>true</valRef>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#holdType_FALSE">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">OFF</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#holdType"/>
+                    <valRef>false</valRef>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#operatingMode">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">COOL</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#operatingMode"/>
+                    <valRef>cool</valRef>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#operatingMode">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">HEAT</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#operatingMode"/>
+                    <valRef>heat</valRef>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#operatingMode">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">AUTO</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#operatingMode"/>
+                    <valRef>auto</valRef>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#operatingMode">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">OFF</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#operatingMode"/>
+                    <valRef>off</valRef>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#temperatureUnit">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Fahrenheit/Celsius</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#temperatureUnit"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#temperatureUnit_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Fahrenheit/Celsius</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#temperatureUnit"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#currentRoomTemp">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Current Temperature</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#currentRoomTemp"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#currentRoomTemp_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Read Only value of current Room
+                temperature in selected unit</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#currentRoomTemp"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#targetTemp">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Desired Temperature</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#targetTemp"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#thermostatsocket_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Thermostat.</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#thermostatsocket"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#program">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Program</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#program"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#program_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Set of Program setup in
+                thermostat</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#program"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#targetTempProgram">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Temperature Program</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#targetTempProgram"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <!-- Start of Required for implicit group label -->
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#group(twoDimTargetTemp)">
+            <content rdf:parseType="Literal" xml:lang="en">Two Dim Command Group Label</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#group(twoDimTargetTemp)"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#group(targetTempProgram)">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Temperature Settings</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#group(targetTempProgram)"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <!--      
+        <AResDesc rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#group(targetTempProgram)">
+            <contentAt rdf:resource="/group(targetTempProgram).jpeg"/>
+            <dc:type>image</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#group(targetTempProgram)"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+-->
+        <!-- End of Required for implicit group label -->
+
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#targetTempProgram">
+            <contentAt rdf:resource="/temperature.jpeg"/>
+            <dc:type>image</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#targetTempProgram"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#targetTempProgram_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Stores target temperature float value for
+                each time of the day.</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#targetTempProgram"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#resetProgram">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Reset Program</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#resetProgram"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#resetProgram_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">This command will clear the all program
+                setiings</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#resetProgram"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#checkReset">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Reset Confirmation</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#checkReset"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#checkReset_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Confirmation to reset command</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#checkReset"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#confirmReset">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Confirm Reset</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#confirmReset"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#confirmReset_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">confirm reset operation</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#confirmReset"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#cancelReset">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Cancel Reset</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#cancelReset"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#cancelReset_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Cancel Reset operation</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#cancelReset"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <!-- 2010-10-14 : Vishal : Added label and help purpose for the newly added command.-->
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#incrTargetTemp">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Increment Target Temperature</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#incrTargetTemp"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#incrTargetTemp_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Increment Temperary Target Temperature
+                operation</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#incrTargetTemp"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#decrTargetTemp">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Decrement Target Temperature</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#decrTargetTemp"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#decrTargetTemp_help_hint">
+            <content rdf:parseType="Literal" xml:lang="en">Decrement Temperary Target Temperature
+                operation</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#decrTargetTemp"/>
+                    <role rdf:resource="http://openurc.org/ns/res#help-purpose"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <!--labels and help hints for set 'program'-->
+        <!--
+        <AResDesc rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#targetTempProgram_label">
+			<content rdf:parseType="Literal" xml:lang="en">Target Temperature</content>
+				<useFor rdf:parseType="Collection">
+					<Context>
+						<eltRef rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#targetTempProgram"/>
+						<role rdf:resource="http://openurc.org/ns/res#label"/>
+					</Context>
+				</useFor>
+	</AResDesc>
+-->
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#targetTempProgram">
+            <contentAt rdf:resource="/temperature.jpeg"/>
+            <dc:type>image</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#targetTempProgram"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#program_label">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Program</content>
+            <dc:format>text/xml</dc:format>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#program"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Day </content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#tempUnitType">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Temperature Unit Type </content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#tempUnitType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType_Sunday">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Sunday</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                    <valRef>Sunday</valRef>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType_Monday">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Monday</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                    <valRef>Monday</valRef>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType_Tuesday">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Tuesday</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                    <valRef>Tuesday</valRef>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType_Wednesday">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Wednesday</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                    <valRef>Wednesday</valRef>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType_Thursday">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Thursday</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                    <valRef>Thursday</valRef>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType_Friday">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Friday</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                    <valRef>Friday</valRef>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType_Saturday">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Saturday</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#dayType"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                    <valRef>Saturday</valRef>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc
+            rdf:about="http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet#notifyOperatingMode">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Operating mode is changed from 'heat' to
+                'cool'</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef
+                        rdf:resource="http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis#notifyOperatingMode"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+
+        <AResDesc rdf:about="http://www.w3.org/2001/XMLSchema#Day">
+            <content rdf:parseType="Literal" xml:lang="en">Day of the week</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef rdf:resource="http://www.w3.org/2001/XMLSchema#Day"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+        <AResDesc rdf:about="http://www.w3.org/2001/XMLSchema#time">
+            <dc:type>Text</dc:type>
+            <content rdf:parseType="Literal" xml:lang="en">Time</content>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc rdf:about="http://www.w3.org/2001/XMLSchema#time">
+            <contentAt rdf:resource="/time.jpeg"/>
+            <dc:type>image</dc:type>
+            <dc:format>image/jpeg</dc:format>
+            <useFor rdf:parseType="Collection">
+                <Context>
+                    <eltRef rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+                    <role rdf:resource="http://openurc.org/ns/res#label"/>
+                </Context>
+            </useFor>
+        </AResDesc>
+
+    </resItems>
+</ResSheet>

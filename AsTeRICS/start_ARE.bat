@@ -1,0 +1,1 @@
+./ARE/start.bat --webservice

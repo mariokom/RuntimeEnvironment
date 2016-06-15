@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<props>
+	<prop>
+		<name>http://openurc.org/ns/res#name</name>
+		<value>http://res.openurc.org/devices/thermostat/script/template/lightWeightThermostat.script</value>
+	</prop>
+	<prop>
+		<name>http://openurc.org/ns/res#type</name>
+		<value>http://openurc.org/restypes#script</value>
+	</prop>
+	<prop><!-- Specifies relative path of resource file or directory-->
+		<name>http://openurc.org/ns/res#resourceUri</name>
+		<value>thermostat.script</value>
+	</prop>
+</props>
