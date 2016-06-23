@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen SCHSchema="http://openurc.org/ns/rsheet-2"?>
+<ResSheet
+    about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet"
+    xmlns="http://openurc.org/ns/rsheet-2"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://openurc.org/ns/rsheet-2 http://openurc.org/ns/rsheet-2 
+        http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd 
+        http://purl.org/dc/terms/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd">
+    
+    <dcterms:conformsTo>http://openurc.org/ns/rsheet-2/isoiec24752-5-2013</dcterms:conformsTo>
+    <scents>
+        <forDomain>http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket</forDomain>
+        <forLang>de</forLang>
+        <dc:type>Text</dc:type>
+    </scents>
+    <resItems>
+        <AResDesc about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#LightSwitch_help_4">
+            <dc:type>Text</dc:type>
+            <content xml:lang="de">Hier können Sie das Licht ein und ausschalten.</content>
+            <useFor>
+                <Context>
+                    <eltRef resource="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#LightSwitch"/>
+                    <role resource="http://openurc.org/ns/res#help"/>
+                    <forLang>de</forLang>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Brightness_label_3">
+            <dc:type>Text</dc:type>
+            <content xml:lang="de">Helligkeit:</content>
+            <useFor>
+                <Context>
+                    <eltRef resource="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Brightness"/>
+                    <role resource="http://openurc.org/ns/res#label"/>
+                    <forLang>de</forLang>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Brightness_help_4">
+            <dc:type>Text</dc:type>
+            <content xml:lang="de">Wählen Sie einen Wert zwischen 0% und 100% um die Helligkeit fest zu legen.</content>
+            <useFor>
+                <Context>
+                    <eltRef resource="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Brightness"/>
+                    <role resource="http://openurc.org/ns/res#help"/>
+                    <forLang>de</forLang>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Saturation_label_3">
+            <dc:type>Text</dc:type>
+            <content xml:lang="de">Farbsättigung</content>
+            <useFor>
+                <Context>
+                    <eltRef resource="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Saturation"/>
+                    <role resource="http://openurc.org/ns/res#label"/>
+                    <forLang>de</forLang>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Saturation_help_4">
+            <dc:type>Text</dc:type>
+            <content xml:lang="de">Wählen Sie einen Wert zwischen 0% und 100% um die Farbsättigung fest zu leben.</content>
+            <useFor>
+                <Context>
+                    <eltRef resource="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Saturation"/>
+                    <role resource="http://openurc.org/ns/res#help"/>
+                    <forLang>de</forLang>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#HueDegree_label_2">
+            <dc:type>Text</dc:type>
+            <content xml:lang="de">Farbe</content>
+            <useFor>
+                <Context>
+                    <eltRef resource="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#HueDegree"/>
+                    <role resource="http://openurc.org/ns/res#label"/>
+                    <forLang>de</forLang>
+                </Context>
+            </useFor>
+        </AResDesc>
+        <AResDesc about="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Colour_help_4">
+            <dc:type>Text</dc:type>
+            <content xml:lang="de">Wählen Sien einen wert zwischen 300nm und 800nm um die Wellenlänge und damit die Farbe fest zu legen.</content>
+            <useFor>
+                <Context>
+                    <eltRef resource="http://openurc.org/TPL/coloured-light-bulb-1.0-yyyymmdd/ColouredLightBulbSocket.de.rsheet#Colour"/>
+                    <role resource="http://openurc.org/ns/res#help"/>
+                    <forLang>de</forLang>
+                </Context>
+            </useFor>
+        </AResDesc>
+    </resItems>
+</ResSheet>
