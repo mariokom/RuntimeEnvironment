@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<props>
+  <prop>
+    <name>http://openurc.org/ns/res#name</name>
+    <value>http://openurc.org/TPL/coloured-light-bulb-1.0/ColouredLightBulb.script</value>
+  </prop>
+  <prop>
+    <name>http://openurc.org/ns/res#type</name>
+    <value>http://openurc.org/restypes#script</value>
+  </prop>
+  <prop>
+    <name>http://openurc.org/ns/res#resourceUri</name>
+    <value>ColouredLightBulb.script</value>
+  </prop>
+</props>

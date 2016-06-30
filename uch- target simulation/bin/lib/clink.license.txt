@@ -1,0 +1,1 @@
+The Cyberlink UPnP toolkit (clink.jar) has been made available under the BSD license.  See http://en.wikipedia.org/wiki/BSD_License.
