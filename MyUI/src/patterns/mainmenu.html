@@ -1,0 +1,108 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../elements/menubutton.html">
+
+<dom-module name="myui-mainmenu">
+  <template>
+    <style>
+      :host {
+        position: absolute;
+        
+        overflow: hidden;
+        
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    
+    <template is="dom-repeat" items="{{services}}" as="service">
+      <myui-menubutton id="{{service.id}}" data="{{service}}" on-tap="handleSelect" on-keypress="handleSelect">{{service.label}}</myui-menubutton>
+    </template>
+  </template>
+  
+  <script>
+    Polymer({
+      is: 'myui-mainmenu',
+      
+      properties: {
+        services: {
+          type: Array,
+          notify: true,
+          observer: "_servicesChanged",
+          reflectToAttribute: false
+        },
+        resultHandler: {
+          type: Object,
+          reflectToAttribute: false
+        }
+      },
+      
+      attached: function() {
+        this.performAdaptation(null);
+      },
+      
+      detached: function() {
+        
+      },
+      
+      _servicesChanged: function(newValue, oldValue) {
+        Polymer.dom.flush()
+        this.performAdaptation(null);
+      },
+      
+      handleSelect: function(e, detail) {
+        if (e instanceof KeyboardEvent) {
+          if (e.charCode == 13 || e.charCode == 32) {
+            this.resultHandler(e.target.data);
+          }
+        } else {
+          this.resultHandler(e.target.data);
+        }
+      },
+      
+      performAdaptation: function(toProfile) {
+        if (!toProfile) {// default
+          this.layoutInGrid(4,4);
+        }
+        
+        // Adapt buttons
+        let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton");
+        for (let b of buttons) {
+          b.performAdaptation(toProfile);
+        }
+      },
+      
+      layoutInGrid: function(rows, cols) {
+        let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton");
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].style.display = "initial";
+          buttons[i].style = `position: relative; float: left; margin: 5px; width: calc(100% / ${cols} - 10px); height: calc(100% / ${rows} - 10px);`;
+          if (i >= rows*cols) {
+            buttons[i].style.display = "none";
+          }
+        }
+      },
+      
+      layoutAround: function() {
+        let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton");
+        let positions = [
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: 5px; left: calc(5px + 100% / 3);",
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: 5px; left: calc(5px + (100% / 3) * 2);",
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: calc(5px + 100% / 3); left: calc(5px + (100% / 3) * 2);",
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: calc(5px + (100% / 3) * 2); left: calc(5px + (100% / 3) * 2);",
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: calc(5px + (100% / 3) * 2); left: calc(5px + 100% / 3);",
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: calc(5px + (100% / 3) * 2); left: 5px;",
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: calc(5px + 100% / 3); left: 5px;",
+          "position: absolute; width: calc(100% / 3 - 10px); height: calc(100% / 3 - 10px); top: 5px; left: 5px;"
+        ];
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].style.display = "initial";
+          if (i < 8) {
+            buttons[i].style = positions[i];
+          } else {
+            buttons[i].style.display = "none";
+          }
+        }
+      }
+    });
+  </script>
+</dom-module>

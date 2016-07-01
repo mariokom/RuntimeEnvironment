@@ -1,0 +1,44 @@
+body {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	background-color: #333333;
+	padding: 0px;
+	margin: 0px;
+}
+
+*,
+html /deep/ * {
+  box-sizing: border-box;
+}
+
+:focus,
+html /deep/ :focus {
+  outline: 3px solid red;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  background: rgb(100, 100, 100);
+}
+
+header h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+main {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  outline: 1px dashed grey;
+}
+
+main pre {
+  width: 100%;
+  color: #ffffff;
+}
