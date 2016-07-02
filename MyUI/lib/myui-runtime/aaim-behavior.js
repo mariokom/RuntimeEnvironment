@@ -40,6 +40,13 @@ class AaimBehavior {
       // Service call configuration
       let service = this._services.get(config.parameters.service ? config.parameters.service : "");
       situationParameters = service.execute(config.parameters.name, ...this._resolveParameters(config.parameters.parameters));
+      // Perform result mapping if configured
+      if (config.parameters.mapping) {
+        let mapService = this._services.get(config.parameters.mapping.service ? config.parameters.mapping.service : "");
+        situationParameters = situationParameters.then(function(result) {
+          return mapService.execute(config.parameters.mapping.name, result);
+        });
+      }
     } else {
       situationParameters = [];
     }
@@ -63,8 +70,27 @@ class AaimBehavior {
   executeTransition(config) {
     if (typeof config === "object") {
       // Service call configuration
+      let result;
       let service = this._services.get(config.service ? config.service : "");
-      service.execute(config.name, ...this._resolveParameters(config.parameters));
+      
+      if (config.parameterMapping) {
+        let parameters = this._resolveParameters(config.parameters);
+        result = Promise.all(parameters.map(function(param, index) {
+          if (config.parameterMapping[index]) {
+            let mapService = this._services.get(config.parameterMapping[index].service ? config.parameterMapping[index].service : "");
+            return mapService.execute(config.parameterMapping[index].name, param);
+          } else {
+            return param;
+          }
+        }, this)).then(function(mapped) {
+          return service.execute(config.name, ...mapped);
+        });
+        
+      } else {
+        result = service.execute(config.name, ...this._resolveParameters(config.parameters));
+      }
+      
+      return Promise.resolve(result);
     }
 	}
 	

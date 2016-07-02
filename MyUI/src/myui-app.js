@@ -28,8 +28,11 @@ let aaim = {
           service: "urc",
           name: "queryTargets",
           parameters: [
-            "ColouredLightBulb"
-          ]
+            "http://openurc.org/TPL/coloured-light-bulb-1.0/ColouredLightBulbSocket"
+          ],
+          mapping: {
+            name: "mapTargetsToMenu"
+          }
         }
       },
       events: [
@@ -44,8 +47,12 @@ let aaim = {
           service: "urc",
           name: "currentState",
           parameters: [
-            "${SelectLamp.socket}"
-          ]
+            "${SelectLamp.socketName}",
+            "${SelectLamp.targetId}"
+          ],
+          mapping: {
+            name: "mapUrcHSBtoColor"
+          }
         }
       },
       events: [
@@ -56,8 +63,14 @@ let aaim = {
             service: "urc",
             name: "setState",
             parameters: [
-              "${SelectLamp.socket}",
+              "${SelectLamp.socketName}",
+              "${SelectLamp.targetId}",
               "${AdjustLight}"
+            ],
+            parameterMapping: [
+              undefined,
+              undefined,
+              { name: "mapColorToUrcHSB" }
             ]
           }
         }

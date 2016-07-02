@@ -10,6 +10,9 @@ class SmarthomeService extends myui.AaimService {
     super();
     
     this._functions.set("getInstalledApps", this.getInstalledServices);
+    this._functions.set("mapTargetsToMenu", this.mapTargetsToMenu);
+    this._functions.set("mapUrcHSBtoColor", this.mapUrcHSBtoColor);
+    this._functions.set("mapColorToUrcHSB", this.mapColorToUrcHSB);
   }
   
   getInstalledServices() {
@@ -26,6 +29,36 @@ class SmarthomeService extends myui.AaimService {
       { id: "some", label: "Thing" },
       { id: "some", label: "Thing" }
     ];
+  }
+  
+  mapTargetsToMenu(targets) {
+    return targets.map(
+      function(target, index) {
+        return {
+          id: index,
+          label: target.targetLabel,
+          targetId: target.targetId,
+          socketName: target.socketName
+        };
+      }
+    );
+  }
+  
+  mapUrcHSBtoColor(hsbValues) {
+    return { 
+      hue: hsbValues.HueDegree, 
+      sat: hsbValues.Saturation, 
+      bright: hsbValues.Brightness
+    };
+  }
+  
+  mapColorToUrcHSB(color) {
+    return {
+      HueDegree: color.hue,
+      Saturation: color.sat,
+      Brightness: color.bright,
+      LightSwitch: color.bright > 0
+    };
   }
 }
 

@@ -148,10 +148,10 @@ class AaimInterpreter {
     this._currentState = target;
     
     if (config && this._behavior) {
-      this._behavior.executeTransition(config);
-    }
-    
-    if (this._behavior) {
+      this._behavior.executeTransition(config).then(function() {
+        this._behavior.executeState(target.do);
+      }.bind(this));
+    } else if (this._behavior) {
       this._behavior.executeState(target.do);
     }
   }
