@@ -10,8 +10,13 @@ html /deep/ * {
   box-sizing: border-box;
 }
 
-:focus,
-html /deep/ :focus {
+[tabIndex="0"]:hover,
+html /deep/ [tabIndex="0"]:hover {
+  outline: 3px dotted red;
+}
+
+[tabIndex="0"]:focus,
+html /deep/ [tabIndex="0"]:focus {
   outline: 3px solid red;
 }
 
@@ -22,11 +27,6 @@ header {
   right: 0px;
   height: 120px;
   background: rgb(100, 100, 100);
-}
-
-header h1 {
-  color: #ffffff;
-  text-align: center;
 }
 
 main {

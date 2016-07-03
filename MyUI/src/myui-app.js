@@ -36,7 +36,8 @@ let aaim = {
         }
       },
       events: [
-        { on: "SelectLamp", goto: "Adjust" }
+        { on: "SelectLamp", goto: "Adjust" },
+        { on: "MetaGoto('back')", goto: "Services" }
       ]
     },
     {
@@ -73,7 +74,8 @@ let aaim = {
               { name: "mapColorToUrcHSB" }
             ]
           }
-        }
+        },
+        { on: "MetaGoto('back')", goto: "Lamps" }
       ]
     }
   ]

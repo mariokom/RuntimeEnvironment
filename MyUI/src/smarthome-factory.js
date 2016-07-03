@@ -35,9 +35,12 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
     this._clearContents(this._header);
     this._clearContents(this._main);
     
-    let title = document.createElement("h1");
+    let title = document.createElement("myui-titlebar");
     title.innerText = situation;
     this._header.appendChild(title);
+    title.resultHandler = function(result) {
+      this._handler.executeEvent(`MetaGoto('${result}')`);
+    }.bind(this);
     
     if (situation === "SelectService") {
       let menu = document.createElement("myui-mainmenu");
