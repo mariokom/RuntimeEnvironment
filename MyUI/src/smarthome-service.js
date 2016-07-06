@@ -13,6 +13,7 @@ class SmarthomeService extends myui.AaimService {
     this._functions.set("mapTargetsToMenu", this.mapTargetsToMenu);
     this._functions.set("mapUrcHSBtoColor", this.mapUrcHSBtoColor);
     this._functions.set("mapColorToUrcHSB", this.mapColorToUrcHSB);
+    this._functions.set("mapModelsToMenu", this.mapModelsToMenu);
   }
   
   getInstalledServices() {
@@ -21,7 +22,7 @@ class SmarthomeService extends myui.AaimService {
       { id: "weather", label: "Weather Forecast" },
       { id: "mail", label: "E-Mails" },
       { id: "light", label: "Lights Control" },
-      { id: "some", label: "Thing" },
+      { id: "models", label: "AsTeRICS" },
       { id: "some", label: "Thing" },
       { id: "some", label: "Thing" },
       { id: "some", label: "Thing" },
@@ -59,6 +60,18 @@ class SmarthomeService extends myui.AaimService {
       Brightness: color.bright,
       LightSwitch: color.bright > 0
     };
+  }
+  
+  mapModelsToMenu(models) {
+    return models.map(
+      function(model, index) {
+        return {
+          id: index,
+          label: model,
+          modelPath: model
+        };
+      }
+    );
   }
 }
 

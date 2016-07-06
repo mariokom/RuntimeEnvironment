@@ -95,6 +95,24 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
         this._handler.executeEvent("AdjustLight");
       }.bind(this);
       
+    } else if (situation === "SelectModel") {
+      let menu = document.createElement("myui-mainmenu");
+      let parent = this._main;
+      if (parameters instanceof Promise) {
+        parameters.then(function(result) {
+          menu.services = result;
+          parent.appendChild(menu);
+        });
+      } else {
+        menu.services = parameters;
+        parent.appendChild(menu);
+      }
+      
+      menu.resultHandler = function(result) {
+        context.set("SelectModel", result);
+        this._handler.executeEvent("SelectModel");
+      }.bind(this);
+      
     } else {
       let params = document.createElement("pre");
       if (parameters instanceof Promise) {
@@ -117,6 +135,16 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
         });
       } else {
         colors.currentColor = parameters[0];
+      }
+      
+    } else if (situation === "SelectModel") {
+      let menu = this._main.querySelector("myui-mainmenu");
+      if (parameters instanceof Promise) {
+        parameters.then(function(result) {
+          menu.services = result;
+        });
+      } else {
+        menu.services = parameters;
       }
       
     } else {

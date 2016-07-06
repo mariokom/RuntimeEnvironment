@@ -17,7 +17,8 @@ let aaim = {
         }
       },
       events: [
-        { on: "SelectService('light')", goto: "Lamps" }
+        { on: "SelectService('light')", goto: "Lamps" },
+        { on: "SelectService('models')", goto: "Models" }
       ]
     },
     {
@@ -77,12 +78,41 @@ let aaim = {
         },
         { on: "MetaGoto('back')", goto: "Lamps" }
       ]
+    },
+    {
+      name: "Models",
+      do: {
+        situation: "SelectModel",
+        parameters: {
+          service: "asterics",
+          name: "listStoredModels",
+          parameters: [],
+          mapping: {
+            name: "mapModelsToMenu"
+          }
+        },
+      },
+      events: [
+        { 
+          on: "SelectModel", 
+          goto: "Models",
+          do: {
+            service: "asterics",
+            name: "startModel",
+            parameters: [
+              "${SelectModel.modelPath}"
+            ]
+          }
+        },
+        { on: "MetaGoto('back')", goto: "Services" }
+      ]
     }
   ]
 };
 
 let behavior = new myui.AaimBehavior(smarthome.factory, smarthome.service);
 behavior.registerService("urc", new myui.urc.UchService());
+behavior.registerService("asterics", new myui.asterics.AreService("http://localhost:8081/rest/"));
 
 let interpreter = new myui.AaimInterpreter(behavior);
 interpreter.load(aaim);

@@ -10,37 +10,38 @@ class AaimService {
    * Create a new AaimService
    */
   constructor() {
-    /** Provided functions by name*/
+    /** Provided methods by name*/
     this._functions = new Map();
   }
   
   /**
    * Calls a function by its name applying the provided parameters.
    * 
-   * @param {String} name
-   *    The name of the function to call.
+   * @param {String} method
+   *    The name of the method to call.
    * @param {Array} params
    *    The parameters to call the function with.
    * 
    * @returns {Promise} A promise to the result of the function call
    * @throws an error if no function with thre requested name is provided by this service.
    */
-  execute(name, ...params) {
+  execute(method, ...params) {
     // Check if function exists
-    if (!this._functions.has(name)) {
-      throw new Error(`Function '${name}' is not provided by this service.`);
+    if (!this._functions.has(method)) {
+      throw new Error(`Function '${method}' is not provided by this service.`);
     }
     
     // Execute function with given params
     let val;
     try {
       // Actualy execute function
-      val = this._functions.get(name).apply(this, params);
+      val = this._functions.get(method).apply(this, params);
       
-      // Wrap non-promise return values into promise
       if (val instanceof Promise) {
+        // Forward returned promise
         return val;
       } else {
+        // Wrap non-promise return values into promise
         return new Promise(function(resolve, reject) {
           resolve(val);
         });
@@ -56,13 +57,13 @@ class AaimService {
   /**
    * Checks if a function is provided by this service.
    * 
-   * @param {String} name
-   *    The name of the function to check.
+   * @param {String} method
+   *    The name of the method to check.
    * 
-   * @returns {Boolean} true if a functions with the given name is provided by this service, false otherwise.
+   * @returns {Boolean} true if a method with the given name is provided by this service, false otherwise.
    */
-  provides(name) {
-    return this._functions.has(name);
+  provides(method) {
+    return this._functions.has(method);
   }
 }
 
