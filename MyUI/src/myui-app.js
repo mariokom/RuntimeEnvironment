@@ -3,6 +3,9 @@ var smarthome = smarthome || {};
 (function() {
 'use strict';
 
+// The URI of the AsTeRICS Runtime Environment's REST interface
+let areURI = "http://localhost:8081/rest/";
+
 // Define the smarthome AAIM
 let aaim = {
   initial: "Services",
@@ -112,7 +115,7 @@ let aaim = {
 
 let behavior = new myui.AaimBehavior(smarthome.factory, smarthome.service);
 behavior.registerService("urc", new myui.urc.UchService());
-behavior.registerService("asterics", new myui.asterics.AreService("http://localhost:8081/rest/"));
+behavior.registerService("asterics", new myui.asterics.AreService(areURI));
 
 let interpreter = new myui.AaimInterpreter(behavior);
 interpreter.load(aaim);
