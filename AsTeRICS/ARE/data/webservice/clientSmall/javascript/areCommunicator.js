@@ -3,7 +3,7 @@
 var _baseURI;
 
 //A map holding the opened connection with ARE for SSE
-var _eventSourceMap = new Map();
+var _eventSourceMap = new areUtils.Map();
 
 //delimiter used for encoding
 var delimiter = "-";
