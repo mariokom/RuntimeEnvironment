@@ -317,13 +317,14 @@
         "start": [
             {
                 "type": "gpii.launch.exec",
-                "command": "C:\\Users\\mkomod05.cs8500\\Documents\\GitHub\\AsTeRICS\\bin\\ARE\\ARE.exe CameraMouse.acs"
+                "command": "<rootFolderPath>\\AsTeRICS\\bin\\ARE\\ARE.exe CameraMouse.acs"
             }
         ],
         "stop": [
             {
                 "type": "gpii.windows.killProcessByName",
                 "filename": "javaw.exe"
+
             }
         ],
         "isInstalled": [
@@ -333,6 +334,85 @@
         ]
     },
 
+    "com.p4all.myui": {
+        "name": "myui",
+        "contexts": {
+            "OS": [
+                {
+                    "id": "win32",
+                    "version": ">=5.0"
+                }
+            ]
+        },
+
+        "settingsHandlers": {
+            "configure": {
+                "type": "gpii.settingsHandlers.noSettings",
+                "capabilities": [
+                    "control.myui",
+                    "applications.com\\.p4all\\.myui.id",
+                    "control.myui.applications.com\\.p4all\\.myui.name"
+                ]
+            }
+        },
+        "start": [
+            {
+                "type": "gpii.launch.exec",
+                "command": "\"${{registry}.HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\chrome.exe\\}\" http://localhost:8080/UCH/Webclient/myui/index.html"
+            }
+        ],
+        "stop": [
+            {
+                    "type": "gpii.windows.killProcessByName",
+                    "filename": "chrome.exe"
+            }
+        ],
+        "isInstalled": [
+            {
+                "type": "gpii.deviceReporter.alwaysInstalled"
+            }
+        ]
+    },
+
+    "com.p4all.uch": {
+        "name": "uch",
+        "contexts": {
+            "OS": [
+                {
+                    "id": "win32",
+                    "version": ">=5.0"
+                }
+            ]
+        },
+
+        "settingsHandlers": {
+            "configure": {
+                "type": "gpii.settingsHandlers.noSettings",
+                "capabilities": [
+                    "control.uch",
+                    "applications.com\\.p4all\\.uch.id",
+                    "control.uch.applications.com\\.p4all\\.uch.name"
+                ]
+            }
+        },
+        "start": [
+            {
+                "type": "gpii.launch.exec",
+                "command": "cd \"<rootFolderPath>\\UCH\\bin\" & java -jar \"UCH.jar\" & cd .."
+            }
+        ],
+        "stop": [
+            {
+                    "type": "gpii.windows.killProcessByName",
+                    "filename": "java.exe"
+            }
+        ],
+        "isInstalled": [
+            {
+                "type": "gpii.deviceReporter.alwaysInstalled"
+            }
+        ]
+    },
 
     "org.nvda-project": {
         "name": "NVDA Screen Reader",
