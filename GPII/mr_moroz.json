@@ -5,7 +5,6 @@
                 "name": "Default preferences",
                 "preferences": {
                     "http://registry.gpii.net/applications/com.p4all.uch": {},
-                    "http://registry.gpii.net/applications/com.p4all.asterics": {},
                     "http://registry.gpii.net/applications/com.p4all.myui": {}
                 }
             }
