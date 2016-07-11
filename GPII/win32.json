@@ -317,7 +317,7 @@
         "start": [
             {
                 "type": "gpii.launch.exec",
-                "command": "<rootFolderPath>\\AsTeRICS\\ARE\\ARE.exe CameraMouse.acs"
+                "command": "start <rootFolderPath>\\AsTeRICS\\ARE\\start.bat --webservice CameraMouse.acs"
             }
         ],
         "stop": [
