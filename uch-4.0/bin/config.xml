@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<configuration>
-    <resserver.appPath>http://res.openurc.org</resserver.appPath>
-    <resserver.ipAdress></resserver.ipAdress>
-    <UCH.portNo>8080</UCH.portNo>
-    <resserver.password>GuestUser</resserver.password>
-    <UCH.DebuggLevel>3</UCH.DebuggLevel>
-    <resserver.userName>GuestUser</resserver.userName>
-</configuration>

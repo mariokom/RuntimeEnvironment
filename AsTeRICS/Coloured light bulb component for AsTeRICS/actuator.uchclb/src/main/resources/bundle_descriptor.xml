@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<componentTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="bundle_model.xsd">
+
+    <componentType id="asterics.UchCLB"
+                   canonical_name="eu.asterics.component.actuator.uchclb.UchCLBInstance">
+        <type subtype="Others">actuator</type>
+        <singleton>false</singleton>
+        <description>This is a plugin which is able handle a UCH colored light bulb component</description>
+        <ports>
+			<inputPort id="hue">
+				<description>Hue value of the light bulb color (in degrees)</description>
+				<mustBeConnected>false</mustBeConnected>
+				<dataType>integer</dataType>
+			</inputPort>
+			<inputPort id="brightness">
+				<description>Brightness value of the light bulb color (percentage: 0-100)</description>
+				<mustBeConnected>false</mustBeConnected>
+				<dataType>integer</dataType>
+			</inputPort>
+			<inputPort id="saturation">
+				<description>Saturation value of the light bulb color (percentage: 0-100)</description>
+				<mustBeConnected>false</mustBeConnected>
+				<dataType>integer</dataType>
+			</inputPort>
+
+
+        </ports>
+		<events>
+			<eventListenerPort id="triggerSwitch">
+				<description>Switches on the colored light bulb</description>
+			</eventListenerPort>
+		</events>
+        <properties>
+			<property name="ip"
+				type="string"
+				value="localhost"
+				description="Ip address of UCH server"/>
+			<property name="port"
+				type="integer"
+				value="8080"
+				description="Port number of UCH server"/>
+			<property name="UIid"
+				type="string"
+				value="undefined"
+				description="The component's UI id in the UCH server"/>
+			<property name="timeInterval"
+				type="integer"
+				value="1000"
+				description="How frequent are the change-color requests being sent to the UCH server (in milliseconds)"/> 
+			<property name="autoDiscovery"
+				type="boolean"
+				value="false"
+				description="Enable UCH server auto discovery (valid only when the server runs in the local network)"/>
+			<property name="hue"
+				type="integer"
+				value="0"
+				description="Hue value of the colored light bulb"/>
+			<property name="saturation"
+				type="integer"
+				value="0"
+				description="saturation value of the colored light bulb"/>
+			<property name="brightness"
+				type="integer"
+				value="0"
+				description="brightness value of the colored light bulb"/>
+			
+			
+        </properties>
+
+    </componentType>
+</componentTypes>
