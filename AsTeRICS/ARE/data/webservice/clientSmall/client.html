@@ -25,69 +25,95 @@
 			//in milliseconds
 			var colorMonitorFrequency = 10;
 
-		
+			//sets the base uri of AsTeRICS server
 			setBaseURI("http://localhost:8085/rest/");
 		
-			//startCameraMouseModel
+		
+			//starts CameraMouse model
 			function startCameraMouseModel() {
 				autorun(successCallback, showError, 'CameraMouse.acs');
 			}
 			
+			//starts arrowsAndClick model
 			function startArrowsAndClickModel() {
 				autorun(successCallback, showError, 'Head-ArrowsAndClick.acs');
 			}
 
+			//starts head sound model
 			function startHeadSoundModel() {
 				autorun(successCallback, showError, 'HeadSound.acs');
 			}
 
+			//starts camera-ColouredLightBulb model
 			function startCameraCLBModel() {
 				autorun(successCallback, showError, 'Head-ColouredLightBulb.acs');
 			}
 
+			//stops the current model
 			function stopCurrentModel() {
 				stopModel(successCallback, showError);
+				stopMonitoring();
 			}
 
-
+			//Function used as a callback when the api call is succesful
 			function successCallback(data, HTTPstatus) { 
 				alert(data);
 			}
 			
+			//Function used as a callback when the api call is not successful
 			function showError(HTTPstatus, AREerrorMessage) { 
 				console.log(AREerrorMessage);
 				errorCount ++;
 			}
 
 
-			/*** Monitoring color of the 'ColoredLightBulb' model ***/
 
+
+
+			/*** The functions below are monitoring color of the hsb parameters of th 'ColoredLightBulb' component. Note: This applies only when the Head-ColouredLighBulb model is running ***/
+
+			//The three functions below are retrieving the HSB values (which define the color) of the colouredLughtBulb component
 			function setHue(data, HTTPstatus) { hue = data; }
 			function setSaturation(data, HTTPstatus) { saturation = data; }
 			function setBrightness(data, HTTPstatus) { brightness = data; }
 
+			//Periodically retrieve the component values. Stops to ask for the values when the error count passed a threshcold
 			function retrieveValues() {
 				if (errorCount > 10) { clearInterval(retrieveValuesInterval); }
+
 				getRuntimeComponentProperty(setHue, showError, "UchCLB.1", "hue");
 				getRuntimeComponentProperty(setSaturation, showError, "UchCLB.1", "saturation");
 				getRuntimeComponentProperty(setBrightness, showError, "UchCLB.1", "brightness");
 			}
 
+			//changes the colour of the div in the webclient according to the retrieved values 
 			function changeColorDiv() {
-				if (errorCount > 10) { clearInterval(changeColorInterval); }
+				if (errorCount > errorThreshold) { clearInterval(changeColorInterval); }
+
 				var colorDiv = document.getElementById('colorDiv');
 				var rgbColor = HSVtoRGB(hue/360, saturation/100, brightness/100);
 
-				console.log("rgb("+rgbColor.r+","+rgbColor.g+","+rgbColor.b+")");
 				colorDiv.style.backgroundColor ="rgb("+rgbColor.r+","+rgbColor.g+","+rgbColor.b+")";
 			}
-
 
 			var changeColorInterval;
 			var retrieveValuesInterval;
 			function startMonitoring() {
-				changeColorInterval = setInterval(changeColorDiv, 10);
-				retrieveValuesInterval = setInterval(retrieveValues, 10);
+				changeColorInterval = setInterval(changeColorDiv, colorMonitorFrequency);
+				retrieveValuesInterval = setInterval(retrieveValues, colorMonitorFrequency);
+
+				var colourMap = document.getElementById('colourMap');
+				colourMap.style.display = "inline-block";
+			}
+
+			function stopMonitoring() {
+				clearInterval(retrieveValuesInterval);
+				clearInterval(changeColorInterval);
+
+				var colourMap = document.getElementById('colourMap');
+				colourMap.style.display = "none";
+
+				errorCount = 0;
 			}
 
 
@@ -125,6 +151,8 @@
 		
 	</head>
 	
+
+
 	<body style="width: 100%;">
 		<hr>
 
@@ -138,11 +166,11 @@
 
 		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'CameraMouse.acs' model which is able to control the mouse of the computer with head movements" onclick="startCameraMouseModel()"> <b>Start camera mouse model</b></button>
 
-		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'Head-ArrowsAndClick.acs' model. Move your head to the desired direction in order to click the corresponding arrow and open your mouse to click" onclick="startArrowsAndClickModel()"> <b>Start Head-ArrowsAndClick model model</b> </button>
+		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'Head-ArrowsAndClick.acs' model. Move your head to the desired direction in order to click the corresponding arrow and open your mouse to click" onclick="startArrowsAndClickModel()"> <b>Start Head-ArrowsAndClick model</b> </button>
 		
 		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'HeadSound.acs' model which gives you the ability to play music with head movements" onclick="startHeadSoundModel()"> <b>Start head sound model</b> </button>
 
-		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'Head-ColouredLightBulb.acs' model. The model will automatichally switch to 'CameraMouse' model if the head stays steady for 2 seconds" onclick="startCameraCLBModel()"> <b>Start Head-ColouredLightBulb model model</b> </button>
+		<button style="margin:10px;border-radius:5px;padding:10px;" title="Deploys and starts the 'Head-ColouredLightBulb.acs' model. The model will automatichally switch to 'CameraMouse' model if the head stays steady for 2 seconds" onclick="startCameraCLBModel()"> <b>Start Head-ColouredLightBulb model</b> </button>
 
 		<br> <br>
 
@@ -152,10 +180,19 @@
 		<hr>
 		<br>
 
-		<div id="colorDiv" style="height: 200px; width: 200px; border: 1px solid black;"> 
-			&nbsp;
-		</div>
 		<br>
+
+		<div style="display: inline-block;">
+			<div id="colorDiv" style="height: 200px; width: 200px; border: 1px solid black; display: inline-block; vertical-align: middle;"> 
+				&nbsp;
+			</div>
+			&nbsp; &nbsp; &nbsp;
+			<img src="colourMap.jpg" id="colourMap" style="width: 600px; height: 200px; vertical-align: middle; display: none;">
+
+		</div>
+
+		<br><br>
+
 		<button onclick="startMonitoring();"> Start monitoring color ('Head-ColouredLightBulb.acs' model) </button>
 
 		<br/> <br/> <br> <br> <br>
