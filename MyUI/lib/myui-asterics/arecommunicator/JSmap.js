@@ -4,7 +4,7 @@
 
 var areUtils = {
 
-	function Map() {
+	map: function Map() {
 		this.map = new Object();
 		
 		this.get = function (key) {

@@ -4,7 +4,7 @@ var smarthome = smarthome || {};
 'use strict';
 
 // The URI of the AsTeRICS Runtime Environment's REST interface
-let areURI = "http://localhost:8081/rest/";
+let areURI = "http://localhost:8085/rest/";
 
 // Define the smarthome AAIM
 let aaim = {
