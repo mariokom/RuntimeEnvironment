@@ -1,0 +1,66 @@
+- AsTeRICS rest API web service
+  Location:
+  Description:
+
+
+- AsTeRICS component: UCH colored light bulb
+  Location:
+  Description:
+
+
+- AsTeRICS component: UCH electricity outlet
+  Location:
+  Description:
+
+
+- AsTeRICS model: Head-ColouredLightBulb
+  Location:
+  Description:
+
+
+- AsTeRICS model: Head-Keyboard
+  Location:
+  Description:
+
+
+- AsTeRICS model: Head-CameraMouse2
+  Location:
+  Description:
+
+
+- AsTeRICS model: Head-ElectricityOutlet
+  Location:
+  Description:
+
+
+- AsapiSupport class:
+  Location: 
+  Description:
+
+
+- AsTeRICS REST API JavaScript Client library
+  Location: 
+  Description:
+
+
+- AsTeRICS REST API Java Client library
+  Location: 
+  Description:
+
+
+- UCH Java Client library (used by AsTeRICS UCH components)
+  Location: 
+  Description:
+
+
+- UCH Java Client library (used by AsTeRICS UCH components)
+  Location: 
+  Description:
+
+
+
+
+
+
+
+  
