@@ -317,7 +317,7 @@
         "start": [
             {
                 "type": "gpii.launch.exec",
-                "command": "start <rootFolderPath>\\AsTeRICS\\ARE\\start.bat --webservice CameraMouse.acs"
+                "command": "start C:\\Users\\ziegler\\Development\\P4A-Runtime\\AsTeRICS\\ARE\\start.bat --webservice CameraMouse.acs"
             }
         ],
         "stop": [
@@ -406,7 +406,7 @@
         "start": [
             {
                 "type": "gpii.launch.exec",
-                "command": "cd \"<rootFolderPath>\\UCH\\bin\" & java -jar \"UCH.jar\" & cd .."
+                "command": "cd \"C:\\Users\\ziegler\\Development\\P4A-Runtime\\UCH\\bin\" & java -jar \"UCH.jar\" & cd .."
             }
         ],
         "stop": [
