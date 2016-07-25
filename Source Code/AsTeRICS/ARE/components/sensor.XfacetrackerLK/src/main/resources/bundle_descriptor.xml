@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<componentTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="bundle_model.xsd">
+
+    <componentType id="asterics.XFacetrackerLK"
+                   canonical_name="eu.asterics.component.sensor.XfacetrackerLK.XFacetrackerLKInstance">
+        <type subtype="Computer Vision">sensor</type>
+        <singleton>false</singleton>
+        <description>X-platform webcamera-based face tracking sensor</description>
+        <ports>
+            <outputPort id="noseX">
+                <description>Output port of nose X coordinate</description>
+                <dataType>integer</dataType>
+            </outputPort>
+            <outputPort id="noseY">
+                <description>Output port of nose Y coordinate</description>
+                <dataType>integer</dataType>
+            </outputPort>
+            <outputPort id="chinX">
+                <description>Output port of chin X coordinate</description>
+                <dataType>integer</dataType>
+            </outputPort>
+            <outputPort id="chinY">
+                <description>Output port of chin Y coordinate</description>
+                <dataType>integer</dataType>
+            </outputPort>
+        </ports>
+        <events>
+            <eventListenerPort id="init">
+                <description>perform new face detection when head is centered</description>
+            </eventListenerPort>
+            
+            <eventListenerPort id="showCameraSettings">
+                <description>shows Camera Settings Window</description>
+            </eventListenerPort> 
+            <!-- 
+            <eventListenerPort id="saveProfile">
+                <description>save camera profile to file</description>
+            </eventListenerPort>
+             -->                        
+        </events>
+        <properties>
+            <property name="frameGrabber"
+              type="string"
+              value="Default"
+              getStringList="true"
+              description="Name of FrameGrabber to use (Default, VideoInput, OpenCV, FFmpeg, OpenKinect, PS3Eye, IPCamera)"/>
+            <property name="frameGrabberFormat"
+                      type="string"
+                      value=""
+                      description="Format for grabber, e.g. FFmpeg: 'dshow' (default), 'vfwcap', 'gdigrab'"/>              
+            <property name="deviceList"
+              type="string"
+              value=""
+              getStringList="true"
+              description="List of available devices, if supported by grabber"/>
+            <property name="cameraSelection"
+                      type="string"
+                      value="0"
+                      description="The camera device to be used - use camdIdx e.g. '0' (VideoInput, OpenCV, OpenKinect, PS3Eye), or camName e.g. 'video=Integrated Camera' or 'desktop' (FFmpeg), stream-url for IPCamera"/>
+            <property name="cameraResolution"
+                      type="integer"
+                      value="1"
+                      combobox="160x120//320x240//352x288//640x480//800x600//1024x768//1600x1200"
+                      description="Desired camera resolution"/>
+            <property name="titleVideoFrameWindow"
+                      type="string"
+                      value=""
+                      description="The title of the window showing the video frame."/>
+                      
+                      <!-- 
+            <property name="cameraDisplayUpdate"
+                      type="integer"
+                      value="100"
+                      description="the update period for the camera display in milliseconds (0=no display window)"/>
+                       -->
+                      <!-- 
+            <property name="cameraProfile" 
+                      type="string"
+                      value=""
+                      description="Filename of the camera profile"/>            
+                            -->   
+        </properties>
+        <gui IsExternalGUIElement="true">
+            <width>2000</width>
+            <height>1500</height>
+        </gui>
+    </componentType>
+
+</componentTypes>

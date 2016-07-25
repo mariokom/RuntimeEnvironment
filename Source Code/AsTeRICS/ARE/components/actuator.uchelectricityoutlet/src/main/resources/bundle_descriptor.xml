@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<componentTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="bundle_model.xsd">
+
+    <componentType id="asterics.UchElectricityOutlet"
+                   canonical_name="eu.asterics.component.actuator.uchelectricityoutlet.UchElectricityOutletInstance">
+        <type subtype="Others">actuator</type>
+        <singleton>false</singleton>
+        <description>This is a plugin which is able handle a UCH electricity outlet component</description>
+        <ports>
+
+
+        </ports>
+		<events>
+			<eventListenerPort id="electricity_outlet_1">
+				<description>Turns the first electricity outlet on or off</description>
+			</eventListenerPort>
+			<eventListenerPort id="electricity_outlet_2">
+				<description>Turns the second electricity outlet on or off</description>
+			</eventListenerPort>
+			<eventListenerPort id="electricity_outlet_3">
+				<description>Turns the third electricity outlet on or off</description>
+			</eventListenerPort>
+		</events>			
+        <properties>
+			<property name="Ip"
+				type="string"
+				value="localhost"
+				description="Ip address of UCH server"/>
+			<property name="Port"
+				type="integer"
+				value="8080"
+				description="Port number of UCH server"/>
+			<property name="UIid"
+				type="string"
+				value="undefined"
+				description="The component's UI id in the UCH server"/>
+			<property name="AutoDiscovery"
+				type="boolean"
+				value="false"
+				description="Enable UCH server auto discovery (valid only when the server runs in the local network)"/>
+			<property name="State"
+				type="boolean"
+				value="false"
+				description="Holds the current state of the device (on or off)"/>
+
+        </properties>
+
+    </componentType>
+</componentTypes>

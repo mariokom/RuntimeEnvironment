@@ -1,61 +1,72 @@
 - AsTeRICS rest API web service
-  Location:
-  Description:
+  Location: 
+  RuntimeEnvironment\Source Code\AsTeRICS\ARE\services\WebService
+  Description: 
+  Restful web API for ARE that provides additional means of integration with the platform over the network
 
 
 - AsTeRICS component: UCH colored light bulb
-  Location:
+  Location: 
+  RuntimeEnvironment\Source Code\AsTeRICS\ARE\components\actuator.uchclb
   Description:
+  AsTeRICS based component capable of communicating with a UCH's ColouredLightBulb component over the local network
 
 
 - AsTeRICS component: UCH electricity outlet
   Location:
+  RuntimeEnvironment\Source Code\AsTeRICS\ARE\components\actuator.uchelectricityoutlet
   Description:
+  AsTeRICS based component capable of communicating with a UCH's electricity outlet component over the local network
 
 
 - AsTeRICS model: Head-ColouredLightBulb
   Location:
+  RuntimeEnvironment\Source Code\AsTeRICS\models\Head-ColouredLightBulb.acs
   Description:
+  AsTeRICS model which defines the communication between the internal components that allows the user to manage a coloured light bulb with head movements.
 
 
-- AsTeRICS model: Head-Keyboard
+- AsTeRICS model: CameraMouse_sensitive
   Location:
+  RuntimeEnvironment\Source Code\AsTeRICS\models\CameraMouse_sensitive.acs
   Description:
-
-
-- AsTeRICS model: Head-CameraMouse2
-  Location:
-  Description:
-
+  AsTeRICS model which defines the communication between the internal components that allows the user to handle the mouse with head movements. In this case, the model parameters are initialized in such a way to match the needs of an end-user who desires to have an increased sensitivity to the mouse device.
 
 - AsTeRICS model: Head-ElectricityOutlet
   Location:
+  RuntimeEnvironment\Source Code\AsTeRICS\models\Head-HeadElectricityOutlet.acs
   Description:
+  AsTeRICS model which defines the communication between the internal components that allows the user to manage an electricity outlet with head movements.
 
 
 - AsapiSupport class:
   Location: 
+  RuntimeEnvironment\Source Code\AsTeRICS\ARE\middleware\src\main\java\eu\asterics\mw\are\AsapiSupport.java
   Description:
+  Minor updates on this class for the purposes of this task
 
 
 - AsTeRICS REST API JavaScript Client library
   Location: 
+  RuntimeEnvironment\Source Code\AsTeRICS\RestClient_javascript
   Description:
+  JavaScript library that enables communications between AsTeRICS rest API and javascript clients
 
 
 - AsTeRICS REST API Java Client library
-  Location: 
+  Location:
+  RuntimeEnvironment\Source Code\AsTeRICS\RestClient_java
   Description:
+  Java library that enables communications between AsTeRICS rest API and java clients
 
 
 - UCH Java Client library (used by AsTeRICS UCH components)
-  Location: 
+  Location:
+  RuntimeEnvironment\Source Code\AsTeRICS\UCH Java Library
   Description:
+  Java library enabling communication with URC components over URC-HTTP protocol
 
 
-- UCH Java Client library (used by AsTeRICS UCH components)
-  Location: 
-  Description:
 
 
 

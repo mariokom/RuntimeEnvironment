@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: asterics-services.cimcommunication
+Bundle-SymbolicName: eu.asterics.mw.cimcommunication
+Bundle-Version: 0.1.0
+Bundle-ClassPath: ., lib/native/nrjavaserial-3.9.2.jar
+Export-Package: eu.asterics.mw.cimcommunication
+Require-Bundle: org.asterics.middleware
+Bundle-Activator: eu.asterics.mw.cimcommunication.CIMCommunicationBundleActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+DynamicImport-Package: *

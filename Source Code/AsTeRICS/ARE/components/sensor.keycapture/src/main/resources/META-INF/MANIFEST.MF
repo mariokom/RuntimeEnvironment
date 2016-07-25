@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: asterics-sensors.keycapture
+Bundle-SymbolicName: eu.asterics.component.sensor.keycapture
+Bundle-Version: 0.1.0
+Require-Bundle: eu.asterics.mw.jnativehook
+DynamicImport-Package: *
+

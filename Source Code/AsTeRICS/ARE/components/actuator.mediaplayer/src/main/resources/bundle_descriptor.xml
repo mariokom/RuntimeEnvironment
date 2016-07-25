@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<componentTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="bundle_model.xsd">
+
+    <componentType id="asterics.MediaPlayer"
+                   canonical_name="eu.asterics.component.actuator.mediaplayer.MediaPlayerInstance">
+        <type subtype="File System">actuator</type>
+        <singleton>false</singleton>
+        <description>Media player for supported file formats</description>
+        <ports>
+			<inputPort id="filename">
+				<description>file name of media file</description>
+				<mustBeConnected>false</mustBeConnected>
+				<dataType>string</dataType>
+			</inputPort>
+			<inputPort id="position">
+				<description>set position in media file (0-100%)</description>
+				<mustBeConnected>false</mustBeConnected>
+				<dataType>double</dataType>
+			</inputPort>
+			<inputPort id="rate">
+				<description>playback speed (0-500%)</description>
+				<mustBeConnected>false</mustBeConnected>
+				<dataType>double</dataType>
+			</inputPort>
+            <outputPort id="actPos">
+                <description>current playback position (0-100%)</description>
+                <dataType>double</dataType>
+            </outputPort>
+        </ports>
+		<events>
+			<eventListenerPort id="play">
+				<description>plays the mediafile</description>
+			</eventListenerPort>
+			<eventListenerPort id="pause">
+				<description>pauses the mediafile</description>
+			</eventListenerPort>
+			<eventListenerPort id="stop">
+				<description>stops the mediafile</description>
+			</eventListenerPort>
+			<eventListenerPort id="reset">
+				<description>resets the mediafile to initial position</description>
+			</eventListenerPort>
+		</events>			
+        <properties>
+			<property name="filename"
+				type="string"
+                value=""
+                getStringList="true"
+				description="path and filename of a valid media file"/>
+			<property name="autoplay"
+				type="boolean"
+				value="true"
+				description="automatically play the media file at startup or when a filename is received"/>
+			<property name="displayGui"
+				type="boolean"
+				value="true"
+				description="shall a window be displayed (e.g for movies) or not ?"/>
+			<property name="pathToVLC"
+				type="string"
+                value="C:\Program Files (x86)\VideoLAN\VLC"
+				description="default path to the VLC media player installation (libvlc.dll)"/>
+        </properties>
+		<gui>
+			<width>3000</width>
+			<height>2000</height>
+		</gui>
+
+    </componentType>
+</componentTypes>

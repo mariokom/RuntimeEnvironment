@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<componentTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="bundle_model.xsd">
+
+    <componentType id="asterics.ButtonGrid"
+                   canonical_name="eu.asterics.component.sensor.buttongrid.ButtonGridInstance">
+        <type subtype="Graphical User Interface">sensor</type>
+        <singleton>false</singleton>
+        <description>Keyboard which sends event after button press</description> 
+        <ports>
+        </ports>
+        <events>
+            <eventTriggererPort id="button1">
+                <description>Button 1 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button2">
+                <description>Button 2 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button3">
+                <description>Button 3 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button4">
+                <description>Button 4 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button5">
+                <description>Button 5 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button6">
+                <description>Button 6 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button7">
+                <description>Button 7 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button8">
+                <description>Button 8 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button9">
+                <description>Button 9 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button10">
+                <description>Button 10 pressed</description>
+            </eventTriggererPort>      
+            <eventTriggererPort id="button11">
+                <description>Button 11 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button12">
+                <description>Button 12 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button13">
+                <description>Button 13 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button14">
+                <description>Button 14 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button15">
+                <description>Button 15 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button16">
+                <description>Button 16 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button17">
+                <description>Button 17 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button18">
+                <description>Button 18 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button19">
+                <description>Button 19 pressed</description>
+            </eventTriggererPort>
+            <eventTriggererPort id="button20">
+                <description>Button 20 pressed</description>
+            </eventTriggererPort>     
+        </events>
+        <properties>
+            <property name="caption"
+                      type="string"
+                      value="Keyboard"
+                      description="Caption of the keyboard"/>
+            <property name="horizontalOrientation"
+                      type="boolean"
+                      value="false"
+                      description="Sets keys in horizontal orientation"/> 
+			<property name="textColor"
+				type="integer"
+				value="13"
+				combobox="black//blue//cyan//darkgray//gray//green//lightgray//magenta//orange//pink//red//white//yellow//default"
+				description="Text color"/>
+			<property name="backgroundColor"
+				type="integer"
+				value="13"
+				combobox="black//blue//cyan//darkgray//gray//green//lightgray//magenta//orange//pink//red//white//yellow//default"
+				description="Background color of the button"/>
+			<property name="borderColor"
+				type="integer"
+				value="13"
+				combobox="black//blue//cyan//darkgray//gray//green//lightgray//magenta//orange//pink//red//white//yellow//default"
+				description="Color of the button frame"/>
+			<property name="borderThickness"
+				type="integer"
+				value="2"
+				description="Thickness of the button frame"/>
+			<property name="selectionFrameColor"
+				type="integer"
+				value="13"
+				combobox="black//blue//cyan//darkgray//gray//green//lightgray//magenta//orange//pink//red//white//yellow//default"
+				description="Color of the selection frame (active when hovering over the button)"/>
+			<property name="selectionFrameThickness"
+				type="integer"
+				value="4"
+				description="Thickness of the selection frame (active when hovering over the button)"/>
+            <property name="displayGUI"
+                      type="boolean"
+                      value="true"                      
+                      description="if selected, the GUI window will be shown"/>
+
+            <property name="buttonCaption1"
+                      type="string"
+                      value="Button 1"
+                      description="Caption of the button 1"/>
+            <property name="buttonCaption2"
+                      type="string"
+                      value="Button 2"
+                      description="Caption of the button 2"/>
+            <property name="buttonCaption3"
+                      type="string"
+                      value=""
+                      description="Caption of the button 3"/>
+            <property name="buttonCaption4"
+                      type="string"
+                      value=""
+                      description="Caption of the button 4"/>
+            <property name="buttonCaption5"
+                      type="string"
+                      value=""
+                      description="Caption of the button 5"/>
+            <property name="buttonCaption6"
+                      type="string"
+                      value=""
+                      description="Caption of the button 6"/>
+            <property name="buttonCaption7"
+                      type="string"
+                      value=""
+                      description="Caption of the button 7"/>
+            <property name="buttonCaption8"
+                      type="string"
+                      value=""
+                      description="Caption of the button 8"/>
+            <property name="buttonCaption9"
+                      type="string"
+                      value=""
+                      description="Caption of the button 9"/>
+            <property name="buttonCaption10"
+                      type="string"
+                      value=""
+                      description="Caption of the button 10"/>
+            <property name="buttonCaption11"
+                      type="string"
+                      value=""
+                      description="Caption of the button 11"/>
+            <property name="buttonCaption12"
+                      type="string"
+                      value=""
+                      description="Caption of the button 12"/>
+            <property name="buttonCaption13"
+                      type="string"
+                      value=""
+                      description="Caption of the button 13"/>
+            <property name="buttonCaption14"
+                      type="string"
+                      value=""
+                      description="Caption of the button 14"/>
+            <property name="buttonCaption15"
+                      type="string"
+                      value=""
+                      description="Caption of the button 15"/>
+            <property name="buttonCaption16"
+                      type="string"
+                      value=""
+                      description="Caption of the button 16"/>
+            <property name="buttonCaption17"
+                      type="string"
+                      value=""
+                      description="Caption of the button 17"/>
+            <property name="buttonCaption18"
+                      type="string"
+                      value=""
+                      description="Caption of the button 18"/>
+            <property name="buttonCaption19"
+                      type="string"
+                      value=""
+                      description="Caption of the button 19"/>
+            <property name="buttonCaption20"
+                      type="string"
+                      value=""
+                      description="Caption of the button 20"/>
+
+            <property name="toolTip1"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 1"/>
+            <property name="toolTip2"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 2"/>
+            <property name="toolTip3"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 3"/>
+            <property name="toolTip4"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 4"/>
+            <property name="toolTip5"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 5"/>
+            <property name="toolTip6"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 6"/>
+            <property name="toolTip7"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 7"/>
+            <property name="toolTip8"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 8"/>
+            <property name="toolTip9"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 9"/>
+            <property name="toolTip10"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 10"/>
+            <property name="toolTip11"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 11"/>
+            <property name="toolTip12"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 12"/>
+            <property name="toolTip13"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 13"/>
+            <property name="toolTip14"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 14"/>
+            <property name="toolTip15"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 15"/>
+            <property name="toolTip16"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 16"/>
+            <property name="toolTip17"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 17"/>
+            <property name="toolTip18"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 18"/>
+            <property name="toolTip19"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 19"/>
+            <property name="toolTip20"
+                      type="string"
+                      value=""
+                      description="Tooltip text for button 20"/>                       
+        </properties>
+        <gui>
+            <width>500</width>
+            <height>2000</height>
+        </gui>
+    </componentType>
+
+</componentTypes>

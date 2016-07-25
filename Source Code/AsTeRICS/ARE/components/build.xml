@@ -1,0 +1,21 @@
+<project name="asterics.components" default="buildAllComponents" basedir=".">
+	<property name="runtime" location="../../bin/ARE"/>
+
+	<target name="buildAllComponents">
+          <subant target="jar">
+            <property name="debug" value="${debug}"/>
+            <fileset dir="." includes="*/build.xml"/>
+          </subant>
+    </target>
+
+	<target name="clean">
+        <delete dir="out"/>
+		<delete>
+			<fileset dir="." includes="*.jar"/>
+		</delete>
+    </target>
+	
+	<import file="../imported.xml"/>
+    <include file="../included.xml"/>
+	
+</project>
