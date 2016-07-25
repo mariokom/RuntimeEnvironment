@@ -344,10 +344,12 @@
                 }
             ]
         },
-
         "settingsHandlers": {
             "configure": {
-                "type": "gpii.settingsHandlers.noSettings",
+                "type": "gpii.settingsHandlers.JSONSettingsHandler",
+                "options": {
+                    "filename": "<rootFolderPath>\\UCH\\bin\\Webclient\\MyUI\\profiles\\currentuser.json"
+                },
                 "capabilities": [
                     "control.myui",
                     "applications.com\\.p4all\\.myui.id",
@@ -355,6 +357,12 @@
                 ]
             }
         },
+		"configure": [
+            "settings.configure"
+        ],
+        "restore": [
+            "settings.configure"
+        ],
         "start": [
             {
                 "type": "gpii.launch.exec",

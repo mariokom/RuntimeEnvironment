@@ -33,11 +33,15 @@
         resultHandler: {
           type: Object,
           reflectToAttribute: false
+        },
+        currentProfile: {
+          type: Object,
+          reflectToAttribute: false
         }
       },
       
       attached: function() {
-        this.performAdaptation(null);
+        this.performAdaptation(this.currentProfile);
       },
       
       detached: function() {
@@ -45,24 +49,34 @@
       },
       
       _servicesChanged: function(newValue, oldValue) {
-        Polymer.dom.flush()
-        this.performAdaptation(null);
+        Polymer.dom.flush();
+        this.performAdaptation(this.currentProfile);
       },
       
       handleSelect: function(e, detail) {
         if (e instanceof KeyboardEvent) {
           if (e.charCode == 13 || e.charCode == 32) {
-            this.resultHandler(e.target.data);
+            this.resultHandler(e.currentTarget.data);
           }
         } else {
-          this.resultHandler(e.target.data);
+          this.resultHandler(e.currentTarget.data);
         }
       },
       
       performAdaptation: function(toProfile) {
-        if (!toProfile) {// default
-          this.layoutInGrid(4,4);
+        if (!toProfile || !toProfile.maxElementsPerScreen) { // default
+          this.layoutInGrid(4, 4);
+        } else if (toProfile.maxElementsPerScreen >= 16) {
+          this.layoutInGrid(4, 4);
+        } else if (toProfile.maxElementsPerScreen >= 9) {
+          this.layoutInGrid(3, 3);
+        } else if (toProfile.maxElementsPerScreen >= 4) {
+          this.layoutInGrid(2, 2);
+        } else {
+          this.layoutInGrid(toProfile.maxElementsPerScreen, 1);
         }
+        
+        this.currentProfile = toProfile;
         
         // Adapt buttons
         let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton");

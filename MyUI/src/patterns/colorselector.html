@@ -102,6 +102,10 @@
         resultHandler: {
           type: Object,
           reflectToAttribute: false
+        },
+        currentProfile: {
+          type: Object,
+          reflectToAttribute: false
         }
       },
       
@@ -139,15 +143,52 @@
           
           { id: "black", label: "Black", rgb: "rgb(0, 0, 0)", hue: 0, sat: 0, bright: 0 }
         ];
+        
+        this.performAdaptation(this.currentProfile);
+      },
+      
+      attached: function() {
+        this.performAdaptation(this.currentProfile);
+      },
+      
+      performAdaptation: function(toProfile) {
+        if (!toProfile || !toProfile.maxElementsPerScreen || toProfile.maxElementsPerScreen >= 23) { // default
+          let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton[id^='light'], myui-menubutton[id^='dark']");
+          for (let i = 0; i < buttons.length; i++) {
+            buttons[i].style.display = "initial";
+          }
+        } else if (toProfile.maxElementsPerScreen >= 9) {
+          let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton[id^='light'], myui-menubutton[id^='dark']");
+          for (let i = 0; i < buttons.length; i++) {
+            buttons[i].style.display = "none";
+          }
+        } else {
+          let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton");
+          for (let i = 0; i < buttons.length; i++) {
+            if (buttons[i].id === "white" || buttons[i].id === "black") {
+              buttons[i].style.display = "initial";
+            } else {
+              buttons[i].style.display = "none";
+            }
+          }
+        }
+        
+        this.currentProfile = toProfile;
+        
+        // Adapt buttons
+        let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton");
+        for (let b of buttons) {
+          b.performAdaptation(toProfile);
+        }
       },
       
       handleSelect: function(e, detail) {
         if (e instanceof KeyboardEvent) {
           if (e.charCode == 13 || e.charCode == 32) {
-            this.resultHandler(e.target.data);
+            this.resultHandler(e.currentTarget.data);
           }
         } else {
-          this.resultHandler(e.target.data);
+          this.resultHandler(e.currentTarget.data);
         }
       },
       
@@ -156,7 +197,7 @@
           let button = Polymer.dom(this.root).querySelector(`#${c.id}`);
           button.toggleClass("currentColor", c.hue == newValue.hue && c.sat == newValue.sat && c.bright == newValue.bright);
         }
-      },
+      }
     });
   </script>
 </dom-module>

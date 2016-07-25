@@ -14,21 +14,23 @@ class SmarthomeService extends myui.AaimService {
     this._functions.set("mapUrcHSBtoColor", this.mapUrcHSBtoColor);
     this._functions.set("mapColorToUrcHSB", this.mapColorToUrcHSB);
     this._functions.set("mapModelsToMenu", this.mapModelsToMenu);
+    this._functions.set("mapUrcSwitches", this.mapUrcSwitches);
+    this._functions.set("mapSwitchToUrc", this.mapSwitchToUrc);
   }
   
   getInstalledServices() {
     return [
       { id: "tv", label: "Television" },
-      { id: "weather", label: "Weather Forecast" },
-      { id: "mail", label: "E-Mails" },
       { id: "light", label: "Lights Control" },
       { id: "models", label: "AsTeRICS" },
-      { id: "some", label: "Thing" },
-      { id: "some", label: "Thing" },
-      { id: "some", label: "Thing" },
-      { id: "some", label: "Thing" },
-      { id: "some", label: "Thing" },
-      { id: "some", label: "Thing" }
+      { id: "outlets", label: "Switched Outlets" },
+      { id: "mail", label: "E-Mails" },
+      { id: "weather", label: "Weather Forecast" },
+      { id: "x1", label: "Something" },
+      { id: "x2", label: "Something" },
+      { id: "x3", label: "Something" },
+      { id: "x4", label: "Something" },
+      { id: "x5", label: "Something" }
     ];
   }
   
@@ -72,6 +74,24 @@ class SmarthomeService extends myui.AaimService {
         };
       }
     );
+  }
+  
+  mapUrcSwitches(urcSwitches) {
+    let switches = [];
+    for (let s in urcSwitches) {
+      let val = urcSwitches[s];
+      if (typeof val !== Boolean) {
+        val = val === "true";
+      }
+      switches.push({ id: s, label: s, value: val });
+    }
+    return switches;
+  }
+  
+  mapSwitchToUrc(switchObj) {
+    let urcValue = {};
+    urcValue[switchObj.id] = !switchObj.value;
+    return urcValue;
   }
 }
 
