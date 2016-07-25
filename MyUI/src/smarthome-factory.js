@@ -6,8 +6,8 @@ var smarthome = smarthome || {};
  * 
  */
 class SmarthomeSituationFactory extends myui.SituationFactory {
-  constructor() {
-    super();
+  constructor(adaptationEngine) {
+    super(adaptationEngine);
     
     this._header = undefined;
     this._main = undefined;
@@ -41,6 +41,7 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
     title.resultHandler = function(result) {
       this._handler.executeEvent(`MetaGoto('${result}')`);
     }.bind(this);
+    this._engine.register(title);
     
     if (situation === "SelectService") {
       let menu = document.createElement("myui-mainmenu");
@@ -59,7 +60,9 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
         this._handler.executeEvent(`SelectService('${result.id}')`);
       }.bind(this);
       
-    } else if (situation === "SelectLamp") {
+      this._engine.register(menu);
+      
+    } else if (situation === "SelectOneOfMany") {
       let menu = document.createElement("myui-mainmenu");
       let parent = this._main;
       if (parameters instanceof Promise) {
@@ -73,9 +76,11 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
       }
       
       menu.resultHandler = function(result) {
-        context.set("SelectLamp", result);
-        this._handler.executeEvent("SelectLamp");
+        context.set("SelectOneOfMany", result);
+        this._handler.executeEvent("SelectOneOfMany");
       }.bind(this);
+      
+      this._engine.register(menu);
       
     } else if (situation === "AdjustLight") {
       let colors = document.createElement("myui-colorselector");
@@ -95,24 +100,28 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
         this._handler.executeEvent("AdjustLight");
       }.bind(this);
       
-    } else if (situation === "SelectModel") {
-      let menu = document.createElement("myui-mainmenu");
+      this._engine.register(colors);
+    
+    } else if (situation === "SwitchOutlets") {
+      let switches = document.createElement("myui-switches");
       let parent = this._main;
       if (parameters instanceof Promise) {
         parameters.then(function(result) {
-          menu.services = result;
-          parent.appendChild(menu);
+          switches.switches = result;
+          parent.appendChild(switches);
         });
       } else {
-        menu.services = parameters;
-        parent.appendChild(menu);
+        switches.switches = parameters[0];
+        parent.appendChild(switches);
       }
       
-      menu.resultHandler = function(result) {
-        context.set("SelectModel", result);
-        this._handler.executeEvent("SelectModel");
+      switches.resultHandler = function(result) {
+        context.set("SwitchOutlets", result);
+        this._handler.executeEvent("SwitchOutlets");
       }.bind(this);
       
+      this._engine.register(switches);
+    
     } else {
       let params = document.createElement("pre");
       if (parameters instanceof Promise) {
@@ -123,6 +132,7 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
         params.innerText = JSON.stringify(parameters);
       }
       this._main.appendChild(params);
+      this._engine.register(params);
     }
   }
   
@@ -137,7 +147,17 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
         colors.currentColor = parameters[0];
       }
       
-    } else if (situation === "SelectModel") {
+    } else if (situation === "SwitchOutlets") {
+      let switches = this._main.querySelector("myui-switches");
+      if (parameters instanceof Promise) {
+        parameters.then(function(result) {
+          switches.switches = result;
+        });
+      } else {
+        switches.switches = parameters[0];
+      }
+      
+    } else if (situation === "SelectOneOfMany") {
       let menu = this._main.querySelector("myui-mainmenu");
       if (parameters instanceof Promise) {
         parameters.then(function(result) {
@@ -169,12 +189,16 @@ class SmarthomeSituationFactory extends myui.SituationFactory {
   
   _clearContents(element) {
     while (element.firstChild) {
+      // Unregister from adaptation engine
+      this._engine.unregister(element.firstChild);
+      
+      // Remove from document
       element.removeChild(element.firstChild);
     }
   }
 }
 
 // Register in namespace
-smarthome.factory = new SmarthomeSituationFactory();
+smarthome.SmarthomeSituationFactory = SmarthomeSituationFactory;
 
 })();

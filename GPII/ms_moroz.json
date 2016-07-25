@@ -6,7 +6,10 @@
                 "preferences": {
                     "http://registry.gpii.net/applications/com.p4all.uch": {},
                     "http://registry.gpii.net/applications/com.p4all.asterics": {},
-                    "http://registry.gpii.net/applications/com.p4all.myui": {}
+                    "http://registry.gpii.net/applications/com.p4all.myui": {
+						"maxElementsPerScreen": 5,
+						"bodyTextFontSize": "3em"
+					}
                 }
             }
         }

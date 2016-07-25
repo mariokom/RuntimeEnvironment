@@ -64,16 +64,20 @@
       },
       
       performAdaptation: function(toProfile) {
-        
+        // Adapt buttons
+        let buttons = Polymer.dom(this.root).querySelectorAll("myui-menubutton");
+        for (let b of buttons) {
+          b.performAdaptation(toProfile);
+        }
       },
       
       handleSelect: function(e, detail) {
         if (e instanceof KeyboardEvent) {
           if (e.charCode == 13 || e.charCode == 32) {
-            this.resultHandler(e.target.dataset.event);
+            this.resultHandler(e.currentTarget.dataset.event);
           }
         } else {
-          this.resultHandler(e.target.dataset.event);
+          this.resultHandler(e.currentTarget.dataset.event);
         }
       },
       
