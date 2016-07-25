@@ -35,6 +35,7 @@
     "http://registry\\.gpii\\.net/common/screenDim": "display.-provisional-screenDim",
     "http://registry\\.gpii\\.net/common/onScreenKeyboardEnabled": "control.onscreenKeyboard",
     "http://registry\\.gpii\\.net/common/astericsEnabled": "control.asterics",
+    "http://registry\\.gpii\\.net/common/asterics_sEnabled": "control.asterics_s",
     "http://registry\\.gpii\\.net/common/myuiEnabled": "control.myui",
     "http://registry\\.gpii\\.net/common/uchEnabled": "control.uch",
     "http://registry\\.gpii\\.net/common/initDelay": "control.mouseEmulation.-provisional-initDelay",

@@ -334,6 +334,46 @@
         ]
     },
 
+    "com.p4all.asterics_s": {
+        "name": "asterics_s",
+        "contexts": {
+            "OS": [
+                {
+                    "id": "win32",
+                    "version": ">=5.0"
+                }
+            ]
+        },
+        "settingsHandlers": {
+            "configure": {
+                "type": "gpii.settingsHandlers.noSettings",
+                "capabilities": [
+                    "control.asterics_s",
+                    "applications.com\\.p4all\\.asterics_s.id",
+                    "control.asterics.applications.com\\.p4all\\.asterics_s.name"
+                ]
+            }
+        },
+        "start": [
+            {
+                "type": "gpii.launch.exec",
+                "command": "start <rootFolderPath>\\AsTeRICS\\ARE\\start.bat --webservice CameraMouse_sensitive.acs"
+            }
+        ],
+        "stop": [
+            {
+                "type": "gpii.windows.killProcessByName",
+                "filename": "javaw.exe"
+
+            }
+        ],
+        "isInstalled": [
+            {
+                "type": "gpii.deviceReporter.alwaysInstalled"
+            }
+        ]
+    },
+
     "com.p4all.myui": {
         "name": "myui",
         "contexts": {
