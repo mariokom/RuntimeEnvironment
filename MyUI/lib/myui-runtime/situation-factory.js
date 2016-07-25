@@ -8,8 +8,9 @@ class SituationFactory {
   /**
    * 
    */
-  constructor() {
-    
+  constructor(adaptationEngine) {
+    /** The adaptation engine instance for managing adaptations of produced situations */
+    this._engine = adaptationEngine;
   }
   
   /**

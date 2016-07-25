@@ -81,7 +81,11 @@
       },
       
       performAdaptation: function(toProfile) {
-        
+        if (!toProfile || !toProfile.bodyTextFontSize) { // default
+          this.style.fontSize = undefined;
+        } else if (toProfile.bodyTextFontSize) {
+          this.style.fontSize = toProfile.bodyTextFontSize;
+        }
       },
       
       _navigationNumberChanged: function(newValue, oldValue) {

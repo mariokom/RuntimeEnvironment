@@ -21,13 +21,14 @@ let aaim = {
       },
       events: [
         { on: "SelectService('light')", goto: "Lamps" },
-        { on: "SelectService('models')", goto: "Models" }
+        { on: "SelectService('models')", goto: "Models" },
+        { on: "SelectService('outlets')", goto: "Outlets" }
       ]
     },
     {
       name: "Lamps",
       do: {
-        situation: "SelectLamp",
+        situation: "SelectOneOfMany",
         parameters: {
           service: "urc",
           name: "queryTargets",
@@ -40,7 +41,7 @@ let aaim = {
         }
       },
       events: [
-        { on: "SelectLamp", goto: "Adjust" },
+        { on: "SelectOneOfMany", goto: "Adjust" },
         { on: "MetaGoto('back')", goto: "Services" }
       ]
     },
@@ -52,8 +53,8 @@ let aaim = {
           service: "urc",
           name: "currentState",
           parameters: [
-            "${SelectLamp.socketName}",
-            "${SelectLamp.targetId}"
+            "${SelectOneOfMany.socketName}",
+            "${SelectOneOfMany.targetId}"
           ],
           mapping: {
             name: "mapUrcHSBtoColor"
@@ -68,8 +69,8 @@ let aaim = {
             service: "urc",
             name: "setState",
             parameters: [
-              "${SelectLamp.socketName}",
-              "${SelectLamp.targetId}",
+              "${SelectOneOfMany.socketName}",
+              "${SelectOneOfMany.targetId}",
               "${AdjustLight}"
             ],
             parameterMapping: [
@@ -85,7 +86,7 @@ let aaim = {
     {
       name: "Models",
       do: {
-        situation: "SelectModel",
+        situation: "SelectOneOfMany",
         parameters: {
           service: "asterics",
           name: "listStoredModels",
@@ -97,26 +98,89 @@ let aaim = {
       },
       events: [
         { 
-          on: "SelectModel", 
+          on: "SelectOneOfMany", 
           goto: "Models",
           do: {
             service: "asterics",
             name: "startModel",
             parameters: [
-              "${SelectModel.modelPath}"
+              "${SelectOneOfMany.modelPath}"
             ]
           }
         },
         { on: "MetaGoto('back')", goto: "Services" }
       ]
+    },
+    {
+      name: "Outlets",
+      do: {
+        situation: "SelectOneOfMany",
+        parameters: {
+          service: "urc",
+          name: "queryTargets",
+          parameters: [
+            "http://hdm-stuttgart.de/WoehlkeWebsteckdose/WoehlkeWebsteckdoseSocket"
+          ],
+          mapping: {
+            name: "mapTargetsToMenu"
+          }
+        }
+      },
+      events: [
+        { on: "SelectOneOfMany", goto: "Switch" },
+        { on: "MetaGoto('back')", goto: "Services" }
+      ]
+    },
+    {
+      name: "Switch",
+      do: {
+        situation: "SwitchOutlets",
+        parameters: {
+          service: "urc",
+          name: "currentState",
+          parameters: [
+            "${SelectOneOfMany.socketName}",
+            "${SelectOneOfMany.targetId}"
+          ],
+          mapping: {
+            name: "mapUrcSwitches"
+          }
+        }
+      },
+      events: [
+        {
+          on: "SwitchOutlets",
+          goto: "Switch",
+          do: {
+            service: "urc",
+            name: "setState",
+            parameters: [
+              "${SelectOneOfMany.socketName}",
+              "${SelectOneOfMany.targetId}",
+              "${SwitchOutlets}"
+            ],
+            parameterMapping: [
+              undefined,
+              undefined,
+              { name: "mapSwitchToUrc" }
+            ]
+          }
+        },
+        { on: "MetaGoto('back')", goto: "Outlets" }
+      ]
     }
   ]
 };
 
+// Create the SituationFactory specific to the application domain
+smarthome.factory = new smarthome.SmarthomeSituationFactory(new myui.AdaptationEngine());
+
+// Initialize the AaimBehavior and register aditional services
 let behavior = new myui.AaimBehavior(smarthome.factory, smarthome.service);
 behavior.registerService("urc", new myui.urc.UchService());
 behavior.registerService("asterics", new myui.asterics.AreService(areURI));
 
+// Create the AaimInterpreter and load the applications AAIM
 let interpreter = new myui.AaimInterpreter(behavior);
 interpreter.load(aaim);
 smarthome.factory.situationEventHandler = interpreter;
@@ -130,8 +194,8 @@ window.onload = function() {
   // Run the AAIM
   interpreter.running = true;
   
-  // Just for testing purpose
-  window.aaiminterpreter = interpreter;
+  // Load profile
+  new awc.AjaxProfileStore("profiles/currentuser.json");
 };
 
 }());
