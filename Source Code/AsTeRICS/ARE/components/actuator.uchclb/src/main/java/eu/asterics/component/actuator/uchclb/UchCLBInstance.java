@@ -35,11 +35,11 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
-import eu.asterics.component.actuator.uchclb.uchCommunication.UchCommunicator;
-import eu.asterics.component.actuator.uchclb.uchCommunication.UchDiscovery;
-import eu.asterics.component.actuator.uchclb.uchCommunication.UchSession;
-import eu.asterics.component.actuator.uchclb.uchCommunication.session.requests.SetValuesRequest;
-import eu.asterics.component.actuator.uchclb.uchCommunication.session.xmlElements.SetElement;
+import cy.ac.ucy.cs.seit.uchCommunication.UchCommunicator;
+import cy.ac.ucy.cs.seit.uchCommunication.UchDiscovery;
+import cy.ac.ucy.cs.seit.uchCommunication.UchSession;
+import cy.ac.ucy.cs.seit.uchCommunication.session.requests.SetValuesRequest;
+import cy.ac.ucy.cs.seit.uchCommunication.session.xmlElements.SetElement;
 import eu.asterics.mw.are.BundleManager;
 import eu.asterics.mw.are.DeploymentManager;
 import eu.asterics.mw.are.exceptions.BundleManagementException;

@@ -3,5 +3,5 @@ Bundle-ManifestVersion: 2
 Bundle-Name: asterics-actuators.uchclb
 Bundle-SymbolicName: eu.asterics.component.actuator.uchclb
 Bundle-Version: 0.1.0
-Bundle-ClassPath: . ,lib/jmdns-3.4.1.jar
+Bundle-ClassPath: . ,lib/jmdns-3.4.1.jar, lib/UchJavaClient-1.1.jar
 DynamicImport-Package: *

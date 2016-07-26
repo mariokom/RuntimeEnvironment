@@ -33,11 +33,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
-import eu.asterics.component.actuator.uchelectricityoutlet.uchCommunication.UchCommunicator;
-import eu.asterics.component.actuator.uchelectricityoutlet.uchCommunication.UchDiscovery;
-import eu.asterics.component.actuator.uchelectricityoutlet.uchCommunication.UchSession;
-import eu.asterics.component.actuator.uchelectricityoutlet.uchCommunication.session.requests.SetValuesRequest;
-import eu.asterics.component.actuator.uchelectricityoutlet.uchCommunication.session.xmlElements.SetElement;
+import cy.ac.ucy.cs.seit.uchCommunication.UchCommunicator;
+import cy.ac.ucy.cs.seit.uchCommunication.UchDiscovery;
+import cy.ac.ucy.cs.seit.uchCommunication.UchSession;
+import cy.ac.ucy.cs.seit.uchCommunication.session.requests.SetValuesRequest;
+import cy.ac.ucy.cs.seit.uchCommunication.session.xmlElements.SetElement;
 import eu.asterics.mw.data.ConversionUtils;
 import eu.asterics.mw.model.runtime.AbstractRuntimeComponentInstance;
 import eu.asterics.mw.model.runtime.IRuntimeInputPort;

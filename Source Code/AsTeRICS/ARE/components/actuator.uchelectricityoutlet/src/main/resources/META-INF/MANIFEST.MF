@@ -3,4 +3,5 @@ Bundle-ManifestVersion: 2
 Bundle-Name: asterics-actuators.uchelectricityoutlet
 Bundle-SymbolicName: eu.asterics.component.actuator.uchelectricityoutlet
 Bundle-Version: 0.1.0
+Bundle-ClassPath: . ,lib/jmdns-3.4.1.jar, lib/UchJavaClient-1.1.jar
 DynamicImport-Package: *
