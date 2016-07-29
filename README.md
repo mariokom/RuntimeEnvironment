@@ -58,6 +58,7 @@ To test that everything was installed and configured correctly, you can do the f
 
 2) Notify GPII that a specific persona was logged in by visiting this URI in the browser: http://localhost:8081/user/nicholas/login
 
+
 3) The GPII will automatically start the three applications (AsTeRICS, MyUI, UCH).
 
 - AsTeRICS should take control of the mouse.
