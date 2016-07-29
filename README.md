@@ -6,9 +6,13 @@ Repository for Task T203.3 of the Prosperity4All project
 ## Installation
 
 Prerequisites
+
 1) Windows OS
+
 2) 32-bit Java SE Development Kit (8 or above)
+
 3) Web camera
+
 4) Web browser (Chrome Version 45 or above for MyUI)
 
 
