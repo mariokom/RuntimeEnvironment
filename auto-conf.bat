@@ -1,3 +1,6 @@
+@REM If the file is being run as as administrator, the starting path will be the system32 folder. With this we ensure that the starting path is the folder containing the bat file
+@cd /d "%~dp0"
+
 @echo.
 @echo.
 @echo.
