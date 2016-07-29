@@ -8,7 +8,15 @@
                     "http://registry.gpii.net/applications/com.p4all.asterics": {},
                     "http://registry.gpii.net/applications/com.p4all.myui": {
 						"maxElementsPerScreen": 5,
-						"bodyTextFontSize": "3em"
+						"bodyTextFontSize": "3em",
+						"content": {
+							"astericsModels": [
+								{ "path": "Head-ColouredLightBulb.acs", "label": "Head - Coloured light bulb" },
+								{ "path": "Head-ElectricityOutlet.acs", "label": "Head - Electricity outlet" },
+								{ "path": "CameraMouse.acs", "label": "Head - Mouse" },
+								{ "path": "CameraMouse_sensitive.acs", "label": "Head - Mouse (sensitive)" }
+							]
+						}
 					}
                 }
             }

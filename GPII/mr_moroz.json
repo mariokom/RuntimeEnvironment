@@ -5,7 +5,19 @@
                 "name": "Default preferences",
                 "preferences": {
                     "http://registry.gpii.net/applications/com.p4all.uch": {},
-                    "http://registry.gpii.net/applications/com.p4all.myui": {}
+                    "http://registry.gpii.net/applications/com.p4all.myui": {
+					"content": {
+							"astericsModels": [
+								{ "path": "demomenu.acs", "label": "Demo menu" },
+								{ "path": "OskaWriting.acs", "label": "Oska writing" },
+								{ "path": "HeadSound.acs", "label": "Head - Sound" },
+								{ "path": "Head-ColouredLightBulb.acs", "label": "Head - Coloured light bulb" },
+								{ "path": "Head-ElectricityOutlet.acs", "label": "Head - Electricity outlet" },
+								{ "path": "CameraMouse.acs", "label": "Head - Mouse" },
+								{ "path": "CameraMouse_sensitive.acs", "label": "Head - Mouse (sensitive)" }
+							]
+						}
+					}
                 }
             }
         }

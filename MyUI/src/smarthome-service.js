@@ -16,6 +16,9 @@ class SmarthomeService extends myui.AaimService {
     this._functions.set("mapModelsToMenu", this.mapModelsToMenu);
     this._functions.set("mapUrcSwitches", this.mapUrcSwitches);
     this._functions.set("mapSwitchToUrc", this.mapSwitchToUrc);
+    this._functions.set("getCurrentUsersModels", this.getCurrentUsersModels);
+    
+    this._models = {};
   }
   
   getInstalledServices() {
@@ -92,6 +95,26 @@ class SmarthomeService extends myui.AaimService {
     let urcValue = {};
     urcValue[switchObj.id] = !switchObj.value;
     return urcValue;
+  }
+  
+  getCurrentUsersModels() {
+    return this._models;
+  }
+  
+  performAdaptation(toProfile) {
+    if (toProfile && toProfile.content && toProfile.content.astericsModels) {
+      this._models = toProfile.content.astericsModels.map(
+        function(model, index) {
+        return {
+          id: index,
+          label: model.label,
+          modelPath: model.path
+        };
+      }
+      );
+    } else {
+      this._models = {};
+    }
   }
 }
 

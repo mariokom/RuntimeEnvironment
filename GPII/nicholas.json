@@ -8,7 +8,18 @@
                     "http://registry.gpii.net/applications/com.p4all.asterics_s": {},
                     "http://registry.gpii.net/applications/com.p4all.myui": {
 						"maxElementsPerScreen": 10,
-						"bodyTextFontSize": "2em"
+						"bodyTextFontSize": "2em",
+						"content": {
+							"astericsModels": [
+								{ "path": "Head-ColouredLightBulb.acs", "label": "Head - Coloured light bulb" },
+								{ "path": "Head-ElectricityOutlet.acs", "label": "Head - Electricity outlet" },
+								{ "path": "CameraMouse.acs", "label": "Head - Mouse" },
+								{ "path": "CameraMouse_sensitive.acs", "label": "Head - Mouse (sensitive)" },
+								{ "path": "HeadSound.acs", "label": "Head - Sound" },
+								{ "path": "OskaWriting.acs", "label": "Oska writing" },
+								{ "path": "demomenu.acs", "label": "Demo menu" }
+							]
+						}
 					}
                 }
             }

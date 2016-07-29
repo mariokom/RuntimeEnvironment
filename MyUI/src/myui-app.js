@@ -88,12 +88,8 @@ let aaim = {
       do: {
         situation: "SelectOneOfMany",
         parameters: {
-          service: "asterics",
-          name: "listStoredModels",
-          parameters: [],
-          mapping: {
-            name: "mapModelsToMenu"
-          }
+          name: "getCurrentUsersModels",
+          parameters: []
         },
       },
       events: [
@@ -173,7 +169,9 @@ let aaim = {
 };
 
 // Create the SituationFactory specific to the application domain
-smarthome.factory = new smarthome.SmarthomeSituationFactory(new myui.AdaptationEngine());
+let engine = new myui.AdaptationEngine();
+smarthome.factory = new smarthome.SmarthomeSituationFactory(engine);
+engine.register(smarthome.service);
 
 // Initialize the AaimBehavior and register aditional services
 let behavior = new myui.AaimBehavior(smarthome.factory, smarthome.service);
