@@ -41,7 +41,7 @@ It is required to:
 
 
 
-Step 1: By default, AsTeRICS is configured to communicate with UCH on the same machine (localhost). If there is a need for UCH to run on a different machine, please see Section 4 of ANNEX III in documentation folder, otherwise no further actions are required: the AsTeRICS files are precompiled and preconfigured.
+Step 1: By default, AsTeRICS is configured to communicate with UCH on the same machine (localhost). If there is a need for UCH to run on a different machine, please see Section 4 of ANNEX III in documentation folder https://github.com/mariokom/RuntimeEnvironment/Documentation, otherwise no further actions are required: the AsTeRICS files are precompiled and preconfigured.
 
 Step 2: Install GPII by using the installer to be found here: ‘<REFolderPath>/GPII/GPII.160119.044327.msi’
 
