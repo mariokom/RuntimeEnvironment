@@ -5,7 +5,7 @@ Repository for Task T203.3 of the Prosperity4All project
 
 ## Installation
 
-Prerequisites
+###Prerequisites
 
 1) Windows OS
 
@@ -14,6 +14,7 @@ Prerequisites
 3) Web camera
 
 4) Web browser (Chrome Version 45 or above for MyUI)
+
 
 
 Software installation
