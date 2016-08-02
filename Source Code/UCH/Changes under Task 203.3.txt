@@ -1,1 +1,27 @@
-This work has received funding from the European Union Seventh Framework Program (FP7/2007-2011) under grant agreement no. 610510, Prosperity4All (”Ecosystem infrastructure for smart and personalized inclusion and PROSPERITY for ALL stakeholders”).
+﻿This work has received funding from the European Union Seventh Framework Program (FP7/2007-2011) under grant agreement no. 610510, Prosperity4All (”Ecosystem infrastructure for smart and personalized inclusion and PROSPERITY for ALL stakeholders”).
+
+UCH 4.0
+
+Main goal: Development of stand alone version. This means UCH was transformed from an .war file that could be deployed in a tomcat server into an .jar file with embedded tomcat server.
+
+This work comprised:
+- adjustment of configuration files format and adjusting all related UCH processes
+
+- development of package edu.wisc.trace.uch.launch
+
+- adjust startup process of UCH from starting it with an external tomcat server to one with an embedded server (several handlers required).
+
+
+
+
+Target adapters:
+
+All source files in the following folders were developed under T203.3:
+
+- remex-ta-set/hdm-ta-set/philips-hue-adapter
+
+- remex-ta-set/hdm-ta-set/vlc
+
+- remex-ta-set/hdm-ta-set/woehlke
+
+
