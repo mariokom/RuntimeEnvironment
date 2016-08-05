@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<props>
+	<prop>
+		<name>http://openurc.org/ns/res#name</name>
+		<value>http://res.openurc.org/generic/tdm/config</value>
+	</prop>
+	<prop>
+		<name>http://openurc.org/ns/res#type</name>
+		<value>http://openurc.org/restypes#generictdmconfig</value>
+	</prop>
+	<prop><!-- Specifies relative path of resource file or directory-->
+		<name>http://openurc.org/ns/res#resourceUri</name>
+		<value>generictdm.config</value>
+	</prop>
+</props>

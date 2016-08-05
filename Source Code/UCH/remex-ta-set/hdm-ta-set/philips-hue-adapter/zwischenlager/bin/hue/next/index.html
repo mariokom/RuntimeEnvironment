@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Philips Hue</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!-- webclient functions -->
+<script src="../../Webclient/org_myurc_webclient.js" type="text/javascript"></script>
+<!-- functions for socket objects -->
+<script src="../../Webclient/org_myurc_socket.js" type="text/javascript"></script>
+<!-- primitive URC-HTTP functions -->
+<!-- URC lib -->
+<script src="../../Webclient/org_myurc_lib.js" type="text/javascript"></script>
+<script src="../../Webclient/org_myurc_urchttp.js" type="text/javascript"></script>
+<!-- jQuery (you can also download it and use it locally) -->
+<!-- Use it Online if possible -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/libs/jquery.min.js"><\/script>');</script>
+<!-- The jQuery URC Plugin -->
+<!--<script src="js/jquery.urc.js" type="text/javascript"></script>-->
+
+<script src="../js/hue.js" type="text/javascript"></script>
+<script src="../js/libs/underscore-min.js" type="text/javascript"></script>
+<script src="../js/libs/state-machine.min.js" type="text/javascript"></script>
+<script src="../js/libs/dollar.js" type="text/javascript"></script>
+<script src="../js/libs/leap-0.6.4.js" type="text/javascript"></script>
+
+    
+<link href="../css/main.css" type="text/css" rel="stylesheet">
+
+<script>
+$(document).ready(function () {
+    var lightStateEl = 'lightState';
+    var hue = $('#wrapper').hueUCH({
+        chooseHueWrapperID: 'chooseHue',
+        saturationID: 'saturation',
+        brightnessID: 'brightness',
+        hueDegreeID: 'hueDegree',
+        switchOnOffID: lightStateEl
+    });
+    
+    /*
+     * Creates and returns a new, throttled version of the passed function, 
+     * that, when invoked repeatedly, will only actually call the original function 
+     * at most once per every wait milliseconds. Useful for rate-limiting events 
+     * that occur faster than you can keep up with. 
+    */
+    var hueDegree = _.throttle(function (val) {
+        hue.hueUCH("setHueDegree", val);
+    },  100);
+    
+    var saturation = _.throttle(function (val) {
+        console.log(val);
+        hue.hueUCH("setSaturation", val);
+    },  100);
+    
+    var brightness = _.throttle(function (val) {
+        console.log(val);
+        hue.hueUCH("setBrightness", val);
+    },  100);
+    
+    
+    var handX,
+        handY,
+        prevHandX = 0,
+        prevHandY = 0,
+        prevPos = 0,
+        distance,
+        prevDistance = 0,
+        diffHeight,
+        prefDiffHeight = 0,
+        handPosStart;
+    
+    var pointStart = function () {
+        prevPos = handPosStart;
+        prevHandX = handPosStart[0];
+        prevHandY = handPosStart[1];
+    };
+    var pointEnd = function () {
+        prevPos = '';
+        prevHandX = '';
+        prevHandY = '';
+    };
+    
+    
+    /*
+     * Statemachine
+     * Handles to switch the brightness
+    */
+    var stateBright = StateMachine.create({
+          initial: 'hand',
+          events: [
+            {name: 'pointstart', from: 'hand',  to: 'point' }, 
+            {name: 'pointend', from: 'point', to: 'hand' }
+          ],
+          callbacks: {
+            onpointstart: pointStart,
+            onpointend: pointEnd
+          }
+    });
+    
+    
+    var setBrightness = function (pos) {     
+        handPosStart = '';
+        handX = pos[0];
+        handY = pos[1];
+        
+        var posXDiff = Math.abs(handX - prevHandX);
+        var posYDiff = Math.abs(handY - prevHandY);
+       
+        // check if pos and prev pos is not equal
+        if(!equalsVec3(pos, prevPos)) {
+            // check if the movement on the Y-Axis is greater than on X-Axis
+            if (posXDiff <= posYDiff) {
+                // check if the movement is greater than 2
+                if (Math.abs(handY - prevHandY) > 2 || (handY - prevHandY) < -2) {
+                    var bright = parseInt($('#brightness').val(), 10);
+                    var diffY = handY - prevHandY;
+                    
+                    var newValY = Math.round(bright + diffY);
+                    if (newValY > 100) {
+                        brightness(100);
+                    } else if (newValY <= 1) {
+                        brightness(1);
+                    } else {
+                        brightness(newValY);
+                    }
+                    prevPos = pos;
+                    prevHandX = handX;
+                    prevHandY = handY;
+                }
+            } else {
+                if (Math.abs(handX - prevHandX) > 2 || (handX - prevHandX) < -2) {
+                    if(stateBright.current === 'point') {
+                        stateBright.pointend();
+                    }
+                }
+            }
+        } else {
+            console.log('same position');
+        }
+    };
+    
+    
+    
+    var controller = Leap.loop({enableGestures: true},  function (frame) {   
+        //Only if Frame is Valid and a Hand is Visible
+        if (frame.valid && frame.hands.length > 0) {
+            // check if there is just one hand
+            if (frame.hands.length === 1) {
+                var hand = frame.hands[0];
+                    
+                console.log(hand.grabStrength);
+                //if (!hand.indexFinger.extended && !hand.pinky.extended && !hand.middleFinger.extended && !hand.ringFinger.extended &&  !hand.thumb.extended) {
+                if (hand.grabStrength > 0.9) {
+                    if ($('#' + lightStateEl).is(':checked')) {
+                        hue.hueUCH("switchLight", false);
+                    }
+                   
+                    if(stateBright.current === 'point') {
+                        stateBright.pointend(frame);
+                    }
+                    
+                } else if (hand.grabStrength <= .2 ) {
+                    if (!$('#' + lightStateEl).is(':checked')) {
+                        hue.hueUCH("switchLight", true);
+                    }     
+                    
+                    if(stateBright.current === 'hand') {
+                        handPosStart = hand.palmPosition;
+                        stateBright.pointstart();
+                    }
+                    if (stateBright.current === 'point') {
+                        var handPos = hand.palmPosition;
+                        setBrightness(handPos);
+                    }
+                }
+            } else if (frame.hands.length === 2) {
+                var i,
+                    right,
+                    left;
+                for (i = 0; i < frame.hands.length; i++) {
+                    var hand = frame.hands[i];
+                    if (hand.type === 'right') {
+                        right = hand;
+                    } else {
+                        left = hand;
+                    }
+                }
+                
+                if (right != undefined && left != undefined) {
+                    var rightConfidence = right.confidence;
+                    var leftConfidence = left.confidence;
+                    
+                    if (!$('#' + lightStateEl).is(':checked')) {
+                        hue.hueUCH("switchLight", true);
+                    }                
+                    
+                    if (rightConfidence > .5){
+                        if (left.grabStrength <= 0.2) {
+                            var rightPos = right.palmPosition;
+                            var leftPos = left.palmPosition;
+                            var dist = Leap.vec3.distance(rightPos, leftPos);
+
+                            setHueDegree(rightPos, leftPos);
+                            setSaturation(dist);
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        function setHueDegree(rightP, leftP) {
+            var deg = angleVec2(rightP[0], rightP[1], leftP[0], leftP[1]);
+            if (deg > 0) {
+                if (deg < 180 && deg > 135) {
+                    hueDegree(Math.round(180-deg) * 4);
+                }
+            } else if (deg < 0) {
+                if(deg > -180 && deg < -135) {
+                    hueDegree(Math.round(180+deg) * -4);
+                }
+            }
+        }
+        
+        function setSaturation(distance) {
+            distance = Math.round(distance);
+            if (distance <= 50) {
+                saturation(1);  
+            } else if (distance >= 300) {
+                saturation(100);
+            } else if (distance === 175) {
+                saturation(50);
+            } else {
+                saturation(Math.round((distance - 50) * 0.4));
+            }
+        }
+    });
+    
+    
+    /**
+    * Calculates the Angle between to Points in 2D-Space.
+    *
+    * @param {double} cx The x coordinate of the first Point.
+    * @param {double} cy The y coordinate of the first Point.
+    * @param {double} ex The x coordinate of the second Point.
+    * @param {double} ey The y coordinate of the second Point.
+    * @returns {double} Degree Value of the Angle of the gradient.
+    */
+    function angleVec2(cx, cy, ex, ey) {
+        var dy = ey - cy,
+            dx = ex - cx,
+            theta = Math.atan2(dy, dx); // range (-PI, PI]
+
+        return degree(theta); // rads to degs, range (-180, 180]
+    }
+        
+    /**
+    * Returns whether or not the vectors have approximately the same elements in the same position.
+    *
+    * @param {vec3} a The first vector.
+    * @param {vec3} b The second vector.
+    * @returns {Boolean} True if the vectors are equal, false otherwise.
+    */
+    function equalsVec3(a, b) {
+        var a0 = a[0], a1 = a[1], a2 = a[2];
+        var b0 = b[0], b1 = b[1], b2 = b[2];
+        var EPSILON = 0.01;
+        return (Math.abs(a0 - b0) <= EPSILON*Math.max(1.0, Math.abs(a0), Math.abs(b0)) &&
+                Math.abs(a1 - b1) <= EPSILON*Math.max(1.0, Math.abs(a1), Math.abs(b1)) &&
+                Math.abs(a2 - b2) <= EPSILON*Math.max(1.0, Math.abs(a2), Math.abs(b2)));
+    };
+        
+    /**
+    * Calculates the Angle between to Vectors.
+    *
+    * @param {vec3} a The first vector.
+    * @param {vec3} b The second vector.
+    * @returns {double} Radian Value of the Angle between Vector a and b.
+    */
+    function angleVec3(a, b) {
+        var vecA = Leap.vec3.fromValues(a[0], a[1], a[2]);
+        var vecB = Leap.vec3.fromValues(b[0], b[1], b[2]);
+        
+        Leap.vec3.normalize(vecA, vecA);
+        Leap.vec3.normalize(vecB, vecB);
+            
+        //Skalarprodukt (Cosine)
+        var dotProduct = Leap.vec3.dot(vecA, vecB);
+
+        if (dotProduct > 1.0) {
+            return 0;
+        } else {
+            return Math.acos(dotProduct);
+        }
+    }
+        
+    /**
+    * Calculates the Degree Value of a Radian Value
+    *
+    * @param {int/double} val Radian Value.
+    * @returns {int/double} Degree Value of a Radian Value.
+    */
+    function degree(val) {
+        return val * (180 / Math.PI);
+    }
+    
+    /**
+    * Rounds a number to a specific dezimal value
+    *
+    * @param {double} a The number which should be rounded.
+    * @param {int} The amound of dezimal values.
+    * @returns {int/double} The rounden number.
+    */
+    //Rundet eine Zahl auf eine bestimmte Nachkommastelle
+    function round(number, decimals) {
+        return Math.round(number * Math.pow(10, decimals)) / Math.pow(10, decimals);
+    }
+});
+</script>
+
+</head>
+    
+<body>
+    
+<div id="wrapper">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Philips Hue</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col" id="chooseHue">
+                <h2>Choose the lamp</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Brightness</h2>
+                <input type="range" name="points" min="1" max="100" id="brightness">
+                <output for="brightness" id="volBri">50</output>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Saturation</h2>
+                <input type="range" name="points" min="0" max="100" value="100" id="saturation">
+                <output for="saturation" id="volSat">50</output>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Hue Degree</h2>
+                <input type="range" name="points" min="-180" max="180" value="0" id="hueDegree">
+                <output for="hueDegree" id="volHue">50</output>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Switch On/Off</h2>
+                <div class="switch">
+                    <input type="checkbox" class="switch-checkbox" id="lightState" value="true">
+                    <label class="switch-label" for="lightState">
+                        <span class="switch-inner"></span>
+                        <span class="switch-switch"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

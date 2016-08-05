@@ -1,0 +1,1407 @@
+/**
+ * Copyright 2013 Friedolin Förder
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *      
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * 
+ * 
+ * @summary A jQuery plugin for the Universal Remote Console (URC)
+ * @description This is a script for receiving, manipulating 
+ * and sending data, which comes from a UCH.
+ * @version 1.0 beta
+ * @file jquery.urc.js
+ * @author Friedolin Förder <ff026@hdm-stuttgart.de>
+ * @overview This script simplifies the access to the official urc webclient
+ * and offers a easy and straightforward API for receiving, manipulating 
+ * and sending data.
+ * <br />
+ * Furthermore with this script you can configure how the received data
+ * is formed and how it should be handled. You can set up default data and
+ * parsing rules. You can also bundle data, so you got them all at once in the
+ * update function.
+ * <br />
+ * <br />
+ * This is the first version (1.0 beta) of this URC jQuery plugin. If there
+ * are any errors or bugs, please report them to me via email:
+ * ff026@hdm-stuttgart.de
+ * @copyright Friedolin Förder 2013
+ * @license Apache, Version 2.0 ({@link http://www.apache.org/licenses/LICENSE-2.0})
+ * @requires jQuery
+ * @requires org_myurc_webclient.js
+ * @requires org_myurc_socket.js
+ * @requires org_myurc_urchttp.js
+ * @requires org_myurc_lib.js
+ */
+
+/**
+ * See the jQuery Library ({@link http://api.jquery.com}) for full details.
+ * 
+ * @name jQuery
+ * @constructor
+ * @class
+ * See the jQuery Library ({@link http://api.jquery.com}) for full details. 
+ * This just documents the function and classes that are added to jQuery 
+ * by this plugin.
+ * @see {@link http://api.jquery.com}
+ */
+ 
+/**
+ * See the jQuery Library ({@link http://api.jquery.com}) for full details.<br />
+ * See <b>{@link fn}</b> for all added methods.
+ * 
+ * @name fn
+ * @alias jQuery.prototype
+ * @memberOf jQuery
+ * @property {object} fn - See the jQuery Library ({@link http://api.jquery.com}) 
+ *                         for full details. This just documents the function and 
+ *                         classes that are added to jQuery by this plugin.
+ * @see {@link http://api.jquery.com} for jQuery property fn 
+ * and {@link fn} for all functions, which are added to the fn property
+ */
+
+(/** @lends <global> */function($) {
+    
+    /**
+     * Initialize event, triggered after the data was received for the first time.
+     * <br />
+     * This event has the namespace <b>urc</b>.
+     * <br />
+     * The context of the event is {@link api}.
+     * 
+     * @param {object} event - The event object
+     * 
+     * @example
+     * $(document).on("init.urc", function(event) {
+     *     // do stuff here, for example:
+     *     alert(this.resource("welcome"));
+     * });
+     * 
+     * @event
+     * @name init
+     */
+    
+    /**
+     * Update event, triggered every time the data was updated.
+     * <br />
+     * This event has the namespace <b>urc</b>.
+     * <br />
+     * The context of the event is {@link api}.
+     * 
+     * @param {object} event   - The event object
+     * @param {string} path    - The name of the attribute
+     * @param {mixed}  value   - The (new) value of the attribute
+     * @param {object} session - The session object
+     * 
+     * @example
+     * $(document).on("update.urc", function(event, path, value, session) {
+     *     // do stuff here, for example:
+     *     $("#"+path).text(value);
+     * });
+     * 
+     * @event
+     * @name update
+     */
+    
+    /**
+     * The main function of the URC plugin.<br />
+     * <b>This function is overloaded multiple times.</b>
+     *
+     * @name urc
+     * @static
+     * @function                                                
+     *
+     * @example
+     * $.urc()
+     * 
+     * @memberOf jQuery
+     * 
+     * @return {api} The API of the URC plugin
+     */
+    
+    /**
+     * The main function of the URC plugin.<br />
+     * Initialize the URC plugin (see {@link api.init})
+     *  
+     * @name urc
+     * @static
+     * @function
+     * 
+     * @param {string|array} sockets - A path of one socket or an array with many
+     *                                 sockets
+     * @param {object}   [options={}]                  - Options to configure 
+     *                                                   the urc plugin
+     * @param {boolean}  [options.autogenerate=false]  - Should the elements be 
+     *                                                   autogenerated?
+     *                                                   Set to true if the
+     *                                                   elements should be
+     *                                                   autogenerated.
+     * @param {int}      [options.updateInterval=1000] - The update interval 
+     *                                                   (duration between two 
+     *                                                   updates in milliseconds)
+     * @param {string}   [options.forLang]             - The language of the 
+     *                                                   remote console
+     * @param {string}   [options.defaultMode="set"]   - The mode, which is used
+     *                                                   internally by the script
+     * @param {Function} [options.onUpdate=null]       - Provide a update handler
+     *                                                   to work with the
+     *                                                   updated data.
+     *                                                   See @link {update}
+     *                                                   for further information
+     * @param {Function} [options.onInit=null]         - Provide a initialize 
+     *                                                   handler to work with
+     *                                                   the received data.
+     *                                                   See @link {init}
+     *                                                   for further information
+     * @param {object}   [options.mapping={}]          - You can provide mappings 
+     *                                                   for all variables so you 
+     *                                                   can get the correct types
+     * @param {object}   [data={}]                     - The default data object
+     * @param {boolean}  [options.verbose=false]       - Set to true if the script
+     *                                                   should log the actions
+     * @param {object}   [options.bundles={}]          - bundle some values, 
+     *                                                   so you've got them at 
+     *                                                   the same time in the 
+     *                                                   update function 
+     * @param {int}      [options.setterDelay=0]       - How long should the
+     *                                                   set function wait for
+     *                                                   new set requests, before
+     *                                                   sending the new data to
+     *                                                   the server. Use this
+     *                                                   option to improve
+     *                                                   performance and
+     *                                                   reactivity of the
+     *                                                   interface. 
+     * @param {boolean}  [options.cache=true]          - True if the server should 
+     *                                                   look for cached attributes 
+     *                                                   in the data object, 
+     *                                                   otherwise false.                                                                                                
+     *
+     * @example
+     * $.urc("http://res.myurc.org/radio")
+     * @example
+     * $.urc(["http://res.myurc.org/radio", "http://res.myurc.org/tv"])
+     * @example
+     * $.urc("http://res.myurc.org/radio", {updateInterval: 500})
+     * @example
+     * $.urc(["http://res.myurc.org/radio", "http://res.myurc.org/tv"], {updateInterval: 500})
+     * 
+     * @memberOf jQuery
+     * 
+     * @return {api} The API of the URC plugin
+     */
+    
+    /**
+     * The main function of the URC plugin.<br />
+     * You can call all api functions with this function.<br />
+     * See <b>{@link api}</b> for all possible functions.
+     *
+     * @name urc
+     * @static
+     * @function 
+     * 
+     * @param {string} func  - The name of the function to call 
+     * @param {mixed}  [arg] - Unlimited number of OPTIONAL arguments                                          
+     *
+     * @example
+     * $.urc("api")
+     * @example
+     * $.urc("use", "myurc.org/radio", "iPad")
+     * @example
+     * $.urc("get", "isOn")
+     * @example
+     * $.urc("set", "isOn", true)
+     * 
+     * @memberOf jQuery
+     * 
+     * @return {mixed|api} The result of the called function. If the result is 
+     *                     undefined, it returns the api.
+     */
+    $.urc = function(a) {
+        var args;
+        
+        if(a === undefined || a == "api") {
+            return api;
+        } else if(api[a] instanceof Function) {
+            args = Array.prototype.slice.call(arguments, 1);
+            var result = api[a].apply(api, args);
+            if(result !== undefined) {
+                return result;
+            }
+        } else {
+            args = Array.prototype.slice.call(arguments, 0);
+            // start urc
+            api.init.apply(api, args);
+        }
+        return api;
+    };
+    
+    /**
+     * A function, which has access to all defined prototype functions
+     * (factory pattern)
+     * 
+     * @param {string} method - The method name
+     * @param {mixed}  [arg]  - Unlimited number of OPTIONAL arguments
+     * 
+     * @memberOf jQuery.fn
+     * 
+     * @return {jQuery} The jQuery object
+     */
+    $.fn.urc = function(method) {
+        method = fn[method];
+        if(method !== undefined) {
+            var args = Array.prototype.splice.call(arguments, 1);
+            method.apply(this, args);
+        }
+        
+        return this;
+    };
+    
+    /**
+     * The default options for the URC plugin.
+     * 
+     * @namespace
+     */
+    var options = {
+            /**
+             * Should the elements be autogenerated?
+             *
+             * @property {boolean} [autogenerate=false] - Set to true if the
+             *                                            elements should be
+             *                                            autogenerated
+             */
+            autogenerate: false,
+            /**
+             * Duration between two updates in milliseconds 
+             * (default is one second)
+             *
+             * @property {int} [updateInterval=1000] - The update interval
+             */
+            updateInterval: 1000,
+            /**
+             * The current language
+             * 
+             * @property {string} [forLang] - The language of the remote console
+             */
+            forLang: document.documentElement.lang,
+            /**
+             * The default mode for working on the data
+             * 
+             * @property {string} [defaultMode="set"] - The mode, which is used
+             *                                          internally by the
+             *                                          script
+             */
+            defaultMode: "set",
+            /**
+             * The event function, which will be called on every update
+             * 
+             * @property {Function} [onUpdate=null] - Provide a update handler
+             *                                        to work with the
+             *                                        updated data
+             */
+            onUpdate: null,
+            /**
+             * The event function, which will be called when the data is
+             * received for the first time
+             * 
+             * @property {Function} [onInit=null] - Provide a initialize handler
+             *                                      to work with the received
+             *                                      data
+             */
+            onInit: null,
+            /**
+             * The mapping for the data of the socket
+             * 
+             * @property {object} [mapping={}] - You can provide mappings for 
+             *                                   all variables so you can get 
+             *                                   the correct types
+             */
+            mapping: {},
+            /**
+             * A reference to the data object, which should be updated
+             * 
+             * @property {object} [data={}] - The default data object
+             */
+            data: {},
+            /**
+             * Should the script write the actions to the console?
+             * 
+             * @property {boolean} [verbose=false] - Set to true if the script
+             *                                       should log the actions
+             */
+            verbose: false,
+            /**
+             * Bundle data
+             * 
+             * @property {object} [bundles={}] - bundle some values, 
+             *                                   so you've got them at the same time
+             *                                   in the update function
+             */
+            bundles: {},
+            /**
+             * Wait for new data to set.
+             * 
+             * @property {int} [setterDelay=0] - How long should the set function 
+             *                                   wait for new set requests, before
+             *                                   sending the new data to the server. 
+             *                                   Use this option to improve
+             *                                   performance and reactivity of the
+             *                                   interface.
+             */
+            setterDelay: 0,
+            /**
+             * Should the plugin look for cached attributes
+             * 
+             * @property {int} [cache=true] - True if the server should look for
+             *                                cached attributes in the data
+             *                                object, otherwise false.
+             */
+            cache: true
+        },
+        /**
+         * @private
+         * 
+         * @property {object} setModes - An object, which maps the various modes
+         */
+        setModes = {
+            set: "S",
+            remove: "R",
+            invoke: "I",
+            add: "A",
+            ack: "K"
+        },
+        /**
+         * @private
+         * 
+         * @property {object} currentSession - The current URC session
+         */
+        currentSession = null,
+        /**
+         * @private
+         *
+         * @property {object} allData - Data of all sessions
+         */
+        allData = {},
+        /**
+         * @private
+         *
+         * @propterty {object} data - Data of the current session
+         */
+        data = {},
+        /**
+         * @private
+         *
+         * @property {object} mapping - An object with default mapping functions
+         */
+        mapping = {
+            /**
+             * Converts a string to an int
+             * 
+             * @param {string} str - The string to convert
+             * 
+             * @return {int} Returns the parsed int 
+             */
+            "int": function(str) {
+                return parseInt(str, 10);
+            },
+            /**
+             * Converts a string to an float
+             * 
+             * @param {string} str - The string to convert
+             * 
+             * @return {float} Returns the parsed float 
+             */
+            "float": function(str) {
+                return parseFloat(str);
+            },
+            /**
+             * Converts a string to an boolean
+             * 
+             * @param {string} str - The string to convert
+             * 
+             * @return {boolean} Returns the parsed int 
+             */
+            "boolean": function(str) {
+                return (str.toLowerCase() === "true");
+            },
+            /**
+             * Returns the given string
+             * (This function is only available because of cosistency reasons)
+             * 
+             * @param {string} str - The string to return
+             * 
+             * @return {string} Returns the given string
+             */
+            "string": function(str) {
+                return str;
+            }
+        },
+        /**
+         * A log function that logs information when the verbose option is true
+         * 
+         * @param {mixed} [arg] - Unlimited number of OPTIONAL arguments 
+         */
+        log = function() {
+            if(options.verbose) {
+                console.log.apply(console, arguments);
+            }
+        },
+        /**
+         * Update the internal and external data with the given path and value
+         * 
+         * @private
+         * @static
+         * @function
+         * 
+         * @param {string} path    - A name of an attribute
+         * @param {mixed}  [value] - You can change the internal and
+         *                           external data by call this function 
+         *                           with a name and a value
+         */
+        updateData = function(path, value) {
+            if(typeof value === "object") {
+                // update data
+                if(typeof data[path] !== "object") {
+                    data[path] = {};
+                }
+                $.extend(true, data[path], value);
+            } else {
+                // update data
+                data[path] = value;
+            }
+        },
+        /**
+         * Update some attributes from the data object
+         *
+         * @private
+         * @static
+         * @function
+         * 
+         * @param {array} way - An array with keys through the data object
+         * 
+         * @return {boolean} Returns true if the data object has changed, false
+         *                   otherwise
+         */
+        updateDataByWay = function(way, value) { 
+            var length = way.length,
+                d = data,
+                dirty = false;
+            
+            for(var i = 0; i<length-1; i++) {
+                if(typeof d[way[i]] !== "object") {
+                    dirty = true;
+                    d[way[i]] = {};
+                }
+                d = d[way[i]];
+            }
+            if(!dirty && d[way[length-1]] != value) {
+                dirty = true;
+            }
+            d[way[length-1]] = value;
+            return dirty;
+        },
+        /**
+         * Remove some attributes from the data
+         * 
+         * @private
+         * @static
+         * @function
+         * 
+         * @param {array} way - An array with keys through the data object
+         * 
+         * @return {boolean} Returns true if the key was deleted, otherwise
+         *                   false
+         */
+        removeData = function(way) {
+            var length = way.length,
+                d = data,
+                untilEnd = true;
+                
+            if(length > 0) {
+                for(var i = 0; i<length-1; i++) {
+                    d = d[way[i]];
+                    if(typeof d !== "object") {
+                        untilEnd = false;
+                        break;
+                    }
+                }
+                if(untilEnd && d[way[length-1]] !== undefined) {
+                    delete d[way[length-1]];
+                    return true;
+                }
+            }
+            return false;
+        },
+        /**
+         * The elements to set.
+         * It's needed because of the setterDelay option.
+         * 
+         * @property {object} elementsToSet - The elements to set
+         */
+        elementsToSet = {},
+        /**
+         * The last time elements wants to be set by the set function.
+         * It's needed because of the setterDelay option.
+         * 
+         * @propterty {int} lastSetTime - The last time elements wants to be set
+         */
+        lastSetTime = null,
+        /**
+         * The main set function. There are shortcut functions, which uses this
+         * function by calling it with a specific mode attribute 
+         * (e.g. mode "remove")
+         * 
+         * @private
+         * @static
+         * @function
+         * 
+         * @param {string|object} paths   - A name of an attribute or an
+         *                                  array holding some attributes
+         * @param {mixed}         [value] - You can manipulate a attribute by
+         *                                  call this function with
+         *                                  a name and a value
+         * @param {string}        [mode]  - The mode of the action. See 
+         *                                  {@link setModes} for all possible
+         *                                  modes.
+         *                                     
+         */
+        set = function(paths, value, mode) {
+            if(typeof paths === "string") {
+                var p = paths;
+                paths = {};
+                paths[p] = value;
+            }
+            
+            for(var path in paths) {
+                value = paths[path];
+                
+                var addElement = function(val, p) {
+                    if(val && typeof val === "object") {
+                        for(var i in val) {
+                            // copy the array
+                            var arr = $.extend(true, [], p);
+                            arr.push(i);
+                            // recursive call of the current function
+                            addElement(val[i], arr);
+                        }
+                    } else {
+                        var way = p.slice(0),
+                            newPath = "/" + p.shift();
+                            
+                        for(var i = 0, length = p.length; i < length; i++) {
+                            if(i%2 == 0) {
+                                newPath += "["+ p[i] +"]"
+                            } else {
+                                newPath += "/" + p[i]
+                            }
+                        }
+                        
+                        var dirty = true;
+                        
+                        if(mode == "set" || mode == "add") {
+                            dirty = updateDataByWay(way, val);
+                        } else if(mode == "remove") {
+                            dirty = removeData(way);
+                        }
+                        
+                        // only send something to the server if the data
+                        // has changed
+                        if(dirty) {
+                            elementsToSet[newPath] = {
+                                elementPath: newPath,
+                                value: val,
+                                operation: mode
+                            };
+                        }
+                    }
+                };
+                addElement(paths[path], [path], [])
+            }
+            
+            if(options.setterDelay) {
+                var time = lastSetTime = +new Date();
+                setTimeout(function() {
+                    if(time == lastSetTime) {
+                        setElements();
+                    }
+                }, options.setterDelay);
+            } else {
+                setElements();
+            }
+            
+            // fluent interface
+            return this;
+        },
+        /**
+         * Send the changed elements to the server.
+         * 
+         * @private
+         * @static
+         * @function
+         */
+        setElements = function() {
+            var elements = [];
+            for(var i in elementsToSet) {
+                var element = elementsToSet[i],
+                    mode = element.operation;
+                    
+                log(mode.toUpperCase()+": "+i+" = ",element.value);
+                
+                element.operation = setModes[mode];
+                elements.push(element);
+            }
+            if(elements.length) {
+                org_myurc_webclient_setValues(null, elements, null, currentSession);
+            }
+            elementsToSet = {};
+        },
+        /**
+         * Convert the value to a specific data type
+         * 
+         * @private
+         * @static
+         * @function
+         * 
+         * @param {string} path  - A name of an attribute
+         * @param {string} value - A value of an attribute
+         * 
+         * @return {mixed} The new value
+         */
+        doMapping = function(path, value) {
+            var parts = path.split("/"),
+                map = options.mapping;
+
+            if(parts.length > 1) {
+                var valueName,
+                    last = parts.pop(),
+                    mapPath = [];
+
+                path = {};
+                var currentPath = path;
+
+                for(var i = 0, length = parts.length; i < length; i++) {
+                    var match = parts[i].match(/^(.*)\[(.*)\]$/);
+                    currentPath[match[1]] = {};
+                    currentPath = currentPath[match[1]];
+                    currentPath[match[2]] = {};
+                    currentPath = currentPath[match[2]];
+
+                    if(i == 0) {
+                        valueName = match[1];
+                    }
+                    if(i == length-1) {
+                        mapPath.push(match[1], last);
+                        map = map[mapPath.join(".")]
+                        if(map instanceof Function) {
+                            value = map.call(this, value);
+                        }
+                        currentPath[last] = value;
+                        value = path[valueName];
+                        path = valueName;
+                    }
+                }
+                updateData(path, value);
+            } else {
+                map = map[path];
+                if(map instanceof Function) {
+                    value = map.call(this, value);
+                }
+                updateData(path, value);
+            }
+            return {
+                path: path,
+                value: value
+            };
+        },
+        /**
+         * The public api of the URC plugin. 
+         * (accessible by the {@link urc}-function)
+         * 
+         * @namespace
+         */
+        api = {
+            /**
+             * Initialize the URC plugin and the required webclient.
+             * 
+             * @param {string|array} sockets   - A path of one socket or an array 
+             *                                   with many sockets
+             * @param {object}       [opts={}] - Options to configure 
+             *                                   the urc plugin. For further
+             *                                   information, see 
+             *                                   {@link jQuery.urc}
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            init: function(sockets, opts) {
+                // merge options
+                if(opts instanceof Object) {
+                    $.extend(options, opts);
+                }
+                
+                // trigger update event on every onpostvalue
+                window.onpostvalue = function(path, value, session) {
+                    $(document).trigger("update.urc", [path, value, session]);
+                };
+                
+                // set the options
+                this.options(options);
+                
+                // if sockets is a string, convert it to a array
+                if(typeof sockets === "string") {
+                    sockets = [sockets];
+                }
+                
+                // set data to the options data
+                data = options.data;
+                
+                // set the update interval
+                org_myurc_webclient_init(sockets, options.updateInterval);
+                
+                // use first socket
+                this.use(sockets[0]);
+                
+                // set the  data and save the data in the allData object
+                allData[currentSession.sessionId] = data = options.data;
+                
+                
+                // set text/attributes with resource values
+                $("[data-urc-resource]").each(function() {
+                    var $this = $(this),
+                        value = $this.attr("data-urc-resource");
+                        
+                    $(this).urc("resource", value);
+                });
+                // set text/attributes with variable values
+                $("[data-urc-get]").each(function() {
+                    var $this = $(this),
+                        value = $this.attr("data-urc-get");
+                        
+                    $(this).urc("get", value);
+                });
+                // set variables with text/attributes values
+                $("[data-urc-set]").each(function() {
+                    var $this = $(this),
+                        value = $this.attr("data-urc-set");
+                        
+                    $(this).urc("set", value);
+                });
+                
+                // trigger init event
+                $(document).trigger("init.urc");
+
+                // fluent interface
+                return this;
+            },
+            /**
+             * Change the current socket and target to use
+             *
+             * @param {string} socketNamePart - A substring of the socket name
+             * @param {string} [targetIdPart] - A substring of the target name
+             *
+             * @example
+             * // use a socket (and target) with a substring of the socket name
+             * urc("use", "http://res.myurc.org/radio");
+             * @example
+             * // use a socket (and target) with a short substring of the 
+             * // socket name and a short substring of the target name
+             * urc("use", "myurc.org/radio", "iPad");
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            use: function(socketNamePart, targetIdPart) {
+                // loop over all available sessions
+                for(var id in org_myurc_webclient_sessions) {
+                    var session = org_myurc_webclient_sessions[id];
+                    // find the requested session and return it
+                    if(session.socketName.toLowerCase().indexOf(socketNamePart.toLowerCase()) != -1) {
+                        if(!targetIdPart || session.targetId.toLowerCase().indexOf(targetIdPart.toLowerCase()) != -1) {
+                            currentSession = session;
+                            // get the current data out of the allData-object
+                            // and set it to the current data
+                            data = allData[currentSession.sessionId];
+
+                            break;
+                        }
+                    }
+                }
+
+                // fluent interface
+                return this;
+            },
+            /**
+             * Get the attributes from the UCH
+             * 
+             * @param {string|object} paths        - A name of an attribute or an
+             *                                       array holding some attributes
+             * @param {boolean}       [fromServer] - Get the data from the server
+             *                                       no matter what the cache option
+             *                                       is right now
+             * 
+             * @example
+             * $.urc("get", "isOn");
+             * // returns true
+             * @example
+             * $.urc("get", ["isOn", "isMuted"]);
+             * // returns {isOn: true, isMuted: false}
+             * 
+             * @return {mixed|object} The value of the attribute or an object
+             *                        with the attribute names as keys and the
+             *                        corresponding values
+             */
+            get: function(paths, fromServer) {
+                var single = false,
+                    pathValues,
+                    i;
+                
+                // convert paths to array if it's a string
+                if(typeof paths === "string") {
+                    paths = [paths];
+                    single = true;
+                }
+                
+                // use caching if the user want's it
+                if(!fromServer && options.cache) {
+                    pathValues = [];
+                    for(i = paths.length; i--; ) {
+                        var path = paths[i],
+                            cachedValue = data[path];
+                        
+                        if(cachedValue != undefined || cachedValue != null) {
+                            // add to pathValues
+                            pathValues.push({
+                                path: path,
+                                value: cachedValue
+                            });
+                            // remove from paths
+                            paths.splice(i, 1);
+                        }
+                    }
+                    if(paths.length) {
+                        pathValues = pathValues.concat(org_myurc_webclient_getValues(null, paths, null, currentSession));
+                        for(i = pathValues.length; i--; ) {
+                            pathValues[i] = doMapping(pathValues[i].path, pathValues[i].value);
+                        }
+                    }
+                } else {
+                    pathValues = org_myurc_webclient_getValues(null, paths, null, currentSession);
+                    for(i = pathValues.length; i--; ) {
+                        pathValues[i] = doMapping(pathValues[i].path, pathValues[i].value);
+                    }
+                }
+                
+                
+                if(single) {
+                    log("GET: "+pathValues[0].path+" = ", pathValues[0].value);
+                    
+                    return pathValues[0].value;
+                } else {
+                    var vars = {};
+                    for(i = pathValues.length; i--; ) {
+                        var pathValue = pathValues[i];
+                            
+                        log("GET: "+pathValue.path+" = ", pathValue.value);
+                        
+                        vars[pathValue.path] = pathValue.value;
+                    }
+                    
+                    return vars;
+                }
+            },
+            /**
+             * Get the index of attribute in a set
+             * 
+             * @param {string} path - The path of the attribute
+             * 
+             * @example
+             * $.urc("index", "frequencies[MF]")
+             * 
+             * @return {int} The index of the attribute in the set
+             */
+            index: function(path) {
+                return org_myurc_webclient_getIndex(null, path, null, currentSession);
+            },
+            /**
+             * Set one or many attributes of the data object.
+             * (A shortcut function for the private set method) 
+             *
+             * @param {string|object} path    - A name of a attribute or an
+             *                                  object consisting of attributes
+             * @param {mixed}         [value] - You can update a attribute by
+             *                                  call this function with
+             *                                  a name and a value 
+             *
+             * @example
+             * $.urc("set", "isOn", true)
+             * @example
+             * $.urc("set", {isOn: true, volume: 75})
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            set: function(path, value) {
+                set(path, value, "set");
+            },
+            /**
+             * Remove one or many attributes of the data object.
+             * (A shortcut function for the private set method)
+             *
+             * @param {string} path    - A name of a attribute
+             * @param {mixed}  [value] - Null if you want delete exactly the
+             *                           given path, otherwise an object if you 
+             *                           want to delete some more attributes
+             *
+             * @example
+             * $.urc("remove", "isOn")
+             * @example
+             * $.urc("remove", "frequencies", {MF: true, LF: true})
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            remove: function(path, value) {
+                if(value === undefined) {
+                    value = null;
+                }
+                set(path, value, "remove");
+            },
+            /**
+             * Invoke one or many attributes of the data object.
+             * (A shortcut function for the private set method)
+             * 
+             * @param {string|object} path    - A name of a remote function or an
+             *                                  object consisting of remote 
+             *                                  functions
+             * @param {mixed}         [value] - Null if you want invoke exactly 
+             *                                  the given function, otherwise an 
+             *                                  object if you want to invoke some 
+             *                                  more functions 
+             *
+             * @example
+             * $.urc("invoke", "clearStations")
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            invoke: function(path, value) {
+                if(value === undefined) {
+                    value = null;
+                }
+                set(path, value, "invoke");
+            },
+            /**
+             * Add one or many attributes to the data object.
+             * (A shortcut function for the private set method)
+             * 
+             * @param {string|object} path  - A name of an attribute or an
+             *                                object consisting of attributes
+             * @param {mixed}         value - The values of one or more
+             *                                attributes
+             *
+             * @example
+             * $.urc("add", "frequencies", {MF: 2000000, LF: 100000})
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            add: function(path, value) {
+                if(value === undefined) {
+                    value = null;
+                }
+                set(path, value, "add");
+            },
+            /**
+             * Acknowledge that some notifications has been received.
+             * (A shortcut function for the private set method)
+             * 
+             * @param {string|object} path    - A name of an attribute or an
+             *                                  object consisting of attributes
+             * @param {mixed}         [value] - The values of one or more
+             *                                  attributes
+             *
+             * @example
+             * $.urc("ack", "frequencies", {MF: 2000000})
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            ack: function(path, value) {
+                if(value === undefined) {
+                    value = null;
+                }
+                set(path, value, "ack");
+            },
+            /**
+             * Get resources from the UCH
+             *
+             * @param {string|object|array} data - A string with a resource
+             *                                     name, an object with resource
+             *                                     informations or an array
+             *                                     consisting of resource names
+             *                                     and/or resource information
+             *                                     objects (a mixed array is
+             *                                     also possible)
+             *
+             * @example
+             * $.urc("resource", "isOn");
+             * // returns {value: "On", type: "text"}
+             * @example
+             * $.urc("resource", {eltRef: "isOn"});
+             * // returns {value: "On", type: "text"} 
+             * @example
+             * $.urc("resource", ["isOn", "radio"]);
+             * // returns [{value: "On", type: "text"}, {value: "Radio", type: "text"}]
+             * @example
+             * $.urc("resource", [{eltRef: "isOn"}, "radio"]); 
+             * // returns [{value: "On", type: "text"}, {value: "Radio", type: "text"}]
+             * @example
+             * $.urc("resource", [{eltRef: "isOn"}, {eltRef: "radio"}]);
+             * // returns [{value: "On", type: "text"}, {value: "Radio", type: "text"}]
+             * 
+             * @return {object|array} An object with value and text attributes 
+             *                        or an array with objects.
+             */
+            resource: function(data) {
+                var values = [],
+                    single = false,
+                    def = {
+                        role: "label",
+                        type: "Text",
+                        forLang: options.forLang
+                    };
+                
+                if(!$.isArray(data)) {
+                    single = true;
+                    data = [data]
+                }
+                for(var i = data.length; i--; ) {
+                    var d = data[i];
+                    if(typeof d === "string") {
+                        d = {eltRef: d};
+                    }
+                    values.push(d.eltRef);
+                    d = $.extend({}, def, d);
+                    d.eltRef = currentSession.socketName + "#" + d.eltRef;
+                    d.role = "http://openurc.org/ns/res#" + d.role;
+                    data[i] = d;
+                }
+                var result = org_myurc_webclient_getResources(data),
+                    hash = {};
+                
+                for(var j = result.length; j--; ) {
+                    var r = result[j];
+                    hash[values[j]] = {
+                        value: (r.string !== undefined) ? r.string : r.at,
+                        type: (r.string !== undefined) ? "text" : "url"
+                    };
+                }
+                
+                if(single) {
+                    return hash[values[0]];
+                } else {
+                    return hash;
+                }
+            },
+            /**
+             * Get or set options of the URC plugin
+             *
+             * @param {string|object|array} name    - Get or set one or many
+             *                                        attributes of the options
+             *                                        object. For further
+             *                                        information look at the
+             *                                        examples above.
+             * @param {mixed}               [value] - You can set a option by
+             *                                        call this function with
+             *                                        a name and a value.                                     
+             *
+             * @example
+             * $.urc("options");
+             * // returns the options object with all options
+             * @example
+             * $.urc("options", "updateInterval");
+             * // returns the value of the attribute updateInterval, e.g. 1000
+             * @example
+             * $.urc("options", ["updateInterval", "autogenerate"]);
+             * // returns the value of some attributes in an object like so:
+             * // {
+             * //   updateInterval: 1000,
+             * //   autogenerate: false
+             * // }
+             * @example
+             * // set a option directly (with key and value)
+             * $.urc("options", "updateInterval", 500);
+             * @example
+             * // set many options at the same time
+             * $.urc("options", {updateInterval: 500, autogenerate: true});
+             * 
+             * @return {api} The API of the URC plugin
+             */
+            options: function(name, value) {
+                if(name === undefined) {
+                    // getter
+                    return options;
+                } else if(typeof name === "string") {
+                    if(value === undefined) {
+                        // getter
+                        return options[name];
+                    } else {
+                        // setter
+                        switch(name) {
+                            case("updateInterval"):
+                                if(value !== options.updateInterval) {
+                                    // set update interval
+                                    org_myurc_webclient_setUpdateInterval(value);
+                                }
+                                break;
+                            case("autogenerate"):
+                                // set autogenerate flag
+                                org_myurc_webclient_autogenerate = options.autogenerate;
+                                break;
+                            case("onUpdate"):
+                                if(value instanceof Function) {
+                                    $(document).on("update.urc", $.proxy(function(event, path, value, session) {
+                                        path = path.split("#")[1].substr(1);
+                                        
+                                        // map the value
+                                        var mappingResult = doMapping(path, value);
+                                        path = mappingResult.path;
+                                        value = mappingResult.value;
+                                        
+                                        // check bundles
+                                        var bundles = options.bundles[path];
+                                        if($.isArray(bundles)) {
+                                            if(!$.isArray(bundles[0])) {
+                                                bundles = [bundles];
+                                            }
+
+                                            var check = function(v, d, bundle, obj, oldV, oldD, oldObj, vName) {
+                                                if(typeof v === "object") {
+                                                    if(typeof d !== "object") {
+                                                        return false;
+                                                    }
+                                                    for(var name in v) {
+                                                        if(d[name] === undefined) {
+                                                            return false;
+                                                        } else {
+                                                            obj[name] = {};
+                                                            return check(v[name], d[name], bundle, obj[name], v, d, obj, name);
+                                                        }
+                                                    }
+                                                } else {        
+                                                    for(var k = bundle.length; k--; ) {
+                                                        var attr = bundle[k];
+                                                        if(oldD[attr] === undefined) {
+                                                            return false;
+                                                        } else {
+                                                            oldObj[attr] = oldD[attr];
+                                                        }
+                                                    }
+                                                    return true;
+                                                }
+                                            }
+
+                                            for(var j = bundles.length; j--; ) {
+                                                var bundleSet = bundles[j],
+                                                    newValue = {};
+
+                                                if(check(value, data[path], bundleSet, newValue)) {
+                                                    log("UPDATE: "+path+" = ",newValue);
+                                                    
+                                                    options.onUpdate.call(this, event, path, newValue, session);
+                                                    break;
+                                                }
+                                            }
+
+                                        } else {
+                                            log("UPDATE: "+path+" = ",value);
+                                            
+                                            options.onUpdate.call(this, event, path, value, session);
+                                        }
+
+                                    }, this));
+                                } else {
+                                    $(document).off("update.urc");
+                                }
+                                break;
+                            case("onInit"):
+                                if(value instanceof Function) {
+                                    $(document).on("init.urc", $.proxy(value, this));
+                                } else {
+                                    $(document).off("init.urc");
+                                }
+                                break;
+                            case("mapping"):
+                                // map the variables to get the correct types
+                                var _mapping = {};
+                                for(var val in value) {
+                                    var map = value[val];
+                                    if(typeof map === "string") {
+                                        // it is a default mapper
+                                        map = mapping[map];
+                                    }
+                                    _mapping[val] = map;
+                                }
+                                value = _mapping;
+                                break;
+                        }
+                    } 
+                    
+                    // set new value
+                    options[name] = value;
+                    
+                } else if($.isArray(name)) {
+                    var elements = {};
+                    for(var i = name.length; i--; ) {
+                        elements[name[i]] = options[name[i]];
+                    }
+                    return elements;
+                } else {
+                    for(var o in options) {
+                        this.options(o, options[o]);
+                    }
+                }
+                
+                // fluent interface
+                return this;
+            },
+            /**
+             * Get the current data
+             * 
+             * @example
+             * $.urc("data")
+             * 
+             * @return {object} Returns the current data
+             */
+            data: function() {
+                return data;
+            }
+        };
+    
+    /**
+     * The namespace holds all URC prototype functions of the jQuery object
+     * 
+     * @private
+     * @namespace
+     */
+    var fn = {
+        /**
+         * Set the value of a resource as the text of a jQuery object
+         * (See {@link jQuery})
+         * 
+         * @param {string}   path       - The name of the resource
+         * @param {Function} [callback] - A callback function, so you can 
+         *                                manipulate the value of the received
+         *                                resource
+         *
+         * 
+         * @example
+         * // Set the text only by providing a resource name
+         * $(".volume-display").urc("resource", "volumeLabel");
+         * @example
+         * // Use a callback function to manipulate the value 
+         * $(".volume-display").urc("resource", "volumeLabel", function(value) {
+         *     return value+"%";
+         * });
+         * // the text of the .volume-display elements is now e.g. "Volume of the radio"
+         */
+        resource: function(path, callback) {
+            var value = api.resource(path).value,
+                attr = this.attr("data-urc-attr");
+                
+            if(callback) {
+                value = callback(value);
+            }
+            
+            if(attr) {
+                // set attributes
+                attr = attr.split(",");
+                for(var i = attr.length; i--; ) {
+                    this.attr(attr[i], value);
+                }
+            } else {
+                // set text
+                this.is("input, textarea, select") ? this.val(value) : this.text(value);
+            }
+        },
+        /**
+         * Set the value of a attribute as the text of a jQuery object
+         * (See {@link jQuery})
+         * 
+         * @param {string}   path       - The path of the attribute
+         * @param {Function} [callback] - A callback function, so you can 
+         *                                manipulate the value of the received
+         *                                attribute
+         *
+         * 
+         * @example
+         * // Set the text only by providing a attribute name
+         * $(".volume").urc("get", "volume");
+         * @example
+         * // Use a callback function to manipulate the value 
+         * $(".volume").urc("get", "volume", function(value) {
+         *     return value+"%";
+         * });
+         * // the text of the .volume elements is now e.g. "75%"
+         */
+        get: function(path, callback) {
+            var prop = api.get(path),
+                attr = this.attr("data-urc-attr");
+            
+            if(callback) {
+                prop = callback(prop);
+            }
+            
+            if(attr) {
+                // set attributes
+                attr = attr.split(",");
+                for(var i = attr.length; i--; ) {
+                    this.attr($.trim(attr[i]), prop);
+                }
+            } else {
+                // set text
+                this.is("input, textarea, select") ? this.val(prop) : this.text(prop);
+            }
+        },
+        /**
+         * Set the text of a jQuery object as the value of an attribute
+         * (See {@link jQuery})
+         * 
+         * @param {string}   path       - The path of the attribute
+         * @param {Function} [callback] - A callback function, so you can 
+         *                                manipulate the value text
+         *
+         * 
+         * @example
+         * // Set the value of an attribute only by providing the name 
+         * // of the attribute
+         * $(".volume").urc("set", "volume");
+         * // the attribute volume is now set to "75%"
+         * @example
+         * // Use a callback function to manipulate the value 
+         * $(".volume").urc("set", "volume", function(value) {
+         *     return value.slice(start, -1);
+         * });
+         * // the attribute volume is now set to "75"
+         */
+        set: function(path, callback) {
+            var attr = this.attr("data-urc-attr"),
+                prop;
+            
+            if(attr) {
+                attr = $.trim(attr.split(",")[0]);
+                prop = this.attr(attr);
+            } else {
+                prop = this.is("input, textarea, select") ? this.val() : this.text();
+            }
+            
+            if(callback) {
+                prop = callback(prop);
+            }
+            
+            api.set(path, prop);
+        }
+    };
+    
+}(jQuery));

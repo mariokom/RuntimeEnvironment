@@ -1,0 +1,10 @@
+<node ro="rw" name="Undefiniert" id="1">
+<node ro="ro" name="Wiedergabeliste" id="2">
+<leaf ro="rw" name="12-31 21-57-04_ZDF HD (deu) Willkommen 2015.ts" id="4" duration="10338" uri="file:///I:/12-31%2021-57-04_ZDF%20HD%20%28deu%29%20Willkommen%202015.ts"/>
+<leaf ro="rw" name="ZDF" id="6" duration="-1" uri="dvb-t://frequency=570000000" current="current"/>
+<leaf ro="rw" name="3sat" id="7" duration="-1" uri="dvb-t://frequency=570000000"/>
+<leaf ro="rw" name="ZDFinfo" id="8" duration="-1" uri="dvb-t://frequency=570000000"/>
+<leaf ro="rw" name="neo/KiKA" id="9" duration="-1" uri="dvb-t://frequency=570000000"/>
+</node>
+<node ro="ro" name="Medienbibliothek" id="3"/>
+</node>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: Lukas
+Class-Path: lib/jersey-client-1.9.1.jar lib/jersey-core-1.9.1.jar lib/
+ uchutil-1.0.jar lib/uchinterfaces-1.0.jar
+Build-Jdk: 1.8.0_66
+Created-By: Maven Integration for Eclipse
+Main-Class: com.your.domain.Program
+

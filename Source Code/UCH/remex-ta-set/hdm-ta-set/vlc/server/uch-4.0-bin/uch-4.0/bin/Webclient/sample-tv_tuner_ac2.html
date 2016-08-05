@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+
+	<head>
+		<title>TV Tuner Sample Controller</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" href="default.css" type="text/css" >
+	
+	   <script type="text/javascript" src="org_myurc_webclient.js">
+			// Defines webclient functions.
+		</script>
+			
+		<script type="text/javascript" src="org_myurc_socket.js">
+			// Defines functions for socket objects.
+		</script>
+						
+		<script type="text/javascript" src="org_myurc_schema.js">
+			// Defines functions for schema objects.
+		</script>
+						
+      <script type="text/javascript" src="org_myurc_urchttp.js">
+	      // Defines primitive URC-HTTP functions.
+      </script>
+
+      <script type="text/javascript" src="org_myurc_urchttp_test.js">
+	      // Defines test cases, but only if file is read from local file system (URL scheme == "file:").  
+      </script>
+
+		<script type="text/javascript" src="org_myurc_lib.js">
+			// Defines utility functions.
+		</script>
+
+		<script type="text/javascript">	
+		   /**
+		    Sample HTML template that is custom-tailored for the pair of TV + AC sockets.
+		    Variant: Use session objects to call webclient functions rather than socket names.  This would be required for having
+		      multiple sessions open with the same socket name.
+		    */
+		    
+		   var tvSession;
+		   var acSession;
+
+         function init() {
+            // First open sockets manually and remember session objects.
+            tvSession = org_myurc_webclient_openSession("http://res.openurc.org/tv", null, null);
+               // targetId and authorizationCode not known.
+            acSession = org_myurc_webclient_openSession("http://res.openurc.org/ac", null, null);
+               // targetId and authorizationCode not known.
+         
+            // Then call the init function of the webclient.
+            try { 
+               org_myurc_webclient_init([], 2000);    // No additional sockets.
+            }
+            catch (ex) { alert(typeof ex === "string" ? ex : ex.message); }
+         }
+         
+         function finalize() {
+            org_myurc_webclient_finalize();
+               // This will close all open sessions.
+         }
+
+         function onpostvalue(path, thisValue, session) {
+            if (session === tvSession) {
+               switch (path) {
+                  // No case for notifications.
+                  // Handled automatically via nodes with id="http://res.openurc.org/tv#/notifySubscription"
+                  // and id="http://res.openurc.org/tv#/notifyPower".
+                     
+                  case "http://res.openurc.org/tv#/powerMode":
+                     var thisNode = document.getElementById("powerMode");
+		               for (var i=0; i<thisNode.options.length; i++) {
+			               var optionNode = thisNode.options[i];
+			               if (optionNode.getAttribute("value") == thisValue) {
+				               thisNode.selectedIndex = optionNode.index;
+				               break;      // No need to look further.
+			               }
+		               }
+                     break;
+                     
+                  case "http://res.openurc.org/tv#/activeChannel":
+                     var thisNode = document.getElementById("activeChannel");
+		               for (var i=0; i<thisNode.options.length; i++) {
+			               var optionNode = thisNode.options[i];
+			               if (optionNode.getAttribute("value") == thisValue) {
+				               thisNode.selectedIndex = optionNode.index;
+				               break;      // No need to look further.
+			               }
+		               }
+                     break;
+                     
+                  case "http://res.openurc.org/tv#/volume":
+                     var thisNode = document.getElementById("volume");
+		               thisNode.value = thisValue;
+                     break;
+                     
+                  case "http://res.openurc.org/tv#/mute":
+                     var thisNode = document.getElementById("mute");
+      	            thisNode.checked = (thisValue == "true" || thisValue == "True" || thisValue == "TRUE");      // Value comes in as string.
+                     break;
+                     
+                  default:
+                     // Ignore any other paths.
+                     break;     
+               }
+            }
+            else if (session === acSession) {
+               switch (path) {
+                  case "http://res.openurc.org/ac#/remoteEnabled":
+                     var thisNode = document.getElementById("remoteEnabled");
+      	            thisNode.checked = (thisValue == "true" || thisValue == "True" || thisValue == "TRUE");      // Value comes in as string.
+                     break;
+                     
+                  case "http://res.openurc.org/ac#/currentTemp":
+                     var thisNode = document.getElementById("currentTemp");
+		               thisNode.value = thisValue;
+                     break;
+                     
+                  case "http://res.openurc.org/ac#/targetTemp":
+                     var thisNode = document.getElementById("targetTemp");
+		               thisNode.value = thisValue;
+                     break;
+                
+                  default:
+                     // Ignore any other paths.
+                     break;     
+               }
+            }
+            else
+               throw new Error("Wrong session object");
+               
+         }
+         
+		</script>
+	</head>
+	
+	<body onload="init()" onunload="finalize()">
+	
+		<h1>HTML Template for TV</h1>
+		
+		<!-- 
+		In the 'onchange' handlers, use only path of socket element (no socket name prepended).  Use null for targetId,
+		and the pertaining session object as arguments.
+		-->
+
+ 		<div id="http://res.openurc.org/tv#/notifySubscription" class="notifyinactive">
+		   <p>Your TV subscription has expired.  Please renew it as soon as possible.</p>
+         <p><button onclick="org_myurc_webclient_acknowledge('/notifySubscription', null, tvSession)" 
+            onkeypress="org_myurc_webclient_acknowledge('/notifySubscription', null, tvSession)">OK</button>
+         </p>
+		</div>
+
+     <P>Power Mode: 
+         <SELECT id="powerMode" onchange="org_myurc_webclient_setValue('/powerMode', this.value, null, tvSession);">
+            <OPTION value=ON>ON</OPTION>
+            <OPTION value=OFF>OFF</OPTION>
+            <OPTION value=STANDBY>STANDBY</OPTION>
+         </SELECT></P>
+      <P>Channel: 
+         <SELECT id="activeChannel" onchange="org_myurc_webclient_setValue('/activeChannel', this.value, null, tvSession);">
+            <OPTION value=ANDALUCIA_TV>ANDALUCÍA_TV</OPTION>
+            <OPTION value=ARTE>ARTE</OPTION>
+            <OPTION value=BBC_World>BBC_World</OPTION>
+            <OPTION value=BFM_TV selected>BFM_TV</OPTION>
+            <OPTION value=BLUCOM_DEMOKANAL>BLUCOM_DEMOKANAL</OPTION>
+         </SELECT></P>
+      <P>Previous channel: <BUTTON 
+         onclick="org_myurc_webclient_invoke('/selectPreviousChannel', null, null, tvSession);"
+         onkeypress="org_myurc_webclient_invoke('/selectPreviousChannel', null, null, tvSession);">Previous Channel</BUTTON></P>
+      <P>Volume Control: <INPUT id="volume"
+         onchange="org_myurc_webclient_setValue('/volume', this.value, null, tvSession);"></P>
+      <P>Mute: <INPUT id="mute" type=checkbox 
+         onclick="org_myurc_webclient_setValue('/mute', this.checked ? 'true' : 'false', null, tvSession);"
+         onkeypress="org_myurc_webclient_setValue('/mute', this.checked ? 'true' : 'false', null, tvSession);"></P>
+   
+  		<div id="http://res.openurc.org/tv#/notifyPower" class="notifyinactive">
+		   <p>Your system runs out of power.  Please plug into a power outlet as soon as possible.</p>
+         <p><button onclick="org_myurc_webclient_acknowledge('/notifyPower', null, tvSession)" 
+            onkeypress="org_myurc_webclient_acknowledge('/notifyPower', null, tvSession)">OK</button>
+         </p>
+		</div>
+ 
+      <hr >
+   
+      <P>AC remote enabled: <INPUT id="remoteEnabled" type=checkbox
+         onclick="org_myurc_webclient_setValue('/remoteEnabled', this.checked ? 'true' : 'false', null, acSession);"
+         onkeypress="org_myurc_webclient_setValue('/remoteEnabled', this.checked ? 'true' : 'false', null, acSession);"></P>
+      <P>Current temperature: <INPUT id="currentTemp"
+         onchange="org_myurc_webclient_setValue('/currentTemp', this.value, null, acSession);"></P>
+      <P>Target temperature: <INPUT id="targetTemp"
+         onchange="org_myurc_webclient_setValue('/targetTemp', this.value, null, acSession);"></P>
+         
+      <hr >
+   
+      <div id="log_" class="logshown"></div>
+
+				
+	</body>
+	
+</html>

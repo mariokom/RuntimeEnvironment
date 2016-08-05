@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>UCH Configuration</title>
+
+<script language="javascript" type="text/javascript" >
+
+	var ipAdd = "192.168.2.50"; // Server IP.
+	var uri = "";	
+	
+	if ( location.protocol != "file:" ) {
+		uri = location.protocol + "//" + location.host + "/UCH/config";
+	} else {
+		uri = "http://" + ipAdd + "/UCH/config";
+	}
+	
+	var clearUipmUri = "";
+	if ( location.protocol != "file:" ) {
+		clearUipmUri = location.protocol + "//" + location.host + "/UCH/URC-HTTP/config";
+	} else {
+		clearUipmUri = "http://" + ipAdd + "/UCH/URC-HTTP/config";
+	}
+	
+	
+	function clearCache() {
+		
+		//sendAjaxRequest(uri, null, "action=clearcache", "POST");
+		
+		setText("clearCacheTextBox", "Requesting...");
+		var ajaxRequestObj = sendAjaxRequest(uri, "action=clearcache", null, "GET");
+		
+		if ( ajaxRequestObj && (ajaxRequestObj.status == "200") ) {
+		
+			ajaxRequestObj = sendAjaxRequest(clearUipmUri, "action=clearcache", null, "GET");
+			
+			if ( ajaxRequestObj && (ajaxRequestObj.status == "200") ) {
+				setText("clearCacheTextBox", "Successful");
+			} else {
+				setText("clearCacheTextBox", "Failed");
+			}
+			
+		} else {
+			setText("clearCacheTextBox", "Failed");
+		}
+	};
+	
+	
+	function clearUipmClientCache() {
+	
+		//sendAjaxRequest(uri, null, "action=clearcache&type=http://openurc.org/restypes#uipm-client", "POST");
+		
+		setText("clearUipmClientCacheTextBox", "Requesting...");
+		var ajaxRequestObj = sendAjaxRequest(uri, "action=clearcache&type=http://openurc.org/restypes%23uipm-client", null, "GET");
+		
+		if ( ajaxRequestObj && (ajaxRequestObj.status == "200") ) {
+		
+			ajaxRequestObj = sendAjaxRequest(clearUipmUri, "action=clearcache", null, "GET");
+			
+			if ( ajaxRequestObj && (ajaxRequestObj.status == "200") ) {
+				setText("clearUipmClientCacheTextBox", "Successful");
+			} else {
+				setText("clearUipmClientCacheTextBox", "Failed");
+			}
+			
+		} else {
+			setText("clearUipmClientCacheTextBox", "Failed");
+		}
+	};
+	
+	
+	function clearResourceSheetCache() {
+	
+		//sendAjaxRequest(uri, null, "action=clearcache&type=http://openurc.org/restypes#ressheet", "POST");
+		
+		setText("clearResourceSheetCacheTextBox", "Requesting...");
+		var ajaxRequestObj = sendAjaxRequest(uri, "action=clearcache&type=http://openurc.org/restypes%23ressheet", null, "GET");
+		
+		if ( ajaxRequestObj && (ajaxRequestObj.status == "200") )
+			setText("clearResourceSheetCacheTextBox", "Successful");
+		else 
+			setText("clearResourceSheetCacheTextBox", "Failed");
+	};
+	
+	
+	function setText(elementId, value) {
+	
+		if ( !elementId || !value )
+			return;
+		
+		var element = document.getElementById(elementId);
+		
+		if ( !element )
+			return;
+		
+		element.value =value;
+	};
+	
+	// Send ajax request and return responseText.
+	function sendAjaxRequest(requestUrl, queryString, postData, method) {
+		
+		if ( (queryString != null) && (queryString != "") ) 
+			requestUrl = requestUrl+"?"+queryString;
+		
+		//alert(" RequestUrl:"+requestUrl+"\n PostData:"+postData+"\n Method:"+method);	
+		
+		try{
+			
+			var request = null ;
+			
+			try {
+				request = new XMLHttpRequest();		
+			} catch(e) {
+			
+				try {
+						request = new ActiveXObject("Msxml2.XMLHTTP");
+				} catch(e) {
+				
+					try {
+						request = new ActiveXObject("Microsoft.XMLHTTP");
+					} catch(e) {
+						return null;
+					}
+				}
+			}
+			
+			if ( request == null ) {
+				return null;
+			}
+			
+			request.open(method, requestUrl, false);
+			
+			request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+			
+			request.send(postData);
+			
+			return request;
+			/*
+			var response = request.responseText;	
+			return response;
+			*/
+			
+		} catch(e) { 
+			window.status = e;
+		}
+					
+	};
+</script>
+</head>
+
+<body>
+
+	<center><h1>UCH Configuration</h1></center>
+	<br /><br />
+	<center>
+		<table>
+			<tr>
+				<td>
+					<input type="button" name="Press" value="Clear Cache" onclick="clearCache()" style="width:200px; height:27px;"/>
+				</td>
+				<td id="clearCacheTd" name="clearCacheTd" >
+					&nbsp;&nbsp;&nbsp;<input type="text" id="clearCacheTextBox" name="clearCacheTextBox" style="border:none;font-weight:bold"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="Press" value="Clear UIPM-Client Cache" onclick="clearUipmClientCache()" style="width:200px; height:27px;"/>
+				</td>
+				<td id="clearUipmClientCacheTd" name="clearUipmClientCacheTd" >
+					&nbsp;&nbsp;&nbsp;<input type="text" id="clearUipmClientCacheTextBox" name="clearUipmClientCacheTextBox" style="border:none;font-weight:bold"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="Press" value="Clear Resource Sheet Cache" onclick="clearResourceSheetCache()" style="width:200px; height:27px;"/>
+				</td>
+				<td id="clearResourceSheetCacheTd" name="clearResourceSheetCacheTd" >
+					&nbsp;&nbsp;&nbsp;<input type="text" id="clearResourceSheetCacheTextBox" name="clearResourceSheetCacheTextBox" style="border:none;font-weight:bold"/>
+				</td>
+			</tr>
+		</table>	
+	</center>
+	
+</body>
+</html>

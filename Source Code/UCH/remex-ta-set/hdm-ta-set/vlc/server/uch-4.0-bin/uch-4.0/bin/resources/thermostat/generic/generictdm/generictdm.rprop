@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<props>
+	
+	<prop>
+		<name>http://openurc.org/ns/res#type</name>
+		<value>http://openurc.org/restypes#tdm</value>
+	</prop>
+	
+	<prop>
+		<name>http://openurc.org/ns/res#devicePlatform</name>
+		<value>generic</value>
+	</prop>
+	
+	<prop>
+		<name>http://openurc.org/ns/res#runtimePlatform</name>
+		<value>java</value>
+	</prop>
+	
+	<prop>
+		<name>http://purl.org/dc/terms/conformsTo</name>
+		<value>http://openurc.org/TR/uch1.0-20121022/</value>
+	</prop>
+	
+	<prop>
+		<name>http://openurc.org/ns/res#name</name>
+		<value>http://res.openurc.org/generic/tdm/java</value>
+	</prop>
+	
+	<prop>
+		<name>http://openurc.org/ns/res#dynamicLibClass</name>
+		<value>edu.wisc.trace.uch.tdm.generic.GenericTDM</value>
+	</prop>
+	<prop>
+		<name>http://purl.org/dc/elements/1.1/title</name>
+		<value>Generic-TDM</value>
+	</prop>	
+	
+	<prop>
+		<name>http://openurc.org/ns/res#mimeType</name>
+		<value>application/java-archive</value>
+	</prop>
+	
+	<prop>
+		<name>http://openurc.org/ns/res#resourceUri</name>
+		<value>generictdm.jar</value>
+	</prop>
+	
+</props>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Philips Hue</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!-- webclient functions -->
+<script src="../../Webclient/org_myurc_webclient.js" type="text/javascript"></script>
+<!-- functions for socket objects -->
+<script src="../../Webclient/org_myurc_socket.js" type="text/javascript"></script>
+<!-- primitive URC-HTTP functions -->
+<!-- URC lib -->
+<script src="../../Webclient/org_myurc_lib.js" type="text/javascript"></script>
+<script src="../../Webclient/org_myurc_urchttp.js" type="text/javascript"></script>
+<!-- jQuery (you can also download it and use it locally) -->
+<!-- Use it Online if possible -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/libs/jquery.min.js"><\/script>');</script>
+<!-- The jQuery URC Plugin -->
+<!--<script src="js/jquery.urc.js" type="text/javascript"></script>-->
+
+<script src="../js/hueRandom.js" type="text/javascript"></script>
+<script src="../js/libs/leap-0.6.4.js" type="text/javascript"></script>
+
+    
+<link href="../css/random.css" type="text/css" rel="stylesheet">
+
+<script>
+$(document).ready(function () {
+    var hue = $('#wrapper').hueUCH({
+        hueWrapperID    :   'hue'
+    });
+    
+    var controller = Leap.loop({enableGestures: true}, function(frame){
+        var currentFrame = frame,
+            previousFrame = controller.frame(1),
+            tenFramesBack = controller.frame(10),
+            currPos = '',
+            oldPos = '';
+        
+        if (frame.valid && frame.hands.length > 0) {
+            for (var i = 0; i < frame.hands.length; i++) {
+                var hand = frame.hands[i];
+                if (hand.type === 'right') {
+                    if (hand.indexFinger.extended === true && hand.pinky.extended === false && hand.middleFinger.extended === false && hand.ringFinger.extended === false) {
+                        //var pos1 = tenFramesBack.hand[0].direction,
+                        //console.log(hand.indexFinger.distal.finger.direction);
+                        currPos = hand.indexFinger.distal.finger.direction;
+                    } else {
+                        currPos = '';
+                    }               
+                }
+            }        
+        }
+        
+        if (tenFramesBack.valid && tenFramesBack.hands.length > 0) {
+            for (var i = 0; i < tenFramesBack.hands.length; i++) {
+                var hand = tenFramesBack.hands[i];
+                if (hand.type === 'right') {
+                    if (hand.indexFinger.extended === true && hand.pinky.extended === false && hand.middleFinger.extended === false && hand.ringFinger.extended === false) {
+                        //var pos1 = tenFramesBack.hand[0].direction,
+                        oldPos = hand.indexFinger.distal.finger.direction;
+                    }  
+                    else {
+                        oldPos = '';
+                    }  
+                }
+            }        
+        }
+        
+        if (currPos.length > 0 && oldPos.length > 0) {
+            var pos1 = round(currPos[1], 1),
+                pos2 = round(oldPos[1], 1);
+            //console.log(pos1);
+            if (pos1 > pos2 && pos1 - pos2 > 0.1) {
+                console.log('hoch');
+                hue.hueUCH('random');
+            } else if (pos2 > pos1 && pos2 - pos1 > 0.1) {
+                console.log('runter');
+            }
+        }
+        
+        //Rundet eine Zahl auf eine bestimmte Nachkommastelle
+        function round(number, decimals){
+            return Math.round(number * Math.pow(10, decimals)) / Math.pow(10, decimals);
+        }
+        /*
+        function calcDifferenz() {
+            if (tenFramesBack.hands.length > 0) {
+            var pos1 = [],
+                pos2 = [];
+                
+                pos1 = tenFramesBack.hand[0].direction;
+                pos2 = frame.hand[0].direction;
+            console.log(pos1[1] - pos2[1]);
+            }
+        }*/
+        
+    });    
+
+});
+</script>
+</head>
+
+<body>
+<div id="top">
+    <h1><a href="#">randomFun</a></h1>
+</div>
+<div id="wrapper">
+    <div class="col" id="hue">
+    </div>
+</div>
+</body>
+</html>

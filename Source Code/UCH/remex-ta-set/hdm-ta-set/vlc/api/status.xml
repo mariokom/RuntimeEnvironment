@@ -1,0 +1,132 @@
+<root>
+<fullscreen>false</fullscreen>
+<aspectratio>default</aspectratio>
+<audiodelay>0</audiodelay>
+<apiversion>3</apiversion>
+<currentplid>9</currentplid>
+<time>53</time>
+<volume>271</volume>
+<length>10338</length>
+<random>false</random>
+<audiofilters>
+<filter_0>equalizer</filter_0>
+</audiofilters>
+<rate>1</rate>
+<videoeffects>...</videoeffects>
+<state>playing</state>
+<loop>true</loop>
+<version>2.2.1 Terry Pratchett (Weatherwax)</version>
+<position>0.0052194893360138</position>
+<repeat>false</repeat>
+<subtitledelay>0</subtitledelay>
+<equalizer>
+<presets>
+<preset id="8">Large Hall</preset>
+<preset id="4">Full bass</preset>
+<preset id="17">Techno</preset>
+<preset id="10">Party</preset>
+<preset id="9">Live</preset>
+<preset id="15">Soft</preset>
+<preset id="14">Ska</preset>
+<preset id="16">Soft rock</preset>
+<preset id="11">Pop</preset>
+<preset id="13">Rock</preset>
+<preset id="5">Full bass and treble</preset>
+<preset id="7">Headphones</preset>
+<preset id="12">Reggae</preset>
+<preset id="2">Club</preset>
+<preset id="6">Full treble</preset>
+<preset id="3">Dance</preset>
+<preset id="1">Classical</preset>
+<preset id="0">Flat</preset>
+</presets>
+<bands>
+<band id="0">4.8</band>
+<band id="5">1.6</band>
+<band id="6">4.8</band>
+<band id="9">14.4</band>
+<band id="1">11.2</band>
+<band id="3">-3.2</band>
+<band id="8">12.8</band>
+<band id="2">5.6</band>
+<band id="7">9.6</band>
+<band id="4">-2.4</band>
+</bands>
+<preamp>4</preamp>
+</equalizer>
+<information>
+<category name="meta">
+<info name="filename">12-31 21-57-04_ZDF HD (deu) Willkommen 2015.ts</info>
+</category>
+<category name="Stream 0">
+<info name="Codec">H264 - MPEG-4 AVC (part 10) (h264)</info>
+<info name="Decodiertes Format">Planar 4:2:0 YUV</info>
+<info name="Bildschirmauflösung">1280x720</info>
+<info name="Typ">Video</info>
+<info name="Originale ID">6110</info>
+<info name="Auflösung">1280x738</info>
+</category>
+<category name="Stream 1">
+<info name="Bitrate">256 kB/s</info>
+<info name="Codec">MPEG Audio layer 1/2 (mpga)</info>
+<info name="Abtastrate">48000 Hz</info>
+<info name="Sprache">Deutsch</info>
+<info name="Typ">Audio</info>
+<info name="Originale ID">6120</info>
+<info name="Kanäle">Stereo</info>
+</category>
+<category name="Stream 6">
+<info name="Codec">DVB Subtitles (dvbs)</info>
+<info name="Sprache">Deutsch</info>
+<info name="Typ">Untertitel</info>
+<info name="Originale ID">6131</info>
+<info name="Beschreibung">DVD-Untertitel: für Gehörgeschädigte</info>
+</category>
+<category name="Stream 3">
+<info name="Sprache">Deutsch</info>
+<info name="Typ">Audio</info>
+<info name="Originale ID">6122</info>
+<info name="Codec">A52 Audio (aka AC3) (a52 )</info>
+</category>
+<category name="Stream 5">
+<info name="Codec">Teletext (telx)</info>
+<info name="Sprache">Deutsch</info>
+<info name="Typ">Untertitel</info>
+<info name="Originale ID">6130</info>
+<info name="Beschreibung">Teletext</info>
+</category>
+<category name="Stream 4">
+<info name="Sprache">mul</info>
+<info name="Typ">Audio</info>
+<info name="Originale ID">6123</info>
+<info name="Codec">MPEG Audio layer 1/2 (mpga)</info>
+</category>
+<category name="Stream 2">
+<info name="Sprache">mis</info>
+<info name="Typ">Audio</info>
+<info name="Originale ID">6121</info>
+<info name="Codec">MPEG Audio layer 1/2 (mpga)</info>
+</category>
+</information>
+<stats>
+<lostabuffers>0</lostabuffers>
+<readpackets>109450</readpackets>
+<lostpictures>555</lostpictures>
+<demuxreadbytes>96843217</demuxreadbytes>
+<demuxbitrate>1.7986382246017</demuxbitrate>
+<playedabuffers>2249</playedabuffers>
+<demuxcorrupted>0</demuxcorrupted>
+<sendbitrate>0</sendbitrate>
+<sentbytes>0</sentbytes>
+<displayedpictures>1257</displayedpictures>
+<demuxreadpackets>0</demuxreadpackets>
+<sentpackets>0</sentpackets>
+<inputbitrate>1.9304975271225</inputbitrate>
+<demuxdiscontinuity>0</demuxdiscontinuity>
+<averagedemuxbitrate>0</averagedemuxbitrate>
+<decodedvideo>1606</decodedvideo>
+<averageinputbitrate>0</averageinputbitrate>
+<readbytes>101504956</readbytes>
+<decodedaudio>2249</decodedaudio>
+</stats>
+</root>

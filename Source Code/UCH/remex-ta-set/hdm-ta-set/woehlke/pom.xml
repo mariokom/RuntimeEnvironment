@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>remex.urc</groupId>
+    <artifactId>hdm-ta-set</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>woehlke</artifactId>
+    <version>1.1</version>
+  <packaging>pom</packaging>
+  <description>		</description>
+
+<dependencies>
+
+<dependency>
+  <groupId>org.apache.httpcomponents</groupId>
+  <artifactId>httpclient</artifactId>
+  <version>4.3.5</version>
+</dependency>
+</dependencies>
+
+  <modules>
+    <module>woehlke-ta</module>
+    <module>woehlke-tdm</module>
+    <module>woehlke-configuration-manager</module>
+    <module>woehlke-api</module>
+<!--    <module>woehlke-integration-test</module>-->
+
+  </modules>
+
+<build>
+<plugins>
+        <plugin> 
+        <groupId>org.apache.maven.plugins</groupId> 
+        <artifactId>maven-dependency-plugin</artifactId> 
+        <executions> 
+            <execution> 
+                <id>copy-dependencies</id> 
+                <phase>prepare-package</phase> 
+                <goals> 
+                    <goal>copy-dependencies</goal> 
+                </goals> 
+                <configuration> 
+       <outputDirectory>${project.build.directory}/lib</outputDirectory> 
+                    <overWriteReleases>false</overWriteReleases> 
+                    <overWriteSnapshots>false</overWriteSnapshots> 
+                    <overWriteIfNewer>true</overWriteIfNewer> 
+                </configuration> 
+            </execution> 
+        </executions> 
+    </plugin> 
+</plugins>
+</build>
+
+</project>

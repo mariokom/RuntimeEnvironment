@@ -1,0 +1,92 @@
+Jul 28, 2016 8:26:05 AM org.apache.coyote.AbstractProtocol init
+INFORMATION: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 28, 2016 8:26:05 AM org.apache.catalina.core.StandardService startInternal
+INFORMATION: Starting service Tomcat
+Jul 28, 2016 8:26:05 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMATION: Starting Servlet Engine: Apache Tomcat/7.0.63
+Jul 28, 2016 8:26:06 AM org.apache.catalina.startup.TldConfig execute
+INFORMATION: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jul 28, 2016 8:26:07 AM org.apache.coyote.AbstractProtocol start
+INFORMATION: Starting ProtocolHandler ["http-bio-8080"]
+Exception in thread "Thread-15" java.lang.NullPointerException
+	at edu.wisc.trace.uch.TAListener.getTargetDetailByTargetName(TAListener.java:1376)
+	at edu.wisc.trace.uch.TAListener.getTargetDescriptionUri(TAListener.java:768)
+	at edu.wisc.trace.uch.UCH.getTargetDescriptionUri(UCH.java:1778)
+	at edu.wisc.trace.uch.UIPMListener.getTargetDescriptionUri(UIPMListener.java:201)
+	at edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.prepareForAddCompatibleUI(UrcHttpUIPM.java:434)
+	at edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.targetDiscovered(UrcHttpUIPM.java:743)
+	at edu.wisc.trace.uch.UIPMListener.targetDiscovered(UIPMListener.java:590)
+	at edu.wisc.trace.uch.UCH.targetDiscovered(UCH.java:1937)
+	at edu.wisc.trace.uch.TAListener.instantiateTA(TAListener.java:1113)
+	at edu.wisc.trace.uch.TAListener.targetDiscovered(TAListener.java:317)
+	at edu.wisc.trace.uch.UCH.targetDiscovered(UCH.java:1617)
+	at edu.wisc.trace.uch.TDMListener.targetDiscovered(TDMListener.java:181)
+	at org.openurc.tdm.SimpleTDM.run(SimpleTDM.java:107)
+java.lang.NullPointerException
+	at edu.wisc.trace.uch.TAListener.getTargetDetailByTargetName(TAListener.java:1376)
+	at edu.wisc.trace.uch.TAListener.getTargetDescriptionUri(TAListener.java:768)
+	at edu.wisc.trace.uch.UCH.getTargetDescriptionUri(UCH.java:1778)
+	at edu.wisc.trace.uch.UIPMListener.getTargetDescriptionUri(UIPMListener.java:201)
+	at edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.prepareForAddCompatibleUI(UrcHttpUIPM.java:434)
+	at edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.targetDiscovered(UrcHttpUIPM.java:743)
+	at edu.wisc.trace.uch.UIPMListener.targetDiscovered(UIPMListener.java:590)
+	at edu.wisc.trace.uch.UCH.targetDiscovered(UCH.java:1937)
+	at edu.wisc.trace.uch.TAListener.instantiateTA(TAListener.java:1113)
+	at edu.wisc.trace.uch.TAListener.targetDiscovered(TAListener.java:317)
+	at edu.wisc.trace.uch.UCH.targetDiscovered(UCH.java:1617)
+	at edu.wisc.trace.uch.TDMListener.targetDiscovered(TDMListener.java:181)
+	at edu.wisc.trace.uch.tdm.generic.GenericTDM$Discovery.run(GenericTDM.java:262)
+Exception in thread "Thread-23" java.lang.NullPointerException
+	at edu.wisc.trace.uch.TAListener.getTargetDetailByTargetName(TAListener.java:1376)
+	at edu.wisc.trace.uch.TAListener.getTargetDescriptionUri(TAListener.java:768)
+	at edu.wisc.trace.uch.UCH.getTargetDescriptionUri(UCH.java:1778)
+	at edu.wisc.trace.uch.UIPMListener.getTargetDescriptionUri(UIPMListener.java:201)
+	at edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.prepareForAddCompatibleUI(UrcHttpUIPM.java:434)
+	at edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.targetDiscovered(UrcHttpUIPM.java:743)
+	at edu.wisc.trace.uch.UIPMListener.targetDiscovered(UIPMListener.java:590)
+	at edu.wisc.trace.uch.UCH.targetDiscovered(UCH.java:1937)
+	at edu.wisc.trace.uch.TAListener.instantiateTA(TAListener.java:1113)
+	at edu.wisc.trace.uch.TAListener.targetDiscovered(TAListener.java:317)
+	at edu.wisc.trace.uch.UCH.targetDiscovered(UCH.java:1617)
+	at edu.wisc.trace.uch.TDMListener.targetDiscovered(TDMListener.java:181)
+	at edu.wisc.trace.uch.tdm.upnp.UpnpTDM.discoverUES(UpnpTDM.java:389)
+	at edu.wisc.trace.uch.tdm.upnp.UpnpTDM.access$1(UpnpTDM.java:361)
+	at edu.wisc.trace.uch.tdm.upnp.UpnpTDM$StartDiscoveryThread.run(UpnpTDM.java:334)
+Jul 28, 2016 8:26:21 AM org.apache.coyote.AbstractProtocol pause
+INFORMATION: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 28, 2016 8:26:21 AM org.apache.catalina.core.StandardService stopInternal
+INFORMATION: Stopping service Tomcat
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-5] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-6] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-7] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-8] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-10] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-11] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-21] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-22] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [WebSocketWorker-46] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [WebSocketWorker-47] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [WebSocketWorker-48] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [WebSocketWorker-49] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [WebsocketSelector50] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-30] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-31] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SCHWERWIEGEND: The web application [/UCH] appears to have started a thread named [Thread-32] but has failed to stop it. This is very likely to create a memory leak.
+Jul 28, 2016 8:26:23 AM org.apache.coyote.AbstractProtocol stop
+INFORMATION: Stopping ProtocolHandler ["http-bio-8080"]

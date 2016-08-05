@@ -1,0 +1,140 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>remex.urc</groupId>
+    <artifactId>ta-set</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>hdm-ta-set</artifactId>
+
+<dependencies>
+        <dependency>
+            <groupId>org.openurc</groupId>
+            <artifactId>ta-framework</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+<dependency>
+<groupId>org.openurc</groupId>
+  <artifactId>uchutil</artifactId>
+  <version>1.0</version>
+</dependency>
+
+<dependency>
+<groupId>org.openurc</groupId>
+<artifactId>uchinterfaces</artifactId>
+<version>1.0</version>
+</dependency>
+
+</dependencies>
+
+
+  <packaging>pom</packaging>
+  <description>		</description>
+
+
+<modules>
+<module>open-weather-map-adapter</module>
+
+	<module>philips-hue-adapter</module>
+<module>woehlke</module>
+<!--	<module>todo-service-adapters</module>-->
+	<module>time-service</module>
+</modules>
+
+<build>
+<pluginManagement>
+        <plugins>
+         <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-dependency-plugin</artifactId>
+              <executions>
+        <execution>
+            <id>copy-dependencies</id>
+            <phase>prepare-package</phase>
+            <goals>
+                <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                <overWriteReleases>false</overWriteReleases>
+                <overWriteSnapshots>false</overWriteSnapshots>
+                <overWriteIfNewer>true</overWriteIfNewer>
+            </configuration>
+        </execution>
+
+                <execution>             
+                  <id>copy-artifact</id>
+                  <phase>package</phase>
+                  <goals>
+                    <goal>copy</goal>
+                  </goals>
+                  <configuration>
+                    <artifactItems>
+                        <artifactItem>
+                          <groupId>${project.groupId}</groupId>
+                          <artifactId>${project.artifactId}</artifactId>
+                          <version>${project.version}</version>
+                          <type>${project.packaging}</type>
+                        </artifactItem>
+                    </artifactItems>
+                    <outputDirectory>/target</outputDirectory>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>2.4</version>
+      <configuration>
+        <outputDirectory>${MyDir}</outputDirectory>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>com.your.domain.Program</mainClass>
+          </manifest>
+        </archive>
+     </configuration>
+</plugin>
+<plugin>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <executions>
+      <execution>
+        <phase>install</phase>
+        <goals>
+          <goal>copy-dependencies</goal>
+        </goals>
+        <configuration>
+          <outputDirectory>${MyDir}/lib</outputDirectory>
+        </configuration>
+      </execution>
+    </executions>
+</plugin>
+
+<plugin>                                                         
+    <groupId>org.codehaus.gmaven</groupId>                       
+    <artifactId>groovy-maven-plugin</artifactId>                 
+    <version>2.0</version>                                       
+    <executions>                                                 
+        <execution>                                              
+            <phase>validate</phase>                              
+            <goals>                                              
+                <goal>execute</goal>                             
+            </goals>                                             
+            <configuration>                                      
+                <source>                                         
+                    log.info('Test message: {}', 'Hello, World!')
+                </source>                                        
+            </configuration>                                     
+        </execution>                                             
+    </executions>                                                
+</plugin>                                                        
+        </plugins>
+</pluginManagement>
+    </build>
+
+
+</project>

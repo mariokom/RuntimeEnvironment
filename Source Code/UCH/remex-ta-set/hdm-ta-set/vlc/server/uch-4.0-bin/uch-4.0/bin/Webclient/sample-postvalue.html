@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+
+	<head>
+		<title>Post Value</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link rel="stylesheet" href="default.css" type="text/css" />
+	
+	   <script type="text/javascript" src="org_myurc_webclient.js">
+			// Defines webclient functions.
+		</script>
+			
+		<script type="text/javascript" src="org_myurc_socket.js">
+			// Defines functions for socket objects.
+		</script>
+						
+		<script type="text/javascript" src="org_myurc_schema.js">
+			// Defines functions for schema objects.
+		</script>
+						
+      <script type="text/javascript" src="org_myurc_urchttp.js">
+	      // Defines primitive URC-HTTP functions.
+      </script>
+
+      <script type="text/javascript" src="org_myurc_urchttp_test.js">
+	      // Defines test cases, but only if file is read from local file system (URL scheme == "file:").  
+      </script>
+
+		<script type="text/javascript" src="org_myurc_lib.js">
+			// Defines utility functions.
+		</script>
+			
+		<script type="text/javascript">		// Functions specific to this page.
+		    
+		   sockets = [ "http://res.openurc.org/tv" ];
+		   updateInterval = 1000;      // Polling for updates every second.
+		
+         function init() {
+            try {
+               org_myurc_webclient_init(sockets, updateInterval);      
+            }
+	         catch (ex) {
+	            alert(typeof ex === "string" ? ex : ex.message);
+	         }
+         }
+         
+         function finalize() {
+            org_myurc_webclient_finalize();
+         }
+         
+         function onpostvalue(path, value, session) {
+            switch (path) {
+               case "http://res.openurc.org/tv#/powerMode":
+                  document.getElementById("powerMode").innerHTML = value;
+                  break;
+                  
+               case "http://res.openurc.org/tv#/activeChannel":
+                  document.getElementById("activeChannel").innerHTML = value;
+                  break;
+
+               case "http://res.openurc.org/tv#/channelList":
+                  document.getElementById("channelList").innerHTML = value;
+                  break;
+                  
+               case "http://res.openurc.org/tv#/previousChannel":
+                  document.getElementById("previousChannel").innerHTML = value;
+                  break;
+                  
+               case "http://res.openurc.org/tv#/selectPreviousChannel[state]":
+                  document.getElementById("selectPreviousChannel").innerHTML = value;
+                  break;
+                  
+               case "http://res.openurc.org/tv#/volume":
+                  document.getElementById("volume").innerHTML = value;
+                  break;
+                  
+               case "http://res.openurc.org/tv#/mute":
+                  document.getElementById("mute").innerHTML = value;
+                  break;
+            }
+         }
+         
+         function toggleLog() {
+            if (document.getElementById("log_").className == "logshown") {
+               document.getElementById("logbutton_").innerHTML = "Show URC-HTTP Log";
+               document.getElementById("log_").className = "loghidden";
+            }
+            else {
+               document.getElementById("logbutton_").innerHTML = "Hide URC-HTTP Log";
+               document.getElementById("log_").className = "logshown";
+            }
+         }
+         
+		</script>
+		
+	</head>
+	
+	<body onload="init()" onunload="finalize()">
+	   
+		<p>HTML elements for displaying the values:</p>
+		<ul>
+		   <li>powerMode: <span id="powerMode"></span></li>
+		   <li>activeChannel: <span id="activeChannel"></span></li>
+		   <li>channelList: <span id="channelList"></span></li>
+		   <li>previousChannel: <span id="previousChannel"></span></li>
+		   <li>selectPreviousChannel: <button id="selectPreviousChannel"></button></li>
+		   <li>volume: <span id="volume"></span></li>
+		   <li>mute: <span id="mute"></span></li>
+		</ul>
+		
+		<hr />
+		
+		<div id="error_" class="error"></div>
+		
+		<p><button id="logbutton_" onclick="toggleLog();" onkeypress="toggleLog();">Show URC-HTTP Log</button> 
+		Note: empty update messages omitted</p>
+		
+		<div id="log_" class="loghidden"></div>
+		
+	</body>
+</html>

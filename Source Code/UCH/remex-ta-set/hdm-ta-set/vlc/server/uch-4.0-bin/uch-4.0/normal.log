@@ -1,0 +1,1251 @@
+Configuration was successfuly read.
+LL: 3
+Configuration was successfuly read.
+edu.wisc.trace.uch.UCH.<init> (Line: 257)
+INFORMATION: CodeBase : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/
+
+edu.wisc.trace.uch.UCH.<init> (Line: 262)
+INFORMATION: UCH Config File URI : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/uch.config
+
+edu.wisc.trace.uch.NetworkUtil.getInetAddress (Line: 89)
+INFORMATION: /0:0:0:0:0:0:0:1is not a valide IPv4 Address.
+
+edu.wisc.trace.uch.NetworkUtil.getInetAddress (Line: 89)
+INFORMATION: /fe80:0:0:0:0:5efe:c0a8:df3e%net0is not a valide IPv4 Address.
+
+edu.wisc.trace.uch.NetworkUtil.getInetAddress (Line: 89)
+INFORMATION: /fe80:0:0:0:0:ffff:ffff:fffe%net1is not a valide IPv4 Address.
+
+edu.wisc.trace.uch.NetworkUtil.getInetAddress (Line: 89)
+INFORMATION: /fe80:0:0:0:0:5efe:abc:6f84%net4is not a valide IPv4 Address.
+
+edu.wisc.trace.uch.NetworkUtil.getInetAddress (Line: 89)
+INFORMATION: /fe80:0:0:0:e9f6:fe9d:f834:71f%eth1is not a valide IPv4 Address.
+
+edu.wisc.trace.uch.UCH.<init> (Line: 275)
+INFORMATION: IP Address : 10.188.111.132
+
+edu.wisc.trace.uch.UCH$UCHRuiServerStarter.run (Line: 2729)
+INFORMATION: Going to start UCH-RUI Server.
+
+edu.wisc.trace.uch.UchRuiServerDevice.<init> (Line: 75)
+INFORMATION: Going to get Device files.
+
+edu.wisc.trace.uch.UCH$ZeroConfServiceStarter.<init> (Line: 2757)
+INFORMATION: lusm: Lukas_Arbeit; /UCH/interfacelist/index.html
+
+edu.wisc.trace.uch.UCH.<init> (Line: 379)
+INFORMATION: resserver_appPath = res.openurc.org
+
+edu.wisc.trace.uch.UchRuiServerDevice.<init> (Line: 84)
+INFORMATION: Going to start Server Device.
+
+edu.wisc.trace.uch.UchRuiServerDevice$ServerDevice.<init> (Line: 342)
+INFORMATION: UCH:UchRuiServerDevice started
+
+edu.wisc.trace.uch.UCH.<init> (Line: 382)
+INFORMATION: 'GuestUser' is validated successfully.
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\gc100\gctdm\gctdm.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://myurc.org/ns/res#devicePlatform=[GC100], http://myurc.org/ns/res#name=[http://res.myurc.org/gc100/tdm/java], http://myurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.gc100.GCTDM], http://myurc.org/ns/res#runtimePlatform=[java], http://myurc.org/ns/res#indexFile=[gc100/config/index.html], http://myurc.org/ns/res#mimeType=[application/zip], http://myurc.org/ns/res#type=[http://myurc.org/restypes#tdm], http://purl.org/dc/terms/conformsTo=[http://myurc.org/TR/uch1.0-20091103/]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyModifier.getResourceURI (Line: 274)
+WARNUNG: Unable to get property 'http://openurc.org/ns/res#resourceUri'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResource (Line: 459)
+INFORMATION: @!@ in getResource...
+
+http://myurc.org/ns/res#devicePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: GC100,
+
+http://myurc.org/ns/res#name : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://res.myurc.org/gc100/tdm/java,
+
+http://myurc.org/ns/res#dynamicLibClass : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: edu.wisc.trace.uch.tdm.gc100.GCTDM,
+
+http://myurc.org/ns/res#runtimePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: java,
+
+http://myurc.org/ns/res#indexFile : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: gc100/config/index.html,
+
+http://myurc.org/ns/res#mimeType : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: application/zip,
+
+http://myurc.org/ns/res#type : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://myurc.org/restypes#tdm,
+
+http://purl.org/dc/terms/conformsTo : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://myurc.org/TR/uch1.0-20091103/,
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query><prop name="http://myurc.org/ns/res#devicePlatform" val="GC100" wgt="1" /><prop name="http://myurc.org/ns/res#name" val="http://res.myurc.org/gc100/tdm/java" wgt="1" /><prop name="http://myurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.tdm.gc100.GCTDM" wgt="1" /><prop name="http://myurc.org/ns/res#runtimePlatform" val="java" wgt="1" /><prop name="http://myurc.org/ns/res#indexFile" val="gc100/config/index.html" wgt="1" /><prop name="http://myurc.org/ns/res#mimeType" val="application/zip" wgt="1" /><prop name="http://myurc.org/ns/res#type" val="http://myurc.org/restypes#tdm" wgt="1" /><prop name="http://purl.org/dc/terms/conformsTo" val="http://myurc.org/TR/uch1.0-20091103/" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response start="0" count="0" total="0" /></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResource (Line: 480)
+WARNUNG: Returned Properties List is empty.
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyValidator.validateProps (Line: 56)
+WARNUNG: Property Map is null.
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 328)
+WARNUNG: Failed to validate Properties null
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\generic\genericta\genericta.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[generic], http://openurc.org/ns/res#deviceType=[*], http://openurc.org/ns/res#resourceUri=[genericta.jar], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/ta/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.ta.generictarget.GenericTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[generic], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/generic/genericta/genericta.jar], http://openurc.org/ns/res#deviceType=[*], http://openurc.org/ns/res#resourceUri=[genericta.jar], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/ta/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.ta.generictarget.GenericTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\generic\generictdm\generictdm.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[Generic-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[generic], http://openurc.org/ns/res#resourceUri=[generictdm.jar], http://openurc.org/ns/res#configfile=[generictdm.config], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/tdm/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.generic.GenericTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[Generic-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[generic], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/generic/generictdm/generictdm.jar], http://openurc.org/ns/res#resourceUri=[generictdm.jar], http://openurc.org/ns/res#configfile=[generictdm.config], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/tdm/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.generic.GenericTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\lexmarkprinter\lexmarktdm\lexmarkprinter.tdm.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[Printer TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[HTTP], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/printer/lexmarkX654de/tdm/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.printer.lexmarkX654de.PrinterTDM], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyModifier.getResourceURI (Line: 274)
+WARNUNG: Unable to get property 'http://openurc.org/ns/res#resourceUri'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResource (Line: 459)
+INFORMATION: @!@ in getResource...
+
+http://purl.org/dc/elements/1.1/title : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: Printer TDM,
+
+http://openurc.org/ns/res#type : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://openurc.org/restypes#tdm,
+
+http://openurc.org/ns/res#devicePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: HTTP,
+
+http://openurc.org/ns/res#name : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://res.openurc.org/devices/printer/lexmarkX654de/tdm/java,
+
+http://openurc.org/ns/res#dynamicLibClass : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: edu.wisc.trace.uch.tdm.printer.lexmarkX654de.PrinterTDM,
+
+http://openurc.org/ns/res#runtimePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: java,
+
+http://purl.org/dc/terms/conformsTo : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://openurc.org/TR/uch1.0-20121022/,
+
+http://openurc.org/ns/res#mimeType : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: application/java-archive,
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query><prop name="http://purl.org/dc/elements/1.1/title" val="Printer TDM" wgt="1" /><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#tdm" wgt="1" /><prop name="http://openurc.org/ns/res#devicePlatform" val="HTTP" wgt="1" /><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/devices/printer/lexmarkX654de/tdm/java" wgt="1" /><prop name="http://openurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.tdm.printer.lexmarkX654de.PrinterTDM" wgt="1" /><prop name="http://openurc.org/ns/res#runtimePlatform" val="java" wgt="1" /><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/TR/uch1.0-20121022/" wgt="1" /><prop name="http://openurc.org/ns/res#mimeType" val="application/java-archive" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fprinter%2FlexmarkX654de%2Ftdm%2Fjava&amp;modified=2013-02-16T10:13:38.0Z" ><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fprinter%2FlexmarkX654de%2Ftdm%2Fjava&amp;modified=2013-02-16T10:13:38.0Z</globalAt><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/devices/printer/lexmarkX654de/tdm/java"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/terms/modified" val="2013-02-16T10:13:38.0Z"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#tdm"></prop><prop name="http://openurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.tdm.printer.lexmarkX654de.PrinterTDM"></prop><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/TR/uch1.0-20121022/"></prop><prop name="http://openurc.org/ns/res#devicePlatform" val="HTTP"></prop><prop name="http://openurc.org/ns/res#runtimePlatform" val="java"></prop><prop name="http://openurc.org/ns/res#filename" val="lexmarkprinterX654deTDM.jar"></prop><prop name="http://purl.org/dc/elements/1.1/title" val="Printer TDM"></prop><prop name="http://openurc.org/ns/res#mimeType" val="application/java-archive"></prop><prop name="http://openurc.org/ns/res#configFileUri" val="lexmarkprinter.tdm.config"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : lexmarkprinterX654deTDM.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fprinter%2FlexmarkX654de%2Ftdm%2Fjava&modified=2013-02-16T10:13:38.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fprinter%2FlexmarkX654de%2Ftdm%2Fjava&modified=2013-02-16T10:13:38.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_07Z_lexmarkprinterX654deTDM.jar\lexmarkprinterX654deTDM.jar'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_lexmarkprinterX654deTDM.jar/lexmarkprinterX654deTDM.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : application/java-archive
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_lexmarkprinterX654deTDM.jar/lexmarkprinterX654deTDM.jar.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_lexmarkprinterX654deTDM.jar/lexmarkprinterX654deTDM.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_lexmarkprinterX654deTDM.jar/lexmarkprinterX654deTDM.jar
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyValidator.checkForResourceUri (Line: 130)
+WARNUNG: Property Map doesn't contain property 'http://openurc.org/ns/res#resourceUri'.
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[Printer TDM], globalAt=[http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fprinter%2FlexmarkX654de%2Ftdm%2Fjava&modified=2013-02-16T10:13:38.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#filename=[lexmarkprinterX654deTDM.jar], http://openurc.org/ns/res#devicePlatform=[HTTP], http://openurc.org/ns/res#configFileUri=[lexmarkprinter.tdm.config], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_lexmarkprinterX654deTDM.jar/lexmarkprinterX654deTDM.jar], http://purl.org/dc/terms/modified=[2013-02-16T10:13:38.0Z], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/printer/lexmarkX654de/tdm/java], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.printer.lexmarkX654de.PrinterTDM], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#runtimePlatform=[java], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\generic\genericta\genericta.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[generic], http://openurc.org/ns/res#deviceType=[*], http://openurc.org/ns/res#resourceUri=[genericta.jar], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/ta/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.ta.generictarget.GenericTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[generic], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/generic/genericta/genericta.jar], http://openurc.org/ns/res#deviceType=[*], http://openurc.org/ns/res#resourceUri=[genericta.jar], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/ta/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.ta.generictarget.GenericTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\generic\generictdm\generictdm.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[Generic-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[generic], http://openurc.org/ns/res#resourceUri=[generictdm.jar], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/tdm/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.generic.GenericTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[Generic-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[generic], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/generic/generictdm/generictdm.jar], http://openurc.org/ns/res#resourceUri=[generictdm.jar], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/tdm/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.generic.GenericTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\generic\tdmconfig\generictdmconfig.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#generictdmconfig], http://openurc.org/ns/res#resourceUri=[generictdm.config], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/tdm/config]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#generictdmconfig], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/generic/tdmconfig/generictdm.config], http://openurc.org/ns/res#resourceUri=[generictdm.config], http://openurc.org/ns/res#name=[http://res.openurc.org/generic/tdm/config]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\lightWeightThermostat.rsheet\lightWeightThermostat.rsheet.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{globalAt=[https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fthermostat%2Fressheet%2Ftemplate%2FlightWeightThermostat.rsheet&modified=2013-12-03T13:16:35.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], http://openurc.org/ns/res#filename=[lightWeightThermostat.rsheet], count=[1], start=[1], index=[1], http://purl.org/dc/elements/1.1/type=[Text, Image], http://openurc.org/ns/res#forDomain=[http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td, http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis], http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#resourceUri=[lightWeightThermostat.rsheet], http://purl.org/dc/terms/modified=[2013-12-03T13:16:35.0Z], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {globalAt=[https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fthermostat%2Fressheet%2Ftemplate%2FlightWeightThermostat.rsheet&modified=2013-12-03T13:16:35.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], http://openurc.org/ns/res#filename=[lightWeightThermostat.rsheet], count=[1], start=[1], index=[1], http://purl.org/dc/elements/1.1/type=[Text, Image], http://openurc.org/ns/res#forDomain=[http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td, http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis], http://openurc.org/ns/res#forLang=[en], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/lightWeightThermostat.rsheet/lightWeightThermostat.rsheet], http://openurc.org/ns/res#resourceUri=[lightWeightThermostat.rsheet], http://purl.org/dc/terms/modified=[2013-12-03T13:16:35.0Z], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\lightWeightThermostat.td\lightWeightThermostat.td.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{globalAt=[https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fthermostat%2Ftargetdesc%2Ftemplate%2FlightWeightThermostat.td&modified=2013-12-03T06:38:03.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#targetdesc], http://openurc.org/ns/res#filename=[lightWeightThermostat.td], http://openurc.org/ns/res#forTargetName=[http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td], count=[1], start=[1], index=[1], http://openurc.org/ns/res#subtype=[http://openurc.org/restypes#targetdesc-template], http://openurc.org/ns/res#deviceType=[http://openurc.org/devicetypes#thermostat], http://openurc.org/ns/res#resourceUri=[lightWeightThermostat.td], http://purl.org/dc/terms/modified=[2013-12-03T06:38:03.0Z], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013], http://openurc.org/ns/res#mimeType=[application/urc-targetdesc+xml]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {globalAt=[https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fthermostat%2Ftargetdesc%2Ftemplate%2FlightWeightThermostat.td&modified=2013-12-03T06:38:03.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#targetdesc], http://openurc.org/ns/res#filename=[lightWeightThermostat.td], http://openurc.org/ns/res#forTargetName=[http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td], count=[1], start=[1], index=[1], http://openurc.org/ns/res#subtype=[http://openurc.org/restypes#targetdesc-template], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/lightWeightThermostat.td/lightWeightThermostat.td], http://openurc.org/ns/res#deviceType=[http://openurc.org/devicetypes#thermostat], http://openurc.org/ns/res#resourceUri=[lightWeightThermostat.td], http://purl.org/dc/terms/modified=[2013-12-03T06:38:03.0Z], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013], http://openurc.org/ns/res#mimeType=[application/urc-targetdesc+xml]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\lightWeightThermostat.uis\lightWeightThermostat.uis.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{globalAt=[https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fthermostat%2Fuisocketdesc%2Ftemplate%2FlightWeightThermostat.uis&modified=2013-12-02T10:19:59.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#uisocketdesc], http://openurc.org/ns/res#filename=[lightWeightThermostat.uis], count=[1], start=[1], index=[1], http://openurc.org/ns/res#forSocketName=[http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis], http://openurc.org/ns/res#resourceUri=[lightWeightThermostat.uis], http://purl.org/dc/terms/modified=[2013-12-02T10:19:59.0Z], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013], http://openurc.org/ns/res#mimeType=[application/urc-uisocketdesc+xml]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {globalAt=[https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fdevices%2Fthermostat%2Fuisocketdesc%2Ftemplate%2FlightWeightThermostat.uis&modified=2013-12-02T10:19:59.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#uisocketdesc], http://openurc.org/ns/res#filename=[lightWeightThermostat.uis], count=[1], start=[1], index=[1], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/lightWeightThermostat.uis/lightWeightThermostat.uis], http://openurc.org/ns/res#forSocketName=[http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis], http://openurc.org/ns/res#resourceUri=[lightWeightThermostat.uis], http://purl.org/dc/terms/modified=[2013-12-02T10:19:59.0Z], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013], http://openurc.org/ns/res#mimeType=[application/urc-uisocketdesc+xml]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\thermostatscript\thermostatscript.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#script], http://openurc.org/ns/res#resourceUri=[thermostat.script], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/script/template/lightWeightThermostat.script]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#script], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/thermostatscript/thermostat.script], http://openurc.org/ns/res#resourceUri=[thermostat.script], http://openurc.org/ns/res#name=[http://res.openurc.org/devices/thermostat/script/template/lightWeightThermostat.script]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\thermostat\thermostattdm\thermostattdm.jar.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[Thermostat-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[WI-FI], http://openurc.org/ns/res#filename=[thermostattdm.jar], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/thermostat/tdm/java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyModifier.getResourceURI (Line: 274)
+WARNUNG: Unable to get property 'http://openurc.org/ns/res#resourceUri'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResource (Line: 459)
+INFORMATION: @!@ in getResource...
+
+http://purl.org/dc/elements/1.1/title : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: Thermostat-TDM,
+
+http://openurc.org/ns/res#type : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://openurc.org/restypes#tdm,
+
+http://openurc.org/ns/res#devicePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: WI-FI,
+
+http://openurc.org/ns/res#filename : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: thermostattdm.jar,
+
+http://openurc.org/ns/res#runtimePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: java,
+
+http://purl.org/dc/elements/1.1/publisher : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://trace.wisc.edu,
+
+http://openurc.org/ns/res#name : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://res.openurc.org/thermostat/tdm/java,
+
+http://purl.org/dc/terms/conformsTo : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://openurc.org/TR/uch1.0-20121022/,
+
+http://openurc.org/ns/res#dynamicLibClass : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM,
+
+http://openurc.org/ns/res#mimeType : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: application/java-archive,
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query><prop name="http://purl.org/dc/elements/1.1/title" val="Thermostat-TDM" wgt="1" /><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#tdm" wgt="1" /><prop name="http://openurc.org/ns/res#devicePlatform" val="WI-FI" wgt="1" /><prop name="http://openurc.org/ns/res#filename" val="thermostattdm.jar" wgt="1" /><prop name="http://openurc.org/ns/res#runtimePlatform" val="java" wgt="1" /><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu" wgt="1" /><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/thermostat/tdm/java" wgt="1" /><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/TR/uch1.0-20121022/" wgt="1" /><prop name="http://openurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM" wgt="1" /><prop name="http://openurc.org/ns/res#mimeType" val="application/java-archive" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fthermostat%2Ftdm%2Fjava&amp;modified=2013-11-27T08:39:52.0Z" ><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fthermostat%2Ftdm%2Fjava&amp;modified=2013-11-27T08:39:52.0Z</globalAt><prop name="http://openurc.org/ns/res#devicePlatform" val="WI-FI"></prop><prop name="http://openurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM"></prop><prop name="http://openurc.org/ns/res#filename" val="thermostattdm.jar"></prop><prop name="http://openurc.org/ns/res#mimeType" val="application/java-archive"></prop><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/thermostat/tdm/java"></prop><prop name="http://openurc.org/ns/res#runtimePlatform" val="java"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#tdm"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/elements/1.1/title" val="Thermostat-TDM"></prop><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/TR/uch1.0-20121022/"></prop><prop name="http://purl.org/dc/terms/modified" val="2013-11-27T08:39:52.0Z"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : thermostattdm.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fthermostat%2Ftdm%2Fjava&modified=2013-11-27T08:39:52.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fthermostat%2Ftdm%2Fjava&modified=2013-11-27T08:39:52.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_07Z_thermostattdm.jar\thermostattdm.jar'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : application/java-archive
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyValidator.checkForResourceUri (Line: 130)
+WARNUNG: Property Map doesn't contain property 'http://openurc.org/ns/res#resourceUri'.
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[Thermostat-TDM], globalAt=[http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fthermostat%2Ftdm%2Fjava&modified=2013-11-27T08:39:52.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#filename=[thermostattdm.jar], http://openurc.org/ns/res#devicePlatform=[WI-FI], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar], http://purl.org/dc/terms/modified=[2013-11-27T08:39:52.0Z], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM], http://openurc.org/ns/res#mimeType=[application/java-archive], http://openurc.org/ns/res#name=[http://res.openurc.org/thermostat/tdm/java], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\time-service\time-service-1.0\TimeAndDate.en.rsheet.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], http://openurc.org/ns/res#resourceUri=[TimeAndDate.en.rsheet], http://purl.org/dc/elements/1.1/type=[Text], http://openurc.org/ns/res#forDomain=[http://hdm-stuttgart.de/TimeService/TimeAndDate], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/TimeService/TimeAndDate.en.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeAndDate.en.rsheet], http://openurc.org/ns/res#resourceUri=[TimeAndDate.en.rsheet], http://purl.org/dc/elements/1.1/type=[Text], http://openurc.org/ns/res#forDomain=[http://hdm-stuttgart.de/TimeService/TimeAndDate], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/TimeService/TimeAndDate.en.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\time-service\time-service-1.0\TimeAndDate.uis.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#uisocketdesc], http://openurc.org/ns/res#forSocketName=[http://hdm-stuttgart.de/TimeService/TimeAndDate], http://openurc.org/ns/res#resourceUri=[TimeAndDate.uis], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/TimeService/TimeAndDate], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013], http://openurc.org/ns/res#mimeType=[application/urc-uisocketdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#uisocketdesc], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeAndDate.uis], http://openurc.org/ns/res#forSocketName=[http://hdm-stuttgart.de/TimeService/TimeAndDate], http://openurc.org/ns/res#resourceUri=[TimeAndDate.uis], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/TimeService/TimeAndDate], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013], http://openurc.org/ns/res#mimeType=[application/urc-uisocketdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\time-service\time-service-1.0\TimeService.td.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#targetdesc], http://openurc.org/ns/res#resourceUri=[TimeService.td], http://openurc.org/ns/res#forTargetName=[http://hdm-stuttgart.de/TimeService], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/TimeService], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013], http://openurc.org/ns/res#mimeType=[application/urc-targetdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#targetdesc], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeService.td], http://openurc.org/ns/res#resourceUri=[TimeService.td], http://openurc.org/ns/res#forTargetName=[http://hdm-stuttgart.de/TimeService], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/TimeService], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013], http://openurc.org/ns/res#mimeType=[application/urc-targetdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\time-service\time-service-ta\TimeServiceTA.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[UCH], http://openurc.org/ns/res#resourceUri=[time-service-ta-0.0.1-SNAPSHOT.jar], http://openurc.org/ns/res#deviceType=[time-service], http://openurc.org/ns/res#name=[time-service-ta], http://openurc.org/ns/res#dynamicLibClass=[org.openurc.timeservice.ta.TimeServiceTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://openurc.org/ns/res#mimeType=[application/java-archive], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[UCH], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-ta/time-service-ta-0.0.1-SNAPSHOT.jar], http://openurc.org/ns/res#resourceUri=[time-service-ta-0.0.1-SNAPSHOT.jar], http://openurc.org/ns/res#deviceType=[time-service], http://openurc.org/ns/res#name=[time-service-ta], http://openurc.org/ns/res#dynamicLibClass=[org.openurc.timeservice.ta.TimeServiceTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://openurc.org/ns/res#mimeType=[application/java-archive], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\time-service\time-service-tdm\time-service-tdm.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[time-service-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[UCH], http://openurc.org/ns/res#resourceUri=[time-service-tdm-0.0.1-SNAPSHOT.jar], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/time-service/tdm/java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#dynamicLibClass=[org.openurc.tdm.SimpleTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[time-service-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[UCH], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-tdm/time-service-tdm-0.0.1-SNAPSHOT.jar], http://openurc.org/ns/res#resourceUri=[time-service-tdm-0.0.1-SNAPSHOT.jar], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/time-service/tdm/java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#dynamicLibClass=[org.openurc.tdm.SimpleTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\uipm\urchttpuipmprops.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[URC-HTTP UIPM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#uipm], http://res.openurc.org/uipm/urc-http#getCompatibleUIsInterval=[60000], http://openurc.org/ns/res#forTargetName=[*], http://openurc.org/ns/res#protocolShortName=[URC-HTTP], http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#urlBasePath=[/urchttp], http://openurc.org/ns/res#devicePlatform=[*], http://openurc.org/ns/res#urlPortNo=[80], http://res.openurc.org/uipm/urc-http#updateChannelPortNo=[8888], http://openurc.org/ns/res#resourceUri=[urchttpuipm.jar], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/upnp/av/uipm/urchttp/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[URC-HTTP UIPM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#uipm], http://res.openurc.org/uipm/urc-http#getCompatibleUIsInterval=[60000], http://openurc.org/ns/res#forTargetName=[*], http://openurc.org/ns/res#protocolShortName=[URC-HTTP], http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#urlBasePath=[/urchttp], http://openurc.org/ns/res#devicePlatform=[*], http://openurc.org/ns/res#urlPortNo=[80], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/uipm/urchttpuipm.jar], http://res.openurc.org/uipm/urc-http#updateChannelPortNo=[8888], http://openurc.org/ns/res#resourceUri=[urchttpuipm.jar], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/upnp/av/uipm/urchttp/java], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\upnp\upnptdm\upnptdm.jar.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[UPnP-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[UPnP], http://openurc.org/ns/res#filename=[upnptdm.jar], http://purl.org/dc/terms/modified=[2013-02-21T06:01:23.0Z], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://openurc.org/ns/res#name=[http://res.openurc.org/upnp/tdm/java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.upnp.UpnpTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyModifier.getResourceURI (Line: 274)
+WARNUNG: Unable to get property 'http://openurc.org/ns/res#resourceUri'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResource (Line: 459)
+INFORMATION: @!@ in getResource...
+
+http://purl.org/dc/elements/1.1/title : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: UPnP-TDM,
+
+http://openurc.org/ns/res#type : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://openurc.org/restypes#tdm,
+
+http://openurc.org/ns/res#devicePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: UPnP,
+
+http://openurc.org/ns/res#filename : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: upnptdm.jar,
+
+http://purl.org/dc/terms/modified : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: 2013-02-21T06:01:23.0Z,
+
+http://openurc.org/ns/res#runtimePlatform : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: java,
+
+http://purl.org/dc/elements/1.1/publisher : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://trace.wisc.edu,
+
+http://openurc.org/ns/res#name : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://res.openurc.org/upnp/tdm/java,
+
+http://purl.org/dc/terms/conformsTo : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: http://openurc.org/TR/uch1.0-20121022/,
+
+http://openurc.org/ns/res#dynamicLibClass : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: edu.wisc.trace.uch.tdm.upnp.UpnpTDM,
+
+http://openurc.org/ns/res#mimeType : edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.showMap (Line: 1243)
+INFORMATION: application/java-archive,
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query><prop name="http://purl.org/dc/elements/1.1/title" val="UPnP-TDM" wgt="1" /><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#tdm" wgt="1" /><prop name="http://openurc.org/ns/res#devicePlatform" val="UPnP" wgt="1" /><prop name="http://openurc.org/ns/res#filename" val="upnptdm.jar" wgt="1" /><prop name="http://purl.org/dc/terms/modified" val="2013-02-21T06:01:23.0Z" wgt="1" /><prop name="http://openurc.org/ns/res#runtimePlatform" val="java" wgt="1" /><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu" wgt="1" /><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/tdm/java" wgt="1" /><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/TR/uch1.0-20121022/" wgt="1" /><prop name="http://openurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.tdm.upnp.UpnpTDM" wgt="1" /><prop name="http://openurc.org/ns/res#mimeType" val="application/java-archive" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Ftdm%2Fjava&amp;modified=2013-02-21T06:01:23.0Z" ><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Ftdm%2Fjava&amp;modified=2013-02-21T06:01:23.0Z</globalAt><prop name="http://openurc.org/ns/res#devicePlatform" val="UPnP"></prop><prop name="http://openurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.tdm.upnp.UpnpTDM"></prop><prop name="http://openurc.org/ns/res#filename" val="upnptdm.jar"></prop><prop name="http://openurc.org/ns/res#mimeType" val="application/java-archive"></prop><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/tdm/java"></prop><prop name="http://openurc.org/ns/res#runtimePlatform" val="java"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#tdm"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/elements/1.1/title" val="UPnP-TDM"></prop><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/TR/uch1.0-20121022/"></prop><prop name="http://purl.org/dc/terms/modified" val="2013-02-21T06:01:23.0Z"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : upnptdm.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Ftdm%2Fjava&modified=2013-02-21T06:01:23.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Ftdm%2Fjava&modified=2013-02-21T06:01:23.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_07Z_upnptdm.jar\upnptdm.jar'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_upnptdm.jar/upnptdm.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : application/java-archive
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_upnptdm.jar/upnptdm.jar.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_upnptdm.jar/upnptdm.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_upnptdm.jar/upnptdm.jar
+
+edu.wisc.trace.uch.resource.localresourcemanager.PropertyValidator.checkForResourceUri (Line: 130)
+WARNUNG: Property Map doesn't contain property 'http://openurc.org/ns/res#resourceUri'.
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[UPnP-TDM], globalAt=[http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Ftdm%2Fjava&modified=2013-02-21T06:01:23.0Z], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#filename=[upnptdm.jar], http://openurc.org/ns/res#devicePlatform=[UPnP], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_upnptdm.jar/upnptdm.jar], http://purl.org/dc/terms/modified=[2013-02-21T06:01:23.0Z], http://openurc.org/ns/res#dynamicLibClass=[edu.wisc.trace.uch.tdm.upnp.UpnpTDM], http://openurc.org/ns/res#mimeType=[application/java-archive], http://openurc.org/ns/res#name=[http://res.openurc.org/upnp/tdm/java], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://trace.wisc.edu], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\vlc\URC-INF\VlcConfigurationManager\WoehlkeConfigurationManager.en.rsheet.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManager.en.rsheet], http://purl.org/dc/elements/1.1/type=[Text], http://openurc.org/ns/res#forDomain=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManager.en.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/URC-INF/VlcConfigurationManager/WoehlkeConfigurationManager.en.rsheet], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManager.en.rsheet], http://purl.org/dc/elements/1.1/type=[Text], http://openurc.org/ns/res#forDomain=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManager.en.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\vlc\URC-INF\VlcConfigurationManager\WoehlkeConfigurationManager.td.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#targetdesc], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManager.td], http://openurc.org/ns/res#forTargetName=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager], http://purl.org/dc/elements/1.1/contributor=[Gottfried Zimmermann], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013], http://openurc.org/ns/res#mimeType=[application/urc-targetdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://purl.org/dc/elements/1.1/creator=[Lukas Smirek]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#targetdesc], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/URC-INF/VlcConfigurationManager/WoehlkeConfigurationManager.td], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManager.td], http://openurc.org/ns/res#forTargetName=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager], http://purl.org/dc/elements/1.1/contributor=[Gottfried Zimmermann], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013], http://openurc.org/ns/res#mimeType=[application/urc-targetdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://purl.org/dc/elements/1.1/creator=[Lukas Smirek]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\vlc\URC-INF\VlcConfigurationManager\WoehlkeConfigurationManagerSocket.en.rsheet.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManagerSocket.en.rsheet], http://purl.org/dc/elements/1.1/type=[Text], http://openurc.org/ns/res#forDomain=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket.en.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#forLang=[en], http://openurc.org/ns/res#type=[http://openurc.org/restypes#ressheet], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/URC-INF/VlcConfigurationManager/WoehlkeConfigurationManagerSocket.en.rsheet], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManagerSocket.en.rsheet], http://purl.org/dc/elements/1.1/type=[Text], http://openurc.org/ns/res#forDomain=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket.en.rsheet], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/rsheet-2/isoiec24752-5-2013], http://openurc.org/ns/res#mimeType=[application/urc-ressheet+xml]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\vlc\URC-INF\VlcConfigurationManager\WoehlkeConfigurationManagerSocket.uis.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#uisocketdesc], http://openurc.org/ns/res#forSocketName=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManagerSocket.uis], http://purl.org/dc/elements/1.1/description=[is the Socket for adding and configuring new soWoehlke Websteckdosen], http://purl.org/dc/elements/1.1/contributor=[Gottfried Zimmermann], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013], http://openurc.org/ns/res#mimeType=[application/urc-uisocketdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://purl.org/dc/elements/1.1/creator=[Lukas Smirek]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#uisocketdesc], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/URC-INF/VlcConfigurationManager/WoehlkeConfigurationManagerSocket.uis], http://openurc.org/ns/res#forSocketName=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket], http://openurc.org/ns/res#resourceUri=[WoehlkeConfigurationManagerSocket.uis], http://purl.org/dc/elements/1.1/description=[is the Socket for adding and configuring new soWoehlke Websteckdosen], http://purl.org/dc/elements/1.1/contributor=[Gottfried Zimmermann], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket], http://purl.org/dc/terms/conformsTo=[http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013], http://openurc.org/ns/res#mimeType=[application/urc-uisocketdesc+xml], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://purl.org/dc/elements/1.1/creator=[Lukas Smirek]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\vlc\vlc-configuration-manager\vlc-configuration-manager.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[LAN], http://openurc.org/ns/res#resourceUri=[vlc-configuration-manager.jar], http://openurc.org/ns/res#deviceType=[VlcConfigurationManager], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager], http://openurc.org/ns/res#dynamicLibClass=[de.ableitner.vlcuch.configurationmanager.VlcConfigurationManagerTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://openurc.org/ns/res#mimeType=[application/java-archive], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[LAN], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/vlc-configuration-manager/vlc-configuration-manager.jar], http://openurc.org/ns/res#resourceUri=[vlc-configuration-manager.jar], http://openurc.org/ns/res#deviceType=[VlcConfigurationManager], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager], http://openurc.org/ns/res#dynamicLibClass=[de.ableitner.vlcuch.configurationmanager.VlcConfigurationManagerTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://openurc.org/ns/res#mimeType=[application/java-archive], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\vlc\vlc-ta\vlc-ta.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[LAN], http://openurc.org/ns/res#resourceUri=[vlc-ta.jar], http://openurc.org/ns/res#deviceType=[VLC], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeTA], http://openurc.org/ns/res#dynamicLibClass=[de.ableitner.vlcuch.ta.VlcTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://openurc.org/ns/res#mimeType=[application/java-archive], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://openurc.org/ns/res#type=[http://openurc.org/restypes#ta], http://openurc.org/ns/res#devicePlatform=[LAN], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/vlc-ta/vlc-ta.jar], http://openurc.org/ns/res#resourceUri=[vlc-ta.jar], http://openurc.org/ns/res#deviceType=[VLC], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/WoehlkeTA], http://openurc.org/ns/res#dynamicLibClass=[de.ableitner.vlcuch.ta.VlcTAFacade], http://openurc.org/ns/res#runtimePlatform=[java], http://openurc.org/ns/res#mimeType=[application/java-archive], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/]} successfuly added
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 310)
+INFORMATION: parsing of C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\resources\vlc\vlc-tdm\vlc-tdm.rprop
+
+edu.wisc.trace.uch.resource.localresourcemanager.LocalResourceManager.parseRPropFile (Line: 317)
+INFORMATION: Found props{http://purl.org/dc/elements/1.1/title=[vlc-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[LAN], http://openurc.org/ns/res#resourceUri=[vlc-tdm.jar], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/tdm/java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#dynamicLibClass=[de.ableitner.vlcuch.tdm.VlcTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]}
+
+edu.wisc.trace.uch.resource.localresourcemanager.ResourceStore.addResource (Line: 574)
+INFORMATION: {http://purl.org/dc/elements/1.1/title=[vlc-TDM], http://openurc.org/ns/res#type=[http://openurc.org/restypes#tdm], http://openurc.org/ns/res#devicePlatform=[LAN], resourceLocalAt=[file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/vlc-tdm/vlc-tdm.jar], http://openurc.org/ns/res#resourceUri=[vlc-tdm.jar], http://openurc.org/ns/res#runtimePlatform=[java], http://purl.org/dc/elements/1.1/publisher=[http://hdm-stuttgart.de], http://openurc.org/ns/res#name=[http://hdm-stuttgart.de/Woehlke/tdm/java], http://purl.org/dc/terms/conformsTo=[http://openurc.org/TR/uch1.0-20121022/], http://openurc.org/ns/res#dynamicLibClass=[de.ableitner.vlcuch.tdm.VlcTDM], http://openurc.org/ns/res#mimeType=[application/java-archive]} successfuly added
+
+edu.wisc.trace.uch.resource.uploadmanager.local.LocalUploadManager.createUploadedResourceDir (Line: 149)
+INFORMATION: Uploaded Resources Directory Path is set to 'file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/uploadedResources' successfully.
+
+edu.wisc.trace.uch.contextmanager.UserProfileParser.parseData (Line: 71)
+WARNUNG: XML Data is null.
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/TR/uch/#userprofile" wgt="1" /><prop name="http://openurc.org/ns/res#username" val="GuestUser" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response start="0" count="0" total="0" /></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.contextmanager.UserProfileManager.parseProfileResource (Line: 153)
+WARNUNG: Profile Resources is null.
+
+edu.wisc.trace.uch.UCH$UCHRuiServerStarter.run (Line: 2731)
+INFORMATION: UCH-RUI Server started successfully.
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 398)
+INFORMATION: Instanciation of TDMs has startd
+
+addJAR
+successful
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 445)
+INFORMATION: TDM successfuly loaded from:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/generic/generictdm/generictdm.jar
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 458)
+INFORMATION: Loading of jars completed..
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 398)
+INFORMATION: Instanciation of TDMs has startd
+
+addJAR
+successful
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 445)
+INFORMATION: TDM successfuly loaded from:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_lexmarkprinterX654deTDM.jar/lexmarkprinterX654deTDM.jar
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 458)
+INFORMATION: Loading of jars completed..
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 398)
+INFORMATION: Instanciation of TDMs has startd
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 398)
+INFORMATION: Instanciation of TDMs has startd
+
+addJAR
+successful
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 445)
+INFORMATION: TDM successfuly loaded from:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 458)
+INFORMATION: Loading of jars completed..
+
+edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM.init (Line: 100)
+INFORMATION: this is init in Thermostat TDM
+
+edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM.init (Line: 110)
+INFORMATION: this is uchProps :::>  {docRoot=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/, uchInstanceId=UCH-5C-51-4F-C8-D8-31}
+
+edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM.init (Line: 111)
+INFORMATION: this is tdmProps :::>  {http://purl.org/dc/elements/1.1/title=Thermostat-TDM, globalAt=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fthermostat%2Ftdm%2Fjava&modified=2013-11-27T08:39:52.0Z, http://openurc.org/ns/res#type=http://openurc.org/restypes#tdm, http://openurc.org/ns/res#filename=thermostattdm.jar, http://openurc.org/ns/res#devicePlatform=WI-FI, resourceLocalAt=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar, http://purl.org/dc/terms/modified=2013-11-27T08:39:52.0Z, http://openurc.org/ns/res#dynamicLibClass=edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM, http://openurc.org/ns/res#mimeType=application/java-archive, http://openurc.org/ns/res#name=http://res.openurc.org/thermostat/tdm/java, http://openurc.org/ns/res#runtimePlatform=java, http://purl.org/dc/elements/1.1/publisher=http://trace.wisc.edu, http://purl.org/dc/terms/conformsTo=http://openurc.org/TR/uch1.0-20121022/}
+
+edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM.init (Line: 113)
+INFORMATION: TDM props : {http://purl.org/dc/elements/1.1/title=Thermostat-TDM, globalAt=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fthermostat%2Ftdm%2Fjava&modified=2013-11-27T08:39:52.0Z, http://openurc.org/ns/res#type=http://openurc.org/restypes#tdm, http://openurc.org/ns/res#filename=thermostattdm.jar, http://openurc.org/ns/res#devicePlatform=WI-FI, resourceLocalAt=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_thermostattdm.jar/thermostattdm.jar, http://purl.org/dc/terms/modified=2013-11-27T08:39:52.0Z, http://openurc.org/ns/res#dynamicLibClass=edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM, http://openurc.org/ns/res#mimeType=application/java-archive, http://openurc.org/ns/res#name=http://res.openurc.org/thermostat/tdm/java, http://openurc.org/ns/res#runtimePlatform=java, http://purl.org/dc/elements/1.1/publisher=http://trace.wisc.edu, http://purl.org/dc/terms/conformsTo=http://openurc.org/TR/uch1.0-20121022/}
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 398)
+INFORMATION: Instanciation of TDMs has startd
+
+addJAR
+successful
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 445)
+INFORMATION: TDM successfuly loaded from:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-tdm/time-service-tdm-0.0.1-SNAPSHOT.jar
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 458)
+INFORMATION: Loading of jars completed..
+
+org.openurc.tdm.SimpleTDM.init (Line: 64)
+INFORMATION: simple-tdm was successfuly initialized
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 398)
+INFORMATION: Instanciation of TDMs has startd
+
+addJAR
+successful
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 445)
+INFORMATION: TDM successfuly loaded from:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_07Z_upnptdm.jar/upnptdm.jar
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 458)
+INFORMATION: Loading of jars completed..
+
+edu.wisc.trace.uch.tdm.upnp.UpnpTDM.init (Line: 109)
+INFORMATION: initializing Upnp TDM.
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 398)
+INFORMATION: Instanciation of TDMs has startd
+
+addJAR
+successful
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 445)
+INFORMATION: TDM successfuly loaded from:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/vlc-tdm/vlc-tdm.jar
+
+edu.wisc.trace.uch.TDMListener.instantiateTDM (Line: 458)
+INFORMATION: Loading of jars completed..
+
+org.openurc.tdmframework.SuperTDM.init (Line: 55)
+INFORMATION: Woehlke-TDM is initialiced
+
+edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM.startDiscovery (Line: 136)
+INFORMATION: Start discovery for Device.
+
+edu.wisc.trace.uch.tdm.thermostat.ThermostatTDM.startDiscovery (Line: 140)
+INFORMATION: BroadcastIP : 239.255.255.250
+
+edu.wisc.trace.uch.tdm.thermostat.util.StateListener.run (Line: 84)
+INFORMATION: Start time : 1469687169433
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query start="1" count="1" ><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#lexmarkprintertdmconfig" wgt="1" /></query></queries>
+
+org.openurc.tdm.SimpleTDM.startDiscovery (Line: 70)
+INFORMATION: Start discovery process in simple-tdm
+
+org.openurc.tdm.SimpleTDMConfigurator.readTargetList (Line: 152)
+INFORMATION: Reading target list from file: C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\.\resources\time-service\time-service-tdm\TargetList.xml
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response ref="2ab5a21c-548c-11e6-a957-00075c51ac83" start="1" count="1" total="1" ><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Flexmark%2Ftdm%2Fconfig&amp;modified=2013-02-27T09:45:42.0Z" index="1"><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Flexmark%2Ftdm%2Fconfig&amp;modified=2013-02-27T09:45:42.0Z</globalAt><prop name="http://openurc.org/ns/res#filename" val="lexmarkprinter.tdm.config"></prop><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/lexmark/tdm/config"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#lexmarkprintertdmconfig"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/terms/modified" val="2013-02-27T09:45:42.0Z"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : lexmarkprinter.tdm.config
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Flexmark%2Ftdm%2Fconfig&modified=2013-02-27T09:45:42.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Flexmark%2Ftdm%2Fconfig&modified=2013-02-27T09:45:42.0Z
+
+edu.wisc.trace.uch.tdm.upnp.UpnpTDM.startDiscovery (Line: 143)
+INFORMATION: Starting Discovery for Upnp Target Device.
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 300)
+INFORMATION: Target discovered in TargetManager named 'Vlc Configuration Manager'.
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 301)
+INFORMATION: Target Properties = {http://openurc.org/ns/res#type=http://openurc.org/TR/uch/#target, http://openurc.org/ns/res#instanceId=VlcConfigurationManagerId, http://openurc.org/ns/res#devicePlatform=LAN, http://openurc.org/ns/res#deviceType=VlcConfigurationManager, http://openurc.org/ns/res#targetFriendlyName=Vlc Configuration Manager, http://openurc.org/restypes#targetdesc=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/URC-INF/VlcConfigurationManager/WoehlkeConfigurationManager.td, de.ableitner.vlcuch.tdm.VlcTDM=de.ableitner.vlcuch.tdm.VlcTDM@7911c97, http://openurc.org/ns/res#targetModelName=Model1}
+
+edu.wisc.trace.uch.TAListener.getTA (Line: 1185)
+INFORMATION: TA Downloaded successfully.
+
+addJAR
+successful
+org.openurc.taframework.SuperTAFacade.<init> (Line: 51)
+INFORMATION: Target adapter: VlcConfigurationManagerTAFacade was instanziated
+
+org.openurc.taframework.SuperTAFacade.init (Line: 64)
+INFORMATION: initializing VlcConfigurationManagerTAFacade has started
+
+org.openurc.taframework.SuperTAFacade.init (Line: 80)
+INFORMATION: Received taProps: {http://openurc.org/ns/res#type=http://openurc.org/restypes#ta, http://openurc.org/ns/res#devicePlatform=LAN, http://openurc.org/ns/res#deviceType=VlcConfigurationManager}
+
+org.openurc.taframework.SuperTAFacade.init (Line: 91)
+INFORMATION: Initialisation of VlcConfigurationManagerTAFacade completed
+
+org.openurc.taframework.SuperTAFacade.registerTarget (Line: 97)
+INFORMATION: null : TARGET ID  : VlcConfigurationManagerId
+
+org.openurc.taframework.SuperTAFacade.registerTarget (Line: 98)
+INFORMATION: null: TARGET Props: {http://openurc.org/ns/res#type=http://openurc.org/TR/uch/#target, http://openurc.org/ns/res#instanceId=VlcConfigurationManagerId, http://openurc.org/ns/res#devicePlatform=LAN, http://openurc.org/ns/res#deviceType=VlcConfigurationManager, http://openurc.org/ns/res#targetFriendlyName=Vlc Configuration Manager, http://openurc.org/restypes#targetdesc=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/URC-INF/VlcConfigurationManager/WoehlkeConfigurationManager.td, de.ableitner.vlcuch.tdm.VlcTDM=de.ableitner.vlcuch.tdm.VlcTDM@7911c97, http://openurc.org/ns/res#targetModelName=Model1}
+
+org.openurc.taframework.SuperTAFacade.registerTarget (Line: 120)
+WARNUNG: Error: there is no entry for "http://openurc.org/ns/res#tdUri" in {http://openurc.org/ns/res#type=http://openurc.org/TR/uch/#target, http://openurc.org/ns/res#instanceId=VlcConfigurationManagerId, http://openurc.org/ns/res#devicePlatform=LAN, http://openurc.org/ns/res#deviceType=VlcConfigurationManager, http://openurc.org/ns/res#targetFriendlyName=Vlc Configuration Manager, http://openurc.org/restypes#targetdesc=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/vlc/URC-INF/VlcConfigurationManager/WoehlkeConfigurationManager.td, de.ableitner.vlcuch.tdm.VlcTDM=de.ableitner.vlcuch.tdm.VlcTDM@7911c97, http://openurc.org/ns/res#targetModelName=Model1}
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceSheetManager.addResourceDir (Line: 174)
+WARNUNG: tdUri is null.
+
+edu.wisc.trace.uch.UIPMListener.instantiateUIPMs (Line: 549)
+WARNUNG: Target Name is null.
+
+edu.wisc.trace.uch.UIPMListener.targetDiscovered (Line: 583)
+INFORMATION: Unable to get UIPMs for the targetId 'VlcConfigurationManagerId'.
+
+edu.wisc.trace.uch.TAListener.instantiateTA (Line: 1114)
+INFORMATION: No of Targets = 1
+
+org.openurc.tdm.SimpleTDM.run (Line: 97)
+INFORMATION: Found 1 targets.
+
+file:///C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin/resources/time-service/time-service-1.0/TimeService.td
+http://openurc.org/TR/uch/#target
+TimeServiceId1
+UCH
+time-service
+time-service
+org.openurc.tdm.SimpleTDM.run (Line: 105)
+INFORMATION: {http://openurc.org/ns/res#tdUri=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeService.td, http://openurc.org/ns/res#type=http://openurc.org/TR/uch/#target, http://openurc.org/ns/res#instanceId=TimeServiceId1, http://openurc.org/ns/res#devicePlatform=UCH, http://openurc.org/ns/res#deviceType=time-service, http://openurc.org/ns/res#targetFriendlyName=time-service}
+
+org.openurc.tdm.SimpleTDM.run (Line: 106)
+INFORMATION: {http://openurc.org/ns/res#type=http://openurc.org/restypes#ta, http://openurc.org/ns/res#devicePlatform=UCH, http://openurc.org/ns/res#deviceType=time-service, http://purl.org/dc/terms/conformsTo=http://openurc.org/TR/uch1.0-20121022/}
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 300)
+INFORMATION: Target discovered in TargetManager named 'time-service'.
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 301)
+INFORMATION: Target Properties = {http://openurc.org/ns/res#tdUri=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeService.td, http://openurc.org/ns/res#type=http://openurc.org/TR/uch/#target, http://openurc.org/ns/res#instanceId=TimeServiceId1, http://openurc.org/ns/res#devicePlatform=UCH, http://openurc.org/ns/res#deviceType=time-service, http://openurc.org/ns/res#targetFriendlyName=time-service}
+
+edu.wisc.trace.uch.TAListener.getTA (Line: 1185)
+INFORMATION: TA Downloaded successfully.
+
+addJAR
+successful
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_09Z_lexmarkprinter.tdm.config\lexmarkprinter.tdm.config'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_09Z_lexmarkprinter.tdm.config/lexmarkprinter.tdm.config
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : null
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_09Z_lexmarkprinter.tdm.config/lexmarkprinter.tdm.config.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_09Z_lexmarkprinter.tdm.config/lexmarkprinter.tdm.config
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_09Z_lexmarkprinter.tdm.config/lexmarkprinter.tdm.config
+
+org.openurc.taframework.SuperTAFacade.<init> (Line: 51)
+INFORMATION: Target adapter: TimeServiceTA was instanziated
+
+org.openurc.taframework.SuperTAFacade.init (Line: 64)
+INFORMATION: initializing TimeServiceTA has started
+
+org.openurc.taframework.SuperTAFacade.init (Line: 80)
+INFORMATION: Received taProps: {http://openurc.org/ns/res#type=http://openurc.org/restypes#ta, http://openurc.org/ns/res#devicePlatform=UCH, http://openurc.org/ns/res#deviceType=time-service, http://purl.org/dc/terms/conformsTo=http://openurc.org/TR/uch1.0-20121022/}
+
+org.openurc.taframework.SuperTAFacade.init (Line: 91)
+INFORMATION: Initialisation of TimeServiceTA completed
+
+org.openurc.taframework.SuperTAFacade.registerTarget (Line: 97)
+INFORMATION: null : TARGET ID  : TimeServiceId1
+
+org.openurc.taframework.SuperTAFacade.registerTarget (Line: 98)
+INFORMATION: null: TARGET Props: {http://openurc.org/ns/res#tdUri=file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeService.td, http://openurc.org/ns/res#type=http://openurc.org/TR/uch/#target, http://openurc.org/ns/res#instanceId=TimeServiceId1, http://openurc.org/ns/res#devicePlatform=UCH, http://openurc.org/ns/res#deviceType=time-service, http://openurc.org/ns/res#targetFriendlyName=time-service}
+
+org.openurc.taframework.SuperTAFacade.registerTarget (Line: 129)
+INFORMATION: file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeService.td
+
+edu.wisc.trace.uch.util.socket.TargetDescription.<init> (Line: 88)
+INFORMATION: file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeService.td
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = conformsTo
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = publisher
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = description
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = creator
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = rights
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = contributor
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = resSheet
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = socket
+
+edu.wisc.trace.uch.util.socket.SocketDescription.<init> (Line: 106)
+INFORMATION: Constructor of SocketDescription.
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 470)
+INFORMATION: TD parsing completed successfully.
+
+org.openurc.taframework.SuperTA.useTargetProps (Line: 368)
+INFORMATION: 
+
+org.openurc.taframework.SuperTAFacade.registerTarget (Line: 141)
+INFORMATION: Target with TargetIDTimeServiceId1 was successfuly added
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceSheetManager.parse (Line: 241)
+INFORMATION: TD URI:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/time-service/time-service-1.0/TimeService.td
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceDirectory.parseResSheetElement (Line: 157)
+INFORMATION: Node Name=dcterms:conformsTo
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceDirectory.parseResSheetElement (Line: 157)
+INFORMATION: Node Name=scents
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceDirectory.parseResSheetElement (Line: 157)
+INFORMATION: Node Name=retrieveFrom
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceSheetManager.parse (Line: 339)
+INFORMATION: No of Resource Sheets : 1
+
+addJAR
+successful
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.init (Line: 676)
+INFORMATION: initialization of 'URC-HTTP UIPM'.
+
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.init (Line: 683)
+INFORMATION: --------Resource Uri = http://10.188.111.132:8080/UCH/GetResources
+
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.init (Line: 685)
+INFORMATION: --------Document Uri = http://10.188.111.132:8080/UCH/GetDocument
+
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.init (Line: 687)
+INFORMATION: --------Locator Uri = http://10.188.111.132:8080/UCH/InvokeLocator
+
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.init (Line: 689)
+INFORMATION: --------Config Uri = http://10.188.111.132:8080/UCH/URC-HTTP/config
+
+edu.wisc.trace.uch.uipm.urchttp.net.WSocketServer.startServer (Line: 118)
+INFORMATION: Web Socket Server started and ready on 8888
+
+edu.wisc.trace.uch.contextmanager.UserContextManager.getAvailableTargetIds (Line: 372)
+WARNUNG: Context is null.
+
+edu.wisc.trace.uch.UIPMListener.instantiateUIPMs (Line: 969)
+INFORMATION: '[http://res.openurc.org/upnp/av/uipm/urchttp/java]' UIPM instantiate successfully.
+
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.targetDiscovered (Line: 738)
+INFORMATION: Target discovered with targetId 'TimeServiceId1'.
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 300)
+INFORMATION: Target discovered in TargetManager named 'UPnP Entertainment System'.
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 301)
+INFORMATION: Target Properties = {http://openurc.org/ns/res#type=http://openurc.org/TR/uch/#target, http://openurc.org/ns/res#instanceId=UPnP-UES, http://openurc.org/ns/res#devicePlatform=UPnP, http://openurc.org/ns/res#modelName=UPnP-UES, http://openurc.org/ns/res#deviceType=urn:schemas-upnp-org:device:ues:1, http://openurc.org/ns/res#targetFriendlyName=UPnP Entertainment System}
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query start="1" count="1" ><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#ta" wgt="1" /><prop name="http://openurc.org/ns/res#devicePlatform" val="UPnP" wgt="1" /><prop name="http://openurc.org/ns/res#deviceType" val="urn:schemas-upnp-org:device:ues:1" wgt="1" /><prop name="http://openurc.org/ns/res#runtimePlatform" val="java" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response ref="2b11f2ed-548c-11e6-a957-00075c51ac83" start="1" count="1" total="1" ><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fta%2Fjava&amp;modified=2013-02-16T10:31:18.0Z" index="1"><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fta%2Fjava&amp;modified=2013-02-16T10:31:18.0Z</globalAt><prop name="http://openurc.org/ns/res#devicePlatform" val="UPnP"></prop><prop name="http://openurc.org/ns/res#deviceType" val="urn:schemas-upnp-org:device:ues:1"></prop><prop name="http://openurc.org/ns/res#dynamicLibClass" val="edu.wisc.trace.uch.ta.upnpav.UpnpAvTAFacade"></prop><prop name="http://openurc.org/ns/res#filename" val="upnpavta.jar"></prop><prop name="http://openurc.org/ns/res#mimeType" val="application/java-archive"></prop><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/av/ta/java"></prop><prop name="http://openurc.org/ns/res#runtimePlatform" val="java"></prop><prop name="http://openurc.org/ns/res#tdUri" val="upnpav/UpnpEntertainmentSystem.td"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#ta"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/TR/uch1.0-20121022/"></prop><prop name="http://purl.org/dc/terms/modified" val="2013-02-16T10:31:18.0Z"></prop><prop name="http://res.openurc.org/ta/upnp-av#eventSubscription" val="no"></prop><prop name="http://res.openurc.org/ta/upnp-av#frameDelay" val="5"></prop><prop name="http://res.openurc.org/ta/upnp-av#pollingRate" val="1"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : upnpavta.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fta%2Fjava&modified=2013-02-16T10:31:18.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fta%2Fjava&modified=2013-02-16T10:31:18.0Z
+
+edu.wisc.trace.uch.tdm.generic.GenericTDM$Discovery.run (Line: 250)
+INFORMATION: 'Generic' Target is going to discover.
+
+edu.wisc.trace.uch.tdm.generic.GenericTDM$Discovery.run (Line: 258)
+INFORMATION: Target Properties :{http://openurc.org/ns/res#instanceId=Generic_Instance, http://openurc.org/ns/res#devicePlatform=Generic, http://openurc.org/ns/res#modelName=Generic, http://openurc.org/ns/res#deviceType=http://openurc.org/devicetypes#thermostat, http://openurc.org/ns/res#targetFriendlyName=Generic, http://openurc.org/ns/res#forTargetName=http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td, http://openurc.org/ns/res#scriptFileName[http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis]=http://res.openurc.org/devices/thermostat/script/template/lightWeightThermostat.script, http://openurc.org/ns/res#manufacturer=Generic}
+
+edu.wisc.trace.uch.tdm.generic.GenericTDM$Discovery.run (Line: 259)
+INFORMATION: Ta Properties :{http://openurc.org/ns/res#type=http://openurc.org/restypes#ta, http://openurc.org/ns/res#devicePlatform=generic, http://openurc.org/ns/res#deviceType=http://openurc.org/devicetypes#generic}
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 300)
+INFORMATION: Target discovered in TargetManager named 'Generic'.
+
+edu.wisc.trace.uch.TAListener.targetDiscovered (Line: 301)
+INFORMATION: Target Properties = {http://openurc.org/ns/res#instanceId=Generic_Instance, http://openurc.org/ns/res#devicePlatform=Generic, http://openurc.org/ns/res#modelName=Generic, http://openurc.org/ns/res#deviceType=http://openurc.org/devicetypes#thermostat, http://openurc.org/ns/res#targetFriendlyName=Generic, http://openurc.org/ns/res#forTargetName=http://res.openurc.org/devices/thermostat/targetdesc/template/lightWeightThermostat.td, http://openurc.org/ns/res#scriptFileName[http://res.openurc.org/devices/thermostat/uisocketdesc/template/lightWeightThermostat.uis]=http://res.openurc.org/devices/thermostat/script/template/lightWeightThermostat.script, http://openurc.org/ns/res#manufacturer=Generic}
+
+edu.wisc.trace.uch.TAListener.getTA (Line: 1185)
+INFORMATION: TA Downloaded successfully.
+
+addJAR
+successful
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_10Z_upnpavta.jar\upnpavta.jar'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_upnpavta.jar/upnpavta.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : application/java-archive
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_upnpavta.jar/upnpavta.jar.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_upnpavta.jar/upnpavta.jar
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_upnpavta.jar/upnpavta.jar
+
+edu.wisc.trace.uch.TAListener.getTA (Line: 1185)
+INFORMATION: TA Downloaded successfully.
+
+addJAR
+successful
+edu.wisc.trace.uch.ta.generictarget.GenericTAFacade.init (Line: 106)
+INFORMATION: Document Root : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/
+
+edu.wisc.trace.uch.ta.upnpav.UpnpAvTAFacade.init (Line: 106)
+INFORMATION: I am in init method of UpnpAvTAFacade.
+
+edu.wisc.trace.uch.ta.upnpav.UpnpAvTAFacade.init (Line: 113)
+INFORMATION: Document Root : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/
+
+edu.wisc.trace.uch.tdm.upnp.lib.UpnpControlPoint.addCPListener (Line: 158)
+INFORMATION: -----------------------Control point listener is added. edu.wisc.trace.uch.ta.upnpav.EventHandler
+
+edu.wisc.trace.uch.ta.upnpav.EventHandler.<init> (Line: 82)
+INFORMATION: Discovered Servers : []
+
+edu.wisc.trace.uch.ta.upnpav.EventHandler.<init> (Line: 106)
+INFORMATION: Discovered Renderers : []
+
+edu.wisc.trace.uch.ta.upnpav.UpnpAvTAFacade.setProperties (Line: 903)
+INFORMATION: isSubscriptionAllowed=false poolingRate=1 isPoolingAllowed=true frameDelay=5
+
+edu.wisc.trace.uch.ta.upnpav.UpnpAvTAFacade.registerTarget (Line: 147)
+INFORMATION: Going to register target of UPnPAVTA.
+
+edu.wisc.trace.uch.ta.upnpav.UpnpAvTAFacade.registerTarget (Line: 161)
+SCHWERWIEGEND: Unable to get Target Description URI.
+
+edu.wisc.trace.uch.ta.upnpav.UpnpAvTAFacade.registerTarget (Line: 176)
+INFORMATION: Going to Resource Server to get Target Description File.
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query start="1" count="1" ><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#targetdesc" wgt="1" /><prop name="http://openurc.org/ns/res#forTargetName" val="http://res.openurc.org/upnp/av" wgt="1" /><prop name="http://openurc.org/ns/res#mimeType" val="application/urc-targetdesc+xml" wgt="1" /><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = description
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = conformsTo
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = created
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = modified
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = creator
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = contributor
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = socket
+
+edu.wisc.trace.uch.util.socket.SocketDescription.<init> (Line: 106)
+INFORMATION: Constructor of SocketDescription.
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = resSheet
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 470)
+INFORMATION: TD parsing completed successfully.
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceSheetManager.parse (Line: 241)
+INFORMATION: TD URI:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/resources/thermostat/lightWeightThermostat.td/lightWeightThermostat.td
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceDirectory.parseResSheetElement (Line: 157)
+INFORMATION: Node Name=dcterms:conformsTo
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceDirectory.parseResSheetElement (Line: 157)
+INFORMATION: Node Name=retrieveFrom
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceDirectory.parseResSheetElement (Line: 157)
+INFORMATION: Node Name=scents
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceDirectory.getDocumentFromThisURI (Line: 724)
+SCHWERWIEGEND:  Error occured..  Can not resolve URI  : http://res.openurc.org/devices/thermostat/ressheet/template/lightWeightThermostat.rsheet
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceSheetManager.parse (Line: 339)
+INFORMATION: No of Resource Sheets : 2
+
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.targetDiscovered (Line: 738)
+INFORMATION: Target discovered with targetId 'Generic_Instance'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response ref="2b542c0e-548c-11e6-a957-00075c51ac83" start="1" count="1" total="1" ><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav&amp;modified=2012-11-26T12:25:37.0Z" index="1"><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav&amp;modified=2012-11-26T12:25:37.0Z</globalAt><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/av"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/terms/modified" val="2012-11-26T12:25:37.0Z"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#targetdesc"></prop><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/ns/targetdesc-2/isoiec24752-4-2013"></prop><prop name="http://openurc.org/ns/res#mimeType" val="application/urc-targetdesc+xml"></prop><prop name="http://openurc.org/ns/res#forTargetName" val="http://res.openurc.org/upnp/av"></prop><prop name="http://openurc.org/ns/res#filename" val="UpnpEntertainmentSystem.td"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : UpnpEntertainmentSystem.td
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav&modified=2012-11-26T12:25:37.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav&modified=2012-11-26T12:25:37.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td\UpnpEntertainmentSystem.td'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td/UpnpEntertainmentSystem.td
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : application/urc-targetdesc+xml
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td/UpnpEntertainmentSystem.td.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td/UpnpEntertainmentSystem.td
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td/UpnpEntertainmentSystem.td
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = conformsTo
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = created
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = modified
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = creator
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = socket
+
+edu.wisc.trace.uch.util.socket.SocketDescription.<init> (Line: 106)
+INFORMATION: Constructor of SocketDescription.
+
+edu.wisc.trace.uch.util.socket.SocketDescription.parseSocketElement (Line: 191)
+SCHWERWIEGEND:  'retrieveFrom' uris in TD, at 'file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td/UpnpEntertainmentSystem.td' are not sufficient to find socket file ..!!! 
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query start="1" count="1" ><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/av/play-1.uis" wgt="1" /><prop name="http://openurc.org/ns/res#mimeType" val="application/urc-uisocketdesc+xml" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response ref="2b6a4c1f-548c-11e6-a957-00075c51ac83" start="1" count="1" total="1" ><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-1.uis&amp;modified=2012-11-26T12:39:40.0Z" index="1"><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-1.uis&amp;modified=2012-11-26T12:39:40.0Z</globalAt><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/av/play-1.uis"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/terms/modified" val="2012-11-26T12:39:40.0Z"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#uisocketdesc"></prop><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013"></prop><prop name="http://openurc.org/ns/res#mimeType" val="application/urc-uisocketdesc+xml"></prop><prop name="http://openurc.org/ns/res#forSocketName" val="http://res.openurc.org/upnp/av/play-1.uis"></prop><prop name="http://openurc.org/ns/res#filename" val="play-1.uis"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : play-1.uis
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-1.uis&modified=2012-11-26T12:39:40.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-1.uis&modified=2012-11-26T12:39:40.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_10Z_play-1.uis\play-1.uis'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_play-1.uis/play-1.uis
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : application/urc-uisocketdesc+xml
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_play-1.uis/play-1.uis.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_play-1.uis/play-1.uis
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_play-1.uis/play-1.uis
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 430)
+INFORMATION: Node Name = socket
+
+edu.wisc.trace.uch.util.socket.SocketDescription.<init> (Line: 106)
+INFORMATION: Constructor of SocketDescription.
+
+edu.wisc.trace.uch.util.socket.SocketDescription.parseSocketElement (Line: 191)
+SCHWERWIEGEND:  'retrieveFrom' uris in TD, at 'file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td/UpnpEntertainmentSystem.td' are not sufficient to find socket file ..!!! 
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 216)
+INFORMATION: Resource Server Query URL : https://res.openurc.org/query
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.queryResource (Line: 217)
+INFORMATION: Query Request Body : <queries><query start="1" count="1" ><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/av/play-2.uis" wgt="1" /><prop name="http://openurc.org/ns/res#mimeType" val="application/urc-uisocketdesc+xml" wgt="1" /></query></queries>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 125)
+INFORMATION: @@ QueriesResponse : <?xml version="1.0" encoding="UTF-8"?><responses><response ref="2b8e00c0-548c-11e6-a957-00075c51ac83" start="1" count="1" total="1" ><resource about="http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-2.uis&amp;modified=2012-11-26T12:44:07.0Z" index="1"><globalAt>http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-2.uis&amp;modified=2012-11-26T12:44:07.0Z</globalAt><prop name="http://openurc.org/ns/res#name" val="http://res.openurc.org/upnp/av/play-2.uis"></prop><prop name="http://purl.org/dc/elements/1.1/publisher" val="http://trace.wisc.edu"></prop><prop name="http://purl.org/dc/terms/modified" val="2012-11-26T12:44:07.0Z"></prop><prop name="http://openurc.org/ns/res#type" val="http://openurc.org/restypes#uisocketdesc"></prop><prop name="http://purl.org/dc/terms/conformsTo" val="http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013"></prop><prop name="http://openurc.org/ns/res#mimeType" val="application/urc-uisocketdesc+xml"></prop><prop name="http://openurc.org/ns/res#forSocketName" val="http://res.openurc.org/upnp/av/play-2.uis"></prop><prop name="http://openurc.org/ns/res#filename" val="play-2.uis"></prop></resource></response></responses>
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 143)
+INFORMATION: In For Loop...!!!!
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 169)
+INFORMATION: %^% FileName : play-2.uis
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 473)
+INFORMATION: @@ HTTpRequestRESPONSE-RetrievalURI=http://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-2.uis&modified=2012-11-26T12:44:07.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.retrieveResource (Line: 504)
+INFORMATION: Retrieval URL : https://res.openurc.org/retrieve?name=http%3A%2F%2Fres.openurc.org%2Fupnp%2Fav%2Fplay-2.uis&modified=2012-11-26T12:44:07.0Z
+
+edu.wisc.trace.uch.resource.retrievalmanager.HttpRequestResponseUtil.httpsRetrieveResource (Line: 1215)
+INFORMATION: Resource Downloaded as 'C:\Users\Lukas\workspace\remex-ta-set\hdm-ta-set\vlc\server\uch-4.0-bin\uch-4.0\bin\cache\2016_07_28T06_26_11Z_play-2.uis\play-2.uis'.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 178)
+INFORMATION: $$ => file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_11Z_play-2.uis/play-2.uis
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.processDownloadedResource (Line: 380)
+INFORMATION: @@ MimeType : application/urc-uisocketdesc+xml
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 338)
+INFORMATION: $$$ file path uri : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_11Z_play-2.uis/play-2.uis.rprop
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.writeRPropFile (Line: 341)
+INFORMATION: #$# File is created.
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.getResources (Line: 192)
+INFORMATION: rprop file is created successfully for : file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_11Z_play-2.uis/play-2.uis
+
+edu.wisc.trace.uch.resource.retrievalmanager.RetrievalManager.cacheDownloadedResource (Line: 1194)
+INFORMATION: @@ Resource Local AT : cacheDownloadResource = file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_11Z_play-2.uis/play-2.uis
+
+edu.wisc.trace.uch.util.socket.TargetDescription.parse (Line: 470)
+INFORMATION: TD parsing completed successfully.
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceSheetManager.parse (Line: 241)
+INFORMATION: TD URI:file:///C:/Users/Lukas/workspace/remex-ta-set/hdm-ta-set/vlc/server/uch-4.0-bin/uch-4.0/bin/cache/2016_07_28T06_26_10Z_UpnpEntertainmentSystem.td/UpnpEntertainmentSystem.td
+
+edu.wisc.trace.uch.resource.resourcesheetmanager.ResourceSheetManager.parse (Line: 339)
+INFORMATION: No of Resource Sheets : 2
+
+edu.wisc.trace.uch.uipm.urchttp.UrcHttpUIPM.targetDiscovered (Line: 738)
+INFORMATION: Target discovered with targetId 'UPnP-UES'.
+
+edu.wisc.trace.uch.tdm.thermostat.util.StateListener.run (Line: 96)
+INFORMATION: Difference = 3000
+
+edu.wisc.trace.uch.UchZeroConfService.<init> (Line: 110)
+INFORMATION: Zero Conf Service 'UCH Zero Conf Service' with Host Name 'uch.local.' started.
+Service : service[UCH Zero Conf Service._http._tcp.local.,Lukas_Arbeit/10.188.111.132:8080,"path=/UCH/interface...]
+
+Stoppe Tomcat
+edu.wisc.trace.uch.UchZeroConfService.finalize (Line: 154)
+INFORMATION: Unregister all Zero Conf Services.
+
