@@ -1,0 +1,16 @@
+{
+  "name": "myui-smarthome",
+  "description": "",
+  "homepage": "",
+  "keywords": [
+  ],
+  "author": "Daniel Ziegler <daniel.ziegler@iao.fraunhofer.de>",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.2"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ]
+}
