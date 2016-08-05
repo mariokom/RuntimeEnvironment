@@ -1,0 +1,90 @@
+body {
+	color: #FEFEFE;
+	background-color: #330066;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+	line-height: 130%;
+}
+
+h1 {
+	color: White;
+	background-color: #330066;
+	text-align: left;
+	line-height: 1.5em;
+	font-size: 120%;
+	}
+
+table {
+	border: medium solid #B4B4B4;
+	border-style: solid;
+}
+
+td {
+	border: thin solid #B4B4B4;
+	border-style: solid;
+	background: #585858;
+	font-size: x-small;
+}
+	
+th {
+	border: thin solid #B4B4B4;
+	border-style: solid;
+	background: #330066;
+	font-size: smaller;
+}
+
+a {
+    color: White;
+    font-weight: bold;
+}
+	
+.footer {
+    display: inherit;
+	font-size: xx-small;
+	font-style: italic;
+	text-align: left;
+}
+
+.error {
+    color: White;
+    background-color: Red;
+    font-weight: bold;
+}
+
+.loghidden {
+    display: none;
+    font-size: inherit;
+    color: Silver;
+    background-color: Black;
+}
+
+.logshown {
+    display: inherit;
+    font-size: inherit;
+    color: Silver;
+    background-color: Black;
+}
+
+.signalinvisible {
+    color:#330066;
+    font-size:xx-small;
+}
+
+.signalvisible {
+    color:Gray;
+    font-size:xx-small;
+}
+
+.notifyinactive {
+    display: none;
+}
+
+.notifyactive {
+    display: block;
+    color: White;  
+    border: solid medium White;
+	/* Parikshit Thakur : 20110825. Removed. Set BG color according to notification type from script*/
+   /*	background-color: Red;*/ 
+    font-weight: bold;
+    text-align: center;
+}

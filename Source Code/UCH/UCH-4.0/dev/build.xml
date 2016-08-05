@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--Copyright (C) 2006-2013  Board of Regents of the University of Wisconsin System (Univ. of Wisconsin-Madison, Trace R&D Center).
+
+	This piece of the software package, developed by the Trace Center - University of Wisconsin is released to the public domain with only the following restrictions:
+
+	1) That the following acknowledgement be included in the source code and documentation for the program or package that use this code:
+
+	"Parts of this program were based on software developed by the Trace Center, University of Wisconsin-Madison under funding from NIDRR / US Dept of Education."
+
+	2) That this program not be modified unless it is plainly marked as modified from the original distributed by Trace.
+
+	NOTE: This license agreement does not cover third-party components bundled with this software, which have their own license agreement with them. A list of included third-party components with references to their license files is provided with this distribution. 
+
+	This software was developed under funding from NIDRR / US Dept of Education under grant # H133E030012.
+
+	THIS SOFTWARE IS EXPERIMENTAL/DEMONSTRATION IN NATURE. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+-->
+
+<project default="init" name="UCH">
+	
+	<property name="src.main.java" value="${basedir}/src/main/java" />
+		<property name="src.main.resources" value="${basedir}/src/main/resources" />
+		<property name="src.test.java" value="${basedir}/src/test/java" />
+		<property name="zipDir" value="${basedir}/../zip" />
+			<property name="binmain" value="${basedir}/../bin/main" />
+			<property name="bin.dir" value="${basedir}/../bin" />
+
+	<property name="src.main.webclient" value="${basedir}/src/main/resources/Webclient"/>
+		<property name="lib.main" value="${basedir}/lib/main"/>
+		<property name="lib.test" value="${basedir}/lib/test"/>
+
+<property name="build.main" value="${basedir}/build/main" />
+<property name="build.test" value="${basedir}/build/test" />
+<property name="bin.classpath.lib"  value="${bin.dir}/lib"/>
+
+<property name="test.report.dir" value="${basedir}/TestReports"/>	
+
+	<property name="interfacelists" value="${src.main.resources}/interfacelist"/>
+	<property name="META-INF" value="${src.main.resources}/META-INF"/>
+	<property name="resources" value="${src.main.resources}/resources"/>
+	
+	<property name="debug" value="off" />
+	
+	<tstamp>
+		<format property="datetimestamp" pattern="yyyy-MM-dd 'at' HH:mm:ss z"/>
+	</tstamp>
+	
+	<tstamp>
+		<format property="datetime" pattern="yyyy-MM-dd"/>
+	</tstamp>
+	
+	<!-- Initially Make and Copy all important Files and Folders to UCH.Jar Directory  -->
+
+    <path id="main.class.path">
+        <fileset dir="${lib.main}"/>
+    </path>
+
+    <!-- Test classpath. -->
+    <path id="test.class.path">
+<path refid="main.class.path"/>
+        <fileset dir="${lib.test}"/>
+    	
+    	<dirset dir="${build.main}"></dirset>
+    </path>
+
+    <!-- JUnit classpath. -->
+<path id="junit.class.path">
+    <fileset dir="${lib.main}" includes="*.jar"/>
+    <fileset dir="${lib.test}" includes="*.jar"/>
+    <pathelement location="${build.main}"/>
+    <pathelement location="${build.test}"/>
+</path>
+	
+	<path id="bin.classpath.lib">
+	        <fileset dir="${bin.dir}/lib" includes="*.jar"/>
+	    </path>
+
+
+	<target name="init" description="Must be made before any other target.">
+		<mkdir dir="${bin.dir}/lib" />
+<mkdir dir="${build.main}" />
+		<mkdir dir="${build.test}" />
+
+<!-- copy dependencies -->
+	<copy todir="${bin.dir}/lib" >
+			<fileset dir="${lib.main}"/>
+		</copy>
+<!-- copy all files from src/main/resources -->
+<copy todir="${bin.dir}">
+			<fileset includes="*.html" dir="${src.main.resources}"/>
+		</copy>
+
+<!-- copy Webclient files without its build.xml -->
+		<copy todir="${bin.dir}/Webclient">
+					<fileset includes="**.*" excludes="build.xml" dir="${src.main.webclient}"/>
+				</copy>
+				
+		<!-- copy interfacelist and related files -->
+		<copy todir="${bin.dir}/interfacelist/">
+			<fileset dir="${interfacelists}"/>
+		</copy>
+
+<!-- copy UCH resources -->
+<copy todir="${bin.dir}/resources">
+					<fileset dir="${resources}"/>
+		</copy>
+
+		
+<mkdir dir="${test.report.dir}"/>
+	</target>
+	
+<target name="clean">
+<delete dir="${bin.dir}" />
+<delete dir="${basedir}/build" />
+
+<delete dir="${test.report.dir}"/>
+</target>
+
+<target name="showPaths" >
+
+	<property name="test.path" refid="test.class.path" />
+	<echo message="Test ClassPath is: ${test.path}"/>
+			
+	        <property name="junit.path" refid="junit.class.path"/>
+	        <echo message="JUnit ClassPath is: ${junit.path}"/>
+
+</target>
+
+	<target name="compile-all" description="Compile UCH source code" depends="init">
+<javac srcdir="${src.main.java}" destdir="${build.main}" includes="**/*.java" includeantruntime="false" debug="true" verbose="true"
+source="1.7"
+target="1.7"
+>
+			<classpath refid="main.class.path" />
+		</javac>
+
+		<javac srcDir="${src.test.java}" destdir="${build.test}" includes="**/*.java" includeantruntime="false" debug="true" verbose="true"
+source="1.7"
+target="1.7"
+>
+			<classpath refid="test.class.path" 
+/>
+		</javac>
+
+	</target>
+	
+	
+	<!-- Preparing Java documentation -->
+	<target name="javadoc" depends="compile-all" description="Generate javadoc files" >
+		<javadoc packagenames="org.openurc.uch.*,edu.wisc.trace.uch.*" 
+			sourcepath="${src.main.java}"
+			classpathref="main.class.path"
+		         defaultexcludes="yes"
+		         destdir="${basedir}/../doc"
+		         author="true"
+		         version="true"
+		         use="true"
+		         windowtitle="UCH(Universal Control Hub) Documentation">
+			
+		         <doctitle><![CDATA[
+		    	           <h1>UCH(Universal Control Hub) Documentation</h1>
+		    				<p>This is the API documentation for UCH.</p>
+		    	           ]]>
+		         </doctitle>
+		         <bottom><![CDATA[<i>Copyright &#169; 2006-2013 Trace R&amp;D Center, University of Wisconsin-Madison. All Rights Reserved.</i>]]></bottom>			        
+			     <group title="UCH Packages" packages="edu.wisc.trace.uch:edu.wisc.trace.uch.action:edu.wisc.trace.uch.servlet:edu.wisc.trace.uch.contextmanager:edu.wisc.trace.uch.resource:edu.wisc.trace.uch.resource.resourcesheetmanager:edu.wisc.trace.uch.resource.localresourcemanager:edu.wisc.trace.uch.resource.retrievalmanager:edu.wisc.trace.uch.resource.uploadmanager.*:edu.wisc.trace.uch.resource.util"/>
+				 <group title="Utility Packages" packages="edu.wisc.trace.uch.util:edu.wisc.trace.uch.util.*" />
+		          
+			 	 <group title="Interface Package" packages="org.openurc.uch"/>	
+			
+				 <link href="http://docs.oracle.com/javase/6/docs/api/"/>
+				 <link href="http://tomcat.apache.org/tomcat-5.5-doc/servletapi/"/>
+		</javadoc>
+		
+	</target>
+	
+	
+	<!-- Preparing uchInrerfaces.jar -->
+	<target name="make-uchInrerfaces-jar" description="Create UCH Interaface Jar">
+		<jar destfile="${bin.dir}/uchinterfaces.jar">
+			<fileset dir="${build.main}">
+				<include name="org/**" />
+			</fileset>
+		</jar>	
+	</target>
+	
+	<!-- Preparing uchUtil.jar -->	
+	<target name="make-uchUtil-jar" description="Create UCH Util Jar">
+		<jar destfile="${bin.dir}/uchutil.jar">
+			<fileset dir="${build.main}">
+				<include name="edu/wisc/trace/uch/util/**" />
+			</fileset>
+		</jar>	
+	</target>
+	
+	<!-- Preparing uchcore.jar -->
+		<target name="make-uchCore-jar" description="Create UCH Core Jar">
+			<jar destfile="${bin.dir}/uchcore.jar">
+				<fileset dir="${build.main}">
+	    			<exclude name="org/**" />
+					<exclude name="edu/**/uch/util/**" />
+				</fileset>
+			</jar>	
+		</target>
+
+	<target name="make-jars" depends="compile-all,make-uchCore-jar,make-uchInrerfaces-jar,make-uchUtil-jar"/>
+	
+	
+	
+	
+	<!-- Create UCH.jar file-->
+		<target name="make-uch-jar" description="Prepare UCH " depends="make-jars" >
+			<move todir="${basedir}/../bin/lib">
+				<fileset dir="${basedir}/../bin"> 
+<include name="*.jar" />
+				</fileset>
+			</move>
+
+			<manifestclasspath property="lib.classpath.list" jarfile="${bin.dir}/lib">
+									   <classpath refid="bin.classpath.lib"/>
+								</manifestclasspath>
+						
+			<jar destfile="${bin.dir}/UCH.jar" basedir="${build.main}">
+				<manifest>
+					<attribute name="Main-Class" value="edu.wisc.trace.uch.launch.Launcher"/>
+					<attribute name="Class-Path" 
+						value="${lib.classpath.list}"/>
+					<attribute name="Project_name" value="UCHj"/> 
+					<attribute name="Version" value="4.0"/>
+					<attribute name="Build_date" value="${datetimestamp}"/>
+					<attribute name="Publisher" value="Hochschule der Medien Stuttgart - Stuttgart Media University, http://www.hdm-stuttgart.de"/>
+					<attribute name="License" value="See LicenseAgreement.html"/>
+				</manifest>
+			</jar>
+			
+		</target>	
+
+	
+	<!-- Preparing UCHj.zip -->	
+	<target name="uch-zip" description="Make zip file of SDK" depends="delete-temp-files, compile-all">
+		<mkdir dir="${zipDir}"/>
+		<copy file="${basedir}/../yyyy-mm-dd.builddate" tofile="${basedir}/../${datetime}.builddate" />
+		
+		<zip destfile="${zipDir}/UCHj.zip" basedir="${basedir}/.." 
+			includes="UCHj-ReleaseNotes.html, 3rdPartyLicenses.html, Installation.html, license.txt, LicenseAgreement.html, index.html, 
+			 bin/**, dev/src/**, dev/build.xml, dev/WebContent/**, doc/**, tutorial/**, ${datetime}.builddate"
+			excludes="**/.*, dev/WebContent/resources/**/*, keystore/**, dev/bin/**, zip/**, dev/*.builddate">
+		</zip>
+		
+	</target>
+	
+	
+	<target name="delete-temp-files">
+		<delete>
+			<fileset dir="${basedir}/../">
+		    	<include name="*.builddate"/>
+		    	<exclude name="yyyy-mm-dd.builddate"/>
+			</fileset>
+		</delete>		
+		<delete dir="${basedir}/build"/>
+	</target>
+	
+	<target name="test" depends="compile-all">
+	    <junit printsummary="yes" fork="true" haltonfailure="yes">
+	      <classpath refid="junit.class.path" />
+	      <formatter type="plain" />
+	      <batchtest todir="${test.report.dir}">
+	        <fileset dir="${src.test.java}">
+	          <include name="**/*Test*.java" />
+	        </fileset>
+	      </batchtest>
+	    </junit>
+
+	</target>
+
+	<target name="run" >
+	       <java
+	           dir="${bin.dir}"
+	           jar="${bin.dir}/UCH.jar"
+	        fork="yes"
+	       />
+</target>
+	</project>

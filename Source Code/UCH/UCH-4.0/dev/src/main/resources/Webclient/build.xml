@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="make-zip" name="Webclient">
+	
+	<property name="binDir" value="${basedir}/../bin" />
+	<property name="tutorialDir" value="${basedir}/../tutorial" />
+	<property name="zipDir" value="${basedir}/../zip" />
+	<property name="debug" value="off" />
+	
+	<tstamp>
+		<format property="datetimestamp" pattern="yyyy-MM-dd 'at' HH:mm:ss z"/>
+	</tstamp>
+	
+	<tstamp>
+			<format property="datetime" pattern="yyyy-MM-dd"/>
+	</tstamp>
+		
+	<target name="init" description="Prepare timestamp file">
+		<delete>
+			<fileset dir="${basedir}/.." includes="*.builddate"/>			
+		</delete>
+		<copy file="${basedir}/yyyy-mm-dd.builddate" tofile="${basedir}/../${datetime}.builddate" />		
+	</target>
+	
+	<target name="make-zip" description="Make zip file for download" depends="init">
+		<mkdir dir="${zipDir}"/>
+		
+		<zip destfile="${zipDir}/Webclient.zip" basedir="${basedir}/.." 
+			includes="*.html, *.txt, *.builddate, bin/*, tutorial/**"
+			excludes="**/.*, TagHistory.html">
+		</zip>
+		
+	</target>
+	
+	
+</project>
+	

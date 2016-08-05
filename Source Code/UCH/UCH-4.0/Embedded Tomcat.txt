@@ -1,0 +1,36 @@
+Embedded Tomcat:
+
+Launcher Class:
+1. Instantiate tomcat Server in  Class edu.wisc.trace.uch.launch.Launcher
+
+2. Create Configuration File on Method initConfigFile config.xml at Context Path root/config.xml 
+	- Using JAXB to Create File with underlying Configuration Class
+
+3. Initialize Context
+	- redirect.html as WelcomeFile which redirects to host/UCH/interfacelst/index.html  	
+	- add Servlets with Servletmapping in methods initServlets and mapServlet
+	- add ContextListener Class UCHContextListener to Context initiation Event to call further Methods in UCHContextListener
+4. Function "createDefaultServlet" Enables rendering static content (html files)
+
+
+
+Build.xml
+
+5. init target creates Folder Structure for UCH.Jar 
+bin/lib as Project Path .jat libraries
+bin/interfacelist for index.html startpage
+bin/META-INF to read version number etc in UCHConfigServlet
+bin/*.html as a Reference from interfacelist/index.html
+bin/resources for targetAdapter? definitions
+
+
+
+UCH Class
+
+6. Reading Ressource Server Config out of Config File on Init Method
+
+-> added readConfigFile() Method
+
+Tried to read with JAXB, not worked
+
+Get Values with DOMParser 

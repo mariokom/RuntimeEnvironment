@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.2
+Created-By: 1.7.0_60-b19 (Oracle Corporation)
+Project_name: UCHj
+Version: 4.0
+Build_date: 2015-04-09 at 11:09:29 MESZ
+Publisher: Trace R&D Center, University of Wisconsin-Madison, http://t
+ race.wisc.edu
+License: See LicenseAgreement.html

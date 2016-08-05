@@ -1,0 +1,7 @@
+For start open-browser script make changes as follow in the file 'usr/share/genom/default.session'.
+
+4,id=default4
+4,Priority=80
+4,RestartCommand=sh /usr/local/tomcat/livecd/livecd.sh
+
+Note : Above lines are an example. Real code may be different
