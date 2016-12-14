@@ -49,7 +49,7 @@ public class SetElement {
 			return "";
 		}
 		
-		text = "<set ref=\""+this.ref+"\">" + this.value + "</set>";
+		text = "<set ref=\"/"+this.ref+"\">" + this.value + "</set>";
 		
 		return text;
 	}
