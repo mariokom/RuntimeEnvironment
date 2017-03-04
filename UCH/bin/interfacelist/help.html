@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<title>Help</title>
+		
+		<script type="text/javascript" language="javascript">
+		
+			function init() {
+			
+				var actionVal = getActionValue( window.location.search.substring(1) );
+				
+				if ( actionVal == 'login' ) 
+					showLogin();
+			};
+			
+			getActionValue = function(queryStr) {
+			
+				if ( !queryStr )
+					return null;
+					
+				var parms = getRequestParams(queryStr);
+				
+				if ( !parms )
+					return null;
+					
+				return parms['action'];
+			};
+			
+			/*Get Request Parameters from query string*/
+			getRequestParams = function(queryStr) {
+
+				if ( !queryStr )
+					return null;
+					
+				var parms = queryStr.split('&');
+			
+				if ( !parms || (parms.length == 0) )
+					return null;
+					
+				var qsParm = new Array();
+				
+				for (var i=0; i<parms.length; i++) {
+				
+					var pos = parms[i].indexOf('=');
+					
+					if (pos > 0) {
+					
+						var key = parms[i].substring(0,pos);
+						var val = parms[i].substring(pos+1);
+						qsParm[key] = val;
+					}
+				}
+				
+				return qsParm;
+			};
+			
+			showNotes = function() {
+			
+				document.getElementById("notesDiv").style.display = "inline";
+				document.getElementById("loginDiv").style.display = "none";
+			};
+			
+			showLogin = function() {
+			
+				document.getElementById("notesDiv").style.display = "none";
+				document.getElementById("loginDiv").style.display = "inline";
+			};
+			
+			
+			var threadTimer = null;
+			
+			changeUserNamePass = function(uName, uPass) {
+			
+				if ( !uName ) {
+					alert("Please enter User Name.");
+					return;
+				}
+				
+				if ( !uPass ) {
+					alert("Please enter User Password.");
+					return;
+				}
+				
+				var requestURL = "/UCH/updateuser?" + "username=" + escape(uName) + "&" + "password=" + escape(uPass);
+				
+				var status = getResponseStatus(requestURL, null);
+				
+				if ( status == 200 ) {
+					//alert("UserName and Password of UCH is updated successfully.\nPlease close all browser windows and open again.");
+					
+					threadTimer =  setTimeout(moveBack,1000);
+					//document.location = "index.html";
+				} else {
+				
+					document.getElementById("msgDiv").style.display = "inline";
+					document.getElementById("msgLabel").innerHTML = "Invalid UserName or Password";
+				}
+			};
+			
+			moveBack = function() {
+				document.location = "index.html";
+			};
+			
+			/*Function related to AJAX request starts*/
+			/**
+			 * To send AJAX request
+			 * @param {Object} url a string of url
+			 * @param {Object} requestBody request body
+			 */
+			getResponseStatus = function( url, requestBody ) {
+				
+				var responseText;
+				var request = null;
+				
+				var method = requestBody ? "POST" : "GET";
+				var postString = null;
+				
+				if ( requestBody )
+					postString = toXmlString(requestBody);
+					
+				try {
+							
+							request = new XMLHttpRequest();
+							
+						} catch(e) {
+						
+							try {
+									request = new ActiveXObject("Msxml2.XMLHTTP");
+									
+							} catch(e1) {
+							
+								try {
+									
+									request = new ActiveXObject("Microsoft.XMLHTTP");
+									
+								} catch(e2) {
+									
+									try{
+										request = new ActiveXObject("Microsoft.XMLHTTP");
+									} catch (e3){
+										// Something went wrong
+										alert("Your browser broke!");
+										return false;
+									}
+		
+									
+								}
+							}
+						}
+						
+					try {
+						
+						if ( request == null ) {
+							return null;
+						}
+						
+						request.open(method, url, false);		// synchronous for now
+					//	request.setRequestHeader("User-Agent", "uipmclient");
+					//	request.setRequestHeader("Accept-Language", "en");
+					//	request.setRequestHeader('Content-Type', 'text/html');
+					//	request.setRequestHeader("If-Modified-Since", Date());  
+						
+						//if ( postString )
+							request.send(postString);
+						
+						while ( request.readyState != 4 ) {
+						
+						}
+						
+						return request.status
+						/*
+						responseText = request.responseText;
+						var responseXml = generateXMLDoc(responseText);
+						
+						return responseXml;
+						*/
+						
+				  } catch(e4) {
+				  }
+			};
+		
+			
+			/**
+			 * Function to convert xml to string
+			 * @param {Object} doc document to be converted to string
+			 */
+			toXmlString = function(doc) {
+			
+				var xmlString;
+			   
+				if (!doc || typeof doc == "string")   
+				   return doc;                         // doc is already a string
+				else if (doc.documentElement.xml)
+					return doc.documentElement.xml;		// IE
+				else
+					return (new XMLSerializer()).serializeToString(doc);
+			};
+
+		</script>
+	</head>
+	<body onload="init()">
+	
+		<div id="notesDiv" style="display:inline">
+		
+				<ul> <h3>Possible causes:</h3>
+					<li>Approval pending.</li>
+					<li>You edited web.xml and provided an invalid userid/password.</li>
+					<li>You or someone else changed the password on the resource server, but not in web.xml.</li>
+					<li>Your account has been deleted by the administrator.</li>
+				</ul>
+				
+				<br />
+				
+				<input type="button" name="changeBtn" value="Change Username/Password of current UCH"  onClick='showLogin()' title="Use this button to remove currently selected user"/>
+				&nbsp;&nbsp;
+				<input type="button" name="subBtn" value="Cancel" onclick="moveBack();" title="Use this button to move previous page.">
+		</div>
+		
+		
+		<div id="loginDiv" style="display:none">
+		
+			<center>
+				<div id="msgDiv" style="display:none;">
+					<label id="msgLabel" style="color:#FF0000"></label>
+				</div>
+				<table  cellpadding=5 >  
+	
+					<tr>
+						<td align=right><b>New User-id &nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp</b></td><td><input id="uName" type="text" name="uName" title="Enter user-id here"></td>
+					</tr>
+	
+					<tr>
+						<td align=right><b>New Password :&nbsp&nbsp&nbsp&nbsp</b></td><td><input type="text" id="uPass" name="uPass" title="Enter password here"></td>
+					</tr>
+	
+					<tr>
+						<td colspan="2">
+							<center>
+								<input type="button" name="subBtn" value="Update" onclick="changeUserNamePass(document.getElementById('uName').value, document.getElementById('uPass').value);" title="Use this button to Update UserName/Password of UCH.">
+								&nbsp;&nbsp;
+								<input type="button" name="subBtn" value="Cancel" onclick="moveBack();" title="Use this button to move previous page.">
+							</center>
+						</td>			
+					</tr>  
+					
+				</table>
+			</center>
+			
+		</div>
+		
+	</body>
+</html>
