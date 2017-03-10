@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen SCHSchema="http://openurc.org/ns/uisocketdesc-2"?>
+<uiSocket
+    about="http://hdm-stuttgart.de/Woehlke/WoehlkeConfigurationManager/WoehlkeConfigurationManager/WoehlkeConfigurationManagerSocket"
+    id="WoehlkeConfigurationManagerSocket"
+    xmlns="http://openurc.org/ns/uisocketdesc-2"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:uis="http://openurc.org/ns/uisocketdesc-2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openurc.org/ns/uisocketdesc-2 http://openurc.org/ns/uisocketdesc-2 http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd http://purl.org/dc/terms/ http://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd">
+    <dcterms:conformsTo>http://openurc.org/ns/uisocketdesc-2/isoiec24752-2-2013</dcterms:conformsTo>
+    <dc:description>is the Socket for adding and configuring new soWoehlke Websteckdosen		</dc:description>
+    <dc:creator>Lukas Smirek</dc:creator>
+    <dc:contributor>Gottfried Zimmermann</dc:contributor>
+    <dc:rights>Creative Commons By Attribution</dc:rights>
+    <dc:publisher>http://hdm-stuttgart.de</dc:publisher>
+    <command id="addNewWebSteckdose" type="uis:basicCommand">
+        <param dir="in" id="IpAddress" type="xsd:string">
+            <dc:description/>
+        </param>
+    </command>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema"/>
+</uiSocket>
