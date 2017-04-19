@@ -52,7 +52,7 @@ class SmarthomeService extends myui.AaimService {
   
   mapUrcHSBtoColor(hsbValues) {
     return { 
-      hue: hsbValues.HueDegree, 
+      hue: hsbValues.HueDegree + 180, 
       sat: hsbValues.Saturation, 
       bright: hsbValues.Brightness
     };
@@ -60,7 +60,7 @@ class SmarthomeService extends myui.AaimService {
   
   mapColorToUrcHSB(color) {
     return {
-      HueDegree: color.hue,
+      HueDegree: color.hue - 180,
       Saturation: color.sat,
       Brightness: color.bright,
       LightSwitch: color.bright > 0

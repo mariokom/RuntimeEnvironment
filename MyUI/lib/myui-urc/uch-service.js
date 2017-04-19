@@ -26,6 +26,7 @@ class UchService extends myui.AaimService {
   }
   
   currentState(socketName, targetId) {
+	org_myurc_webclient_openSession(socketName, targetId);
     org_myurc_webclient_init([socketName], 0);
 
     let values = {};
@@ -39,6 +40,7 @@ class UchService extends myui.AaimService {
   }
   
   setState(socketName, targetId, values) {
+	org_myurc_webclient_openSession(socketName, targetId);
     org_myurc_webclient_init([socketName], 0);
     
     let elements = [];
