@@ -13,7 +13,7 @@
 
 	<prop>
 		<name>http://openurc.org/ns/res#resourceUri</name>
-		<value>philips-hue-configuration-manager-1.2.jar</value>
+		<value>philips-hue-configuration-manager-1.3.jar</value>
 	</prop>
 	
 	<prop>

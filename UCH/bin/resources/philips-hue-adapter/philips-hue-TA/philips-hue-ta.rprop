@@ -11,7 +11,7 @@
     </prop>
     <prop>
         <name>http://openurc.org/ns/res#resourceUri</name>
-        <value>philips-hue-ta-1.2.jar</value>
+        <value>philips-hue-ta-1.3.jar</value>
     </prop>
     <prop>
         <name>http://openurc.org/ns/res#dynamicLibClass</name>
