@@ -43,7 +43,7 @@ It is required to:
 This is a Quickstart Guide. For more information refer to the the Runtime Environment Setup manual: 
 https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.pdf
 
-Step 1: By default, AsTeRICS is configured to communicate with UCH on the same machine (localhost). If there is a need for UCH to run on a different machine, please see Section 4 of ANNEX III in documentation folder https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx, otherwise no further actions are required: the AsTeRICS files are precompiled and preconfigured.
+Step 1: By default, AsTeRICS is configured to communicate with UCH on the same machine (localhost). If there is a need for UCH to run on a different machine, please see Section 4 of the Runtime Environment Setup manual, otherwise no further actions are required: the AsTeRICS files are precompiled and preconfigured.
 
 Step 2: Install GPII by using the installer to be found here: ‘REFolderPath/GPII/GPII.160119.044327.msi’
 
