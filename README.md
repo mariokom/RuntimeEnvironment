@@ -37,7 +37,7 @@ It is required to:
 
 - extract the contents of the folder to a preferred location
 
-- Important: let <REFolderPath> be this location
+- Important: let "<REFolderPath>" be this location
 
 
 This is a Quickstart Guide. For more information refer to the the Runtime Environment Setup manual: https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx
