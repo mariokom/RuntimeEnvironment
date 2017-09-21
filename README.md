@@ -70,7 +70,7 @@ To test that everything was installed and configured correctly, you can do the f
 
 - UCH should run on the background, ready to interact with AsTeRICS or MyUI and control the targeted devices or applications.
 
-4) You may proceed by following Step 4 of the Head-ColouredLightBulb and WoehlkeWebsteckdose electricity outlet demo described in Sections 5.1 and 5.2 of ANNEX III https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx
+4) You may proceed by following Step 4 of the Head-ColouredLightBulb and WoehlkeWebsteckdose electricity outlet demo described in Sections 5.1 and 5.2 of the Runtime Environment Setup manual.
 
 5) Close the program by logging out the persona by visiting the URI: ‘localhost:8081/user/nicholas/logout’
 
