@@ -37,16 +37,16 @@ It is required to:
 
 - extract the contents of the folder to a preferred location
 
-- Important: let "<REFolderPath>" be this location
+- Important: let "REFolderPath" be this location
 
 
 This is a Quickstart Guide. For more information refer to the the Runtime Environment Setup manual: https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx
 
 Step 1: By default, AsTeRICS is configured to communicate with UCH on the same machine (localhost). If there is a need for UCH to run on a different machine, please see Section 4 of ANNEX III in documentation folder https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx, otherwise no further actions are required: the AsTeRICS files are precompiled and preconfigured.
 
-Step 2: Install GPII by using the installer to be found here: ‘<REFolderPath>/GPII/GPII.160119.044327.msi’
+Step 2: Install GPII by using the installer to be found here: ‘REFolderPath/GPII/GPII.160119.044327.msi’
 
-Step 3: Run (double click) the ‘<REFolderPath>/auto-conf.bat’ file with administrator privileges (right click on the file -> Run as administrator). The execution of this file will automatically clone MyUI in order to be hosted by the UCH server, as well as configure the GPII framework. The execution window will prompt the user to enter the GPII installation folder path (the default GPII installation folder path will be similar or identical to ‘C:\Program Files (x86)\GPII’). If any errors occur during the execution of the file, if you do not have administrator privileges or if you are running a windows version older than Windows 7 it is recommended to substitute this step (Step 3) by following the instructions in Sections 4.3 Installation and 4.4 Configuration of ANNEX III in documentation folder https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx
+Step 3: Run (double click) the ‘REFolderPath/auto-conf.bat’ file with administrator privileges (right click on the file -> Run as administrator). The execution of this file will automatically clone MyUI in order to be hosted by the UCH server, as well as configure the GPII framework. The execution window will prompt the user to enter the GPII installation folder path (the default GPII installation folder path will be similar or identical to ‘C:\Program Files (x86)\GPII’). If any errors occur during the execution of the file, if you do not have administrator privileges or if you are running a windows version older than Windows 7 it is recommended to substitute this step (Step 3) by following the instructions in Sections 4.3 Installation and 4.4 Configuration of ANNEX III in documentation folder https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx
 	
 
 
