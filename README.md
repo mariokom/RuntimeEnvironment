@@ -6,7 +6,7 @@ Repository for Task T203.3 of the Prosperity4All project
 
 ## Installation
 
-###Prerequisites
+### Prerequisites
 
 1) Windows OS
 
@@ -18,7 +18,7 @@ Repository for Task T203.3 of the Prosperity4All project
 
 
 
-###Software installation
+### Software installation
 
 To test or use the complete solution, the following platforms should be installed and configured appropriately:
 
