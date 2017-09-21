@@ -40,7 +40,8 @@ It is required to:
 - Important: let "REFolderPath" be this location
 
 
-This is a Quickstart Guide. For more information refer to the the Runtime Environment Setup manual: https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx
+This is a Quickstart Guide. For more information refer to the the Runtime Environment Setup manual: 
+https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.pdf
 
 Step 1: By default, AsTeRICS is configured to communicate with UCH on the same machine (localhost). If there is a need for UCH to run on a different machine, please see Section 4 of ANNEX III in documentation folder https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/P4All-D203.1-2-ANNEX%20III%20Runtime%20Environment%20Setup%20manual_v5.docx, otherwise no further actions are required: the AsTeRICS files are precompiled and preconfigured.
 
