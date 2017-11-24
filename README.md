@@ -93,6 +93,11 @@ To test that everything was installed and configured correctly, you can do the f
 6) Close GPII.
 
 
+## IRE Use Case Scenarios
+In this document a use case scenario is described in order to show how the IRE can be used effectively in real life situations:
+https://github.com/mariokom/RuntimeEnvironment/blob/master/Documentation/IRE%20Scenarios.pdf
+
+
 ## License
 
 https://github.com/mariokom/RuntimeEnvironment/blob/master/License.txt
