@@ -1,10 +1,26 @@
 # RuntimeEnvironment
 
+The Integrated Runtime Environment - IRE aims at providing accessible user interfaces aligned to the individual needs and preferences of diverse users. For this purpose it includes three major functional modules:
+- Support of diverse and individually tailored AT provided by the AsTeRICS runtime environment (ARE)
+- Access to a variety of products and services via user interface sockets as defined by the Universal Remote Console (URC)
+- Serving flexible, runtime adaptive user interfaces that match dynamic personal, technical and environmental requirements using MyUI
+The IRE enables to lower development costs and simplify the development of assistive solutions, mainly through the capabilities the IRE offers to developers, in terms of reusing a variety of components (e.g., ARE bundles, URC targets/controllers, MyUI adaptive interfaces) and functionalities. The Integrated Runtime Environment also aims to offer appropriate interactions to heterogeneous groups of users, and in addition, overcome interoperability problems of heterogeneous devices and services.
+
 Prosperity4All, D203.1 Runtime Environment Final Prototype
 
 Repository for Task T203.3 of the Prosperity4All project
 
 ## Installation
+
+
+### IRE Installation & Testing Videos
+
+Installation & Testing IRE part 1: https://www.youtube.com/watch?v=59QCy2KHReQ&feature=youtu.be
+
+Installation & Testing IRE part 2: https://www.youtube.com/watch?v=AadTTfL56ZI
+
+Installation & Testing IRE part 3 (scenario): https://www.youtube.com/watch?v=jdIMmnrsH7s
+
 
 ### Prerequisites
 
