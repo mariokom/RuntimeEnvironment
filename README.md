@@ -1,7 +1,7 @@
-# RuntimeEnvironment
+﻿# RuntimeEnvironment
 
 The Integrated Runtime Environment - IRE aims at providing accessible user interfaces aligned to the individual needs and preferences of diverse users. For this purpose it includes three major functional modules:
-- Support of diverse and individually tailored AT provided by the AsTeRICS runtime environment (ARE)
+- Support of diverse and individually tailored AT (mainly for motor impaired users)provided by the AsTeRICS runtime environment (ARE)
 - Access to a variety of products and services via user interface sockets as defined by the Universal Remote Console (URC)
 - Serving flexible, runtime adaptive user interfaces that match dynamic personal, technical and environmental requirements using MyUI
 The IRE enables to lower development costs and simplify the development of assistive solutions, mainly through the capabilities the IRE offers to developers, in terms of reusing a variety of components (e.g., ARE bundles, URC targets/controllers, MyUI adaptive interfaces) and functionalities. The Integrated Runtime Environment also aims to offer appropriate interactions to heterogeneous groups of users, and in addition, overcome interoperability problems of heterogeneous devices and services.
@@ -9,6 +9,9 @@ The IRE enables to lower development costs and simplify the development of assis
 Prosperity4All, D203.1 Runtime Environment Final Prototype
 
 Repository for Task T203.3 of the Prosperity4All project
+
+## About this version
+This is a experimental prototype, developed to demonstrate the above mentioned goals. This repository shows the status of the project     as of July 2017. The included technologies [AsTeRICS](https://github.com/asterics/AsTeRICS) and [MyUI](  http://sources.shawacademy.com/FraunhoferIAO/myui-runtime) are continiously improved in their own Github repositories. Support for The used URC/UCH implementation has stopped. The relevant concepts have been moved to the [URC4ESH](https://github.com/REMEXLabs/URC4ESH) implementation. Please have a look at these repositories to get the latest snapshots.
 
 ## Installation
 
